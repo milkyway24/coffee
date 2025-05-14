@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофе. Поиск точек</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" type="module" defer></script>
+</head>
+
+<body>
+    <div class="container main-wrap">
+        <h1 class="page-title">Поиск точек</h1>
+
+        <div class="inputs-wrap">
+            <label class="input-wrap">
+                <span class="input-label">Станция</span>
+                <input type="text" class="input js-station">
+            </label>
+            <label class="input-wrap">
+                <span class="input-label">Номер Т/А</span>
+                <input type="text" class="input js-number">
+            </label>
+        </div>
+
+        <section class="places">
+            <h2 class="visually-hidden">Точки</h2>
+
+            <svg class="loader js-loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <radialGradient id="a7" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)">
+                    <stop offset="0" stop-color="#FF156D"></stop>
+                    <stop offset=".3" stop-color="#FF156D" stop-opacity=".9"></stop>
+                    <stop offset=".6" stop-color="#FF156D" stop-opacity=".6"></stop>
+                    <stop offset=".8" stop-color="#FF156D" stop-opacity=".3"></stop>
+                    <stop offset="1" stop-color="#FF156D" stop-opacity="0"></stop>
+                </radialGradient>
+                <circle transform-origin="center" fill="none" stroke="url(#a7)" stroke-width="15" stroke-linecap="round"
+                    stroke-dasharray="200 1000" stroke-dashoffset="0" cx="100" cy="100" r="70">
+                    <animateTransform type="rotate" attributeName="transform" calcMode="spline" dur=".5" values="360;0"
+                        keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform>
+                </circle>
+                <circle transform-origin="center" fill="none" opacity=".2" stroke="#FF156D" stroke-width="15"
+                    stroke-linecap="round" cx="100" cy="100" r="70"></circle>
+            </svg>
+            <b class="not-found js-not-found">Не найдено</b>
+            <div class="js-places">
+            </div>
+        </section>
+
+        <template class="js-template">
+            <div class="place">
+                <h3 class="place-title"><span class="place-name js-place-title">Петровско-Разумовская</span> - <span
+                        class="place-num js-place-num">2213</span> </h3>
+                <div class="place-links">
+                    <span class="place-link-wrap js-place-enter">
+                        <b class="place-link-text">Вход:</b>
+                        <a href="#" class="place-link js-place-link" target="_blank">ссылка</a>
+                    </span>
+                    <span class="place-link-wrap js-place-drive">
+                        <b class="place-link-text">Заезд:</b>
+                        <a href="#" class="place-link js-place-link" target="_blank">ссылка</a>
+                    </span>
+                    <span class="place-link-wrap js-place-parking">
+                        <b class="place-link-text">Парковка:</b>
+                        <a href="#" class="place-link js-place-link" target="_blank">ссылка</a>
+                    </span>
+                </div>
+                <div class="place-about js-place-descr">
+                    <b class="place-link-text">Особенности:</b>
+                    <p class="place-descr js-place-descr-text">Взять ключ от конструкции. Заезжать под кирпич, только
+                        посмотреть или в
+                        округе нет ДПС. Дальше мимо шлагбаума слева по тротуару.</p>
+                </div>
+            </div>
+        </template>
+    </div>
+
+</body>
+
+</html>
