@@ -10,15 +10,15 @@ function findStations(stat, num) {
     const findedStArr = stations.filter((el) => {
 
         if (stat && num) {
-            return el.name.toLowerCase().includes(stat.toLowerCase()) && el.number.toLowerCase().includes(num.toLowerCase());
+            return el.name.toLowerCase().startsWith(stat.toLowerCase()) && el.number.toLowerCase().startsWith(num.toLowerCase());
         }
 
         if (!num) {
-            return el.name.toLowerCase().includes(stat.toLowerCase());
+            return el.name.toLowerCase().startsWith(stat.toLowerCase());
         }
 
         if (!stat) {
-            return el.number.toLowerCase().includes(num.toLowerCase());
+            return el.number.toLowerCase().startsWith(num.toLowerCase());
         }
 
     });
