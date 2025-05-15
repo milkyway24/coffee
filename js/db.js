@@ -234,4 +234,173 @@ export const stations = [
         number: '2299',
         place: 'https://yandex.ru/navi/-/CHfdRI3o',
     },
+    {
+        name: 'Варшавская',
+        number: '3511',
+        place: 'https://yandex.ru/navi/-/CHrd7ZoG',
+    },
+    {
+        name: 'Вернадского',
+        number: '2751',
+        // place: 'https://yandex.ru/navi/-/CHrd7ZoG',
+    },
+    {
+        name: 'Вернадского',
+        number: '2243',
+        // place: 'https://yandex.ru/navi/-/CHrd7ZoG',
+    },
+    {
+        name: 'Вернадского проспект',
+        number: '2781',
+        // place: 'https://yandex.ru/navi/-/CHrd7ZoG',
+    },
+    {
+        name: 'Вернадского проспект',
+        number: '2706',
+        // place: 'https://yandex.ru/navi/-/CHrd7ZoG',
+    },
+    {
+        name: 'Верхние Котлы',
+        number: '2261',
+        place: 'https://yandex.ru/navi/-/CHrhAQlb',
+    },
+    {
+        name: 'Верхние Лихоборы',
+        number: '2715',
+        place: 'https://yandex.ru/navi/-/CHfdRC5S',
+        descr: 'Закрывается в 1:00'
+    },
+    {
+        name: 'Владыкино',
+        number: '2739',
+        place: 'https://yandex.ru/navi/-/CHfdRLOx',
+        drive: 'https://yandex.ru/navi/-/CHfdRX0j',
+        descr: 'Закрывается в 2:00'
+    },
+    {
+        name: 'Владыкино депо',
+        number: '2285',
+        place: 'https://yandex.ru/navi/-/CHfdV0mo',
+        drive: 'https://yandex.ru/navi/-/CHfdVD9-'
+    },
+    {
+        name: 'Вневедомственная охрана',
+        number: '3517',
+        place: 'https://yandex.ru/maps/-/CHrlyRjF',
+    },
+    {
+        name: 'Вневедомственная охрана',
+        number: '3522',
+        place: 'https://yandex.ru/maps/-/CHrlyRjF',
+    },
+    {
+        name: 'Внуково',
+        number: '2250',
+        place: 'https://yandex.ru/maps/-/CHvIeBP2',
+        parking: 'https://yandex.ru/maps/-/CHvIe4nr',
+        descr: 'Парковаться на платной парковке рядом с отелем и пешком идти до выхода 3. Оплачивать парковку при выезде, на рисепшене отеля 500 руб. Если припарковаться возле выхода метро и не успеть выехать через 25 минут после въезда на территорию аэропорта, будет штраф 3000 руб.'
+    },
+    {
+        name: 'Водный стадион',
+        number: '2790',
+        place: 'https://yandex.ru/maps/-/CHvMj2Ne',
+        descr: 'Взять ключ от конструкции. Аппарат на улице, перед входом'
+    },
+    {
+        name: 'Водный стадион',
+        number: '3500',
+        place: 'https://yandex.ru/maps/-/CHvMn4nl',
+        descr: 'Взять ключ от конструкции. Аппарат на улице, перед входом'
+    },
+    {
+        name: 'Войковская',
+        number: '2405',
+        place: 'https://yandex.ru/maps/-/CHvMnZ7v',
+    },
+    {
+        name: 'Войковская',
+        number: '2406',
+        place: 'https://yandex.ru/maps/-/CHvMnG6Q',
+    },
+    {
+        name: 'Волгоградский проспект',
+        number: '2785',
+        place: 'https://yandex.ru/maps/-/CHrlY6LQ',
+    },
+    {
+        name: 'Волжская',
+        number: '2771',
+        place: 'https://yandex.ru/maps/-/CHrlyCM7',
+    },
+    {
+        name: 'Волоколамская',
+        number: '2497',
+        // place: 'https://yandex.ru/maps/-/CHrlyCM7',
+    },
+    {
+        name: 'Волоколамская',
+        number: '2496',
+        // place: 'https://yandex.ru/maps/-/CHrlyCM7',
+    },
+    {
+        name: 'Воронцовская',
+        number: '2717',
+        place: 'https://yandex.ru/maps/-/CHvIeRIh',
+        descr: 'Закрывается в 2:00'
+    },
+    {
+        name: 'Воронцовская',
+        number: '2718',
+        place: 'https://yandex.ru/maps/-/CHvIeVJw',
+    },
+    {
+        name: 'Выхино',
+        number: '2787',
+        place: 'https://yandex.ru/navi/-/CHrhuQIS',
+        descr: 'Взять ключ от конструкции. Аппарат находится на платформе электрички, за турникетом'
+    },
+    {
+        name: 'Выхино депо',
+        number: '2286',
+        place: 'https://yandex.ru/navi/-/CHrhu2KG',
+        descr: 'Закрывается в 22:00'
+    },
+    {
+        name: 'Выхино депо',
+        number: '2287',
+        place: 'https://yandex.ru/navi/-/CHrhu2KG',
+        descr: 'Закрывается в 22:00'
+    },
+    {
+        name: 'Выхино депо',
+        number: '2288',
+        place: 'https://yandex.ru/navi/-/CHrhuGLs',
+        drive: 'https://yandex.ru/navi/-/CHrhuNP5'
+    },
+    {
+        name: 'Выхино депо',
+        number: '2289',
+        place: 'https://yandex.ru/navi/-/CHrhuWkR',
+        drive: 'https://yandex.ru/navi/-/CHrhuNP5'
+    },
+    {
+        name: 'Генерала Тюленева',
+        number: '2709',
+        place: 'https://yandex.ru/maps/-/CHv6yJ-E',
+    },
+    {
+        name: 'Говорово',
+        number: '3502',
+        // place: 'https://yandex.ru/maps/-/CHv6yJ-E',
+    },
+    {
+        name: 'Давыдково',
+        number: '2248',
+        // place: 'https://yandex.ru/maps/-/CHv6yJ-E',
+    },
+    {
+        name: 'Дмитриевского',
+        number: '2430',
+        place: 'https://yandex.ru/maps/-/CHrl46IJ',
+    },
 ]
