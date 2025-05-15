@@ -403,4 +403,121 @@ export const stations = [
         number: '2430',
         place: 'https://yandex.ru/maps/-/CHrl46IJ',
     },
+    {
+        name: 'Дмитриевского',
+        number: '2746',
+        place: 'https://yandex.ru/maps/-/CHrl46IJ',
+    },
+    {
+        name: 'Дмитрия Донского',
+        number: '2791',
+        place: 'https://yandex.ru/maps/-/CHrdq2mS',
+        descr: 'Выход 10. Парковаться на платной парковке. В ТЦ на 3 этаже есть туалет'
+    },
+    {
+        name: 'Дмитрия Донского',
+        number: '3505',
+        place: 'https://yandex.ru/maps/-/CHrduUMZ',
+        descr: 'В одном переходе с 2403'
+    },
+    {
+        name: 'Дмитрия Донского',
+        number: '2403',
+        place: 'https://yandex.ru/maps/-/CHrduUMZ',
+        descr: 'В одном переходе с 3505'
+    },
+    {
+        name: 'Дмитровская',
+        number: '2142',
+        place: 'https://yandex.ru/maps/-/CHr-rU66',
+    },
+    {
+        name: 'Дмитровское шоссе СЦ',
+        number: '2188',
+        place: 'https://yandex.ru/maps/-/CHr-bY~-',
+        descr: 'Подъехать к воротам и позвонить по телефону: +74993250278'
+    },
+    {
+        name: 'Дмитровское шоссе СЦ',
+        number: '2189',
+        place: 'https://yandex.ru/maps/-/CHr-bY~-',
+        descr: 'Подъехать к воротам и позвонить по телефону: +74993250278'
+    },
+    {
+        name: 'Домодедовcкая',
+        number: '2757',
+        place: 'https://yandex.ru/maps/-/CHrduKpi',
+        descr: 'В одном переходе с 2121'
+    },
+    {
+        name: 'Домодедовcкая',
+        number: '2121',
+        place: 'https://yandex.ru/maps/-/CHrduKpi',
+        descr: 'В одном переходе с 2757'
+    },
+    {
+        name: 'Домодедовcкая',
+        number: '2122',
+        place: 'https://yandex.ru/maps/-/CHrduHyV',
+        drive: 'https://yandex.ru/maps/-/CHrduTIB'
+    },
+    {
+        name: 'Достоевская',
+        number: '2400',
+        place: 'https://yandex.ru/maps/-/CHr-F86k',
+        descr: 'Можно парковаться возле выхода на тротуаре, но на всякий случай рядом есть платная парковка'
+    },
+    {
+        name: 'Достоевская',
+        number: '2789',
+        place: 'https://yandex.ru/maps/-/CHr-F-Zy',
+        descr: 'До 1:00. Стоит за турникетом. Есть лифт на выходе 1. Можно зайти и с выхода 2'
+    },
+    {
+        name: 'Дубровка',
+        number: '2127',
+        place: 'https://yandex.ru/maps/-/CHrlmV9~',
+    },
+    {
+        name: 'Жулебино',
+        number: '2753',
+        place: 'https://yandex.ru/maps/-/CHrl4YIN',
+    },
+    {
+        name: 'Жулебино',
+        number: '2181',
+        place: 'https://yandex.ru/maps/-/CHrl4E~q',
+    },
+    {
+        name: 'Жулебино',
+        number: '2223',
+        place: 'https://yandex.ru/maps/-/CHrl4Mpw',
+    },
+    {
+        name: 'Замоскворецкое депо',
+        number: '2268',
+        place: 'https://yandex.ru/navi/-/CHrhyJl1',
+        drive: 'https://yandex.ru/navi/-/CHrhyB2i'
+    },
+    {
+        name: 'Зюзино',
+        number: '2245',
+        place: 'https://yandex.ru/navi/-/CHrhAC7A',
+    },
+    {
+        name: 'Зюзино',
+        number: '2246',
+        place: 'https://yandex.ru/navi/-/CHrhASZM',
+    },
+    {
+        name: 'Зябликово',
+        number: '2124',
+        place: 'https://yandex.ru/maps/-/CHvbqRj1',
+    },
+    {
+        name: 'Измайлово депо',
+        number: '2263',
+        place: 'https://yandex.ru/maps/-/CHrtfT2E',
+        drive: 'https://yandex.ru/maps/-/CHvbqSiF'
+    },
 ]
