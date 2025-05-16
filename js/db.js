@@ -1267,5 +1267,508 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHr-z-pY',
         drive: 'https://yandex.ru/maps/-/CHr-7E-v'
     },
-
+    {
+        name: 'Павелецкая',
+        number: '2297',
+        place: 'https://yandex.ru/maps/-/CHrd5L2d',
+        drive: 'https://yandex.ru/maps/-/CHrd5Xp1',
+        descr: 'Выход 1'
+    },
+    {
+        name: 'Парк культуры',
+        number: '2796',
+        place: 'https://yandex.ru/maps/-/CHvrAB-R',
+        descr: 'Взять ключ от антивандальной конструкции '
+    },
+    {
+        name: 'Парк Победы',
+        number: '2219',
+        place: 'https://yandex.ru/maps/-/CHvrAD4b',
+    },
+    {
+        name: 'Первомайская',
+        number: '2162',
+        place: 'https://yandex.ru/maps/-/CHrt74PV',
+    },
+    {
+        name: 'Первомайская',
+        number: '2163',
+        place: 'https://yandex.ru/maps/-/CHrt7QIS',
+    },
+    {
+        name: 'Перово',
+        number: '2472',
+        place: 'https://yandex.ru/maps/-/CHrt7Z60',
+    },
+    {
+        name: 'Перово',
+        number: '2218',
+        place: 'https://yandex.ru/maps/-/CHrt7O8K',
+    },
+    {
+        name: 'Петровский парк',
+        number: '2495',
+        place: 'https://yandex.ru/maps/-/CHvMrUK3',
+        descr: 'Закрывается в 1:00 или в 2:00'
+    },
+    {
+        name: 'Петровский парк',
+        number: '2494',
+        place: 'https://yandex.ru/maps/-/CHvMn-3E',
+        descr: 'Закрывается в 2:00'
+    },
+    {
+        name: 'Петровско - Разумовская',
+        number: '2470',
+        place: 'https://yandex.ru/maps/-/CHr-7ZNM',
+        drive: 'https://yandex.ru/maps/-/CHr-7Ckz',
+        descr: 'Закрывается в 2:00. Заезжать по автобусной под кирпич, потом с пешеходника на тротуар. Два аппарата в одном здании. Этот налево'
+    },
+    {
+        name: 'Петровско - Разумовская',
+        number: '2470',
+        place: 'https://yandex.ru/maps/-/CHr-7ZNM',
+        drive: 'https://yandex.ru/maps/-/CHr-7Ckz',
+        descr: 'Закрывается в 2:00. Заезжать по автобусной под кирпич, потом с пешеходника на тротуар. Два аппарата в одном здании. Этот направо'
+    },
+    {
+        name: 'Петровско-Разумовская',
+        number: '2214',
+        place: 'https://yandex.ru/maps/-/CHrdAU2a',
+        drive: 'https://yandex.ru/maps/-/CHrdA45T',
+        descr: 'Закрывается в 2:00. Есть лифт'
+    },
+    {
+        name: 'Планерная',
+        number: '2486',
+        place: 'https://yandex.ru/maps/-/CHvrB69a',
+    },
+    {
+        name: 'Планерное депо',
+        number: '2741',
+        // place: 'https://yandex.ru/maps/-/CHvrB69a',
+    },
+    {
+        name: 'Планерное депо',
+        number: '2740',
+        // place: 'https://yandex.ru/maps/-/CHvrB69a',
+    },
+    {
+        name: 'Площадь Ильича',
+        number: '2752',
+        place: 'https://yandex.ru/maps/-/CHrleV~q',
+    },
+    {
+        name: 'Полежаевская',
+        number: '2792',
+        place: 'https://yandex.ru/maps/-/CHvrzE9g',
+    },
+    {
+        name: 'Полежаевская',
+        number: '2479',
+        place: 'https://yandex.ru/maps/-/CHvrz4Zi',
+    },
+    {
+        name: 'Полянка',
+        number: '2461',
+        place: 'https://yandex.ru/navi/-/CHrhIN8R',
+    },
+    {
+        name: 'Потапово',
+        number: '2432',
+        place: 'https://yandex.ru/maps/-/CHvIeLY2',
+    },
+    {
+        name: 'Пражская',
+        number: '2152',
+        place: 'https://yandex.ru/maps/-/CHrdBQ8Z',
+        descr: 'Можно встать на платной парковке'
+    },
+    {
+        name: 'Пражская',
+        number: '2153',
+        place: 'https://yandex.ru/maps/-/CHrdB414',
+    },
+    {
+        name: 'Преображенская площадь',
+        number: '2493',
+        descr: 'Cкорее всего аппарат давно не работает, ни у кого точки нет',
+    },
+    {
+        name: 'Преображенская площадь',
+        number: '2499',
+        place: 'https://yandex.ru/maps/-/CHrt7H2l',
+    },
+    {
+        name: 'Прокшино',
+        number: '2476',
+        place: 'https://yandex.ru/maps/-/CHvIeLO0',
+    },
+    {
+        name: 'Пролетарская',
+        number: '2182',
+        place: 'https://yandex.ru/maps/-/CHrlaW0m',
+        parking: 'https://yandex.ru/maps/-/CHrla8Ie',
+        descr: 'Есть платная парковка рядом на дороге'
+    },
+    {
+        name: 'Пролетарская',
+        number: '2183',
+        place: 'https://yandex.ru/maps/-/CHrlaGlr',
+    },
+    {
+        name: 'Проспект Мира',
+        number: '2456',
+        place: 'https://yandex.ru/maps/-/CHr-6X8w',
+        descr: 'Закрывается в 2:00'
+    },
+    {
+        name: 'Профсоюзная',
+        number: '2409',
+        place: 'https://yandex.ru/maps/-/CHvIeLpZ',
+    },
+    {
+        name: 'Профсоюзная',
+        number: '2224',
+        place: 'https://yandex.ru/maps/-/CHvIePir',
+    },
+    {
+        name: 'Пушкинская',
+        number: '2187',
+        place: 'https://yandex.ru/maps/-/CHrdAV4j',
+        drive: 'https://yandex.ru/maps/-/CHrdA6Z9',
+        parking: 'https://yandex.ru/maps/-/CHrdAS1M',
+        descr: 'Заезд там где низкий бордюр. Если рядом ДПС или в праздники много народу, можно встать на платной парковке и пройтись'
+    },
+    {
+        name: 'Пыхтино',
+        number: '2252',
+        place: 'https://yandex.ru/maps/-/CHvIePom',
+    },
+    {
+        name: 'Пятницкое шоссе',
+        number: '2168',
+        place: 'https://yandex.ru/maps/-/CHvrzO7K',
+    },
+    {
+        name: 'Пятницкое шоссе',
+        number: '2498',
+        place: 'https://yandex.ru/maps/-/CHvrvSKe',
+    },
+    {
+        name: 'Рассказовка',
+        number: '2474',
+        place: 'https://yandex.ru/maps/-/CHvIePp7',
+    },
+    {
+        name: 'Рижская',
+        number: '2146',
+        place: 'https://yandex.ru/navi/-/CHvCuDZR',
+        drive: 'https://yandex.ru/navi/-/CHfdY40h'
+    },
+    {
+        name: 'Римская',
+        number: '2138',
+        place: 'https://yandex.ru/maps/-/CHrleNp-',
+    },
+    {
+        name: 'Рокоссовского б-р',
+        number: '2701',
+        place: 'https://yandex.ru/maps/-/CHrxAJI4',
+    },
+    {
+        name: 'Рокоссовского б-р',
+        number: '2212',
+        place: 'https://yandex.ru/maps/-/CHrxAR9G',
+    },
+    {
+        name: 'РУДН',
+        number: '2710',
+        place: 'https://yandex.ru/maps/-/CHvIeT5q',
+    },
+    {
+        name: 'Румянцево',
+        number: '2436',
+        place: 'https://yandex.ru/maps/-/CHvIeT8q',
+        descr: 'Заезжать через шлагбаум на парковку, там бесплатно первые 2 часа. Обслужить до 22:00, потом парковка закрывается'
+    },
+    {
+        name: 'Румянцево',
+        number: '2211',
+        place: 'https://yandex.ru/maps/-/CHvIeTzs',
+        descr: 'Заезжать через шлагбаум на парковку, там бесплатно первые 2 часа. Обслужить до 22:00, потом парковка закрывается'
+    },
+    {
+        name: 'Савёловская',
+        number: '2140',
+        place: 'https://yandex.ru/maps/-/CHrdEEoN',
+        parking: 'https://yandex.ru/maps/-/CHrdEQ12',
+        descr: 'Лучше парковаться на платной парковке, там до лифта 50 метров пройтись. На вокзале есть бесплатный туалет'
+    },
+    {
+        name: 'Савёловская',
+        number: '2487',
+        place: 'https://yandex.ru/navi/-/CHfd4V~t',
+        parking: 'https://yandex.ru/navi/-/CHfdbJ5f',
+        descr: 'Закрывается в 1:00'
+    },
+    {
+        name: 'Саларьево',
+        number: '2735',
+        place: 'https://yandex.ru/maps/-/CHvIeXp7',
+        drive: 'https://yandex.ru/maps/-/CHvIiA1Z',
+        descr: 'Можно заехать через парковку ТЦ и дальше по тротуару'
+    },
+    {
+        name: 'Саларьево',
+        number: '2736',
+        place: 'https://yandex.ru/maps/-/CHvIe2yo',
+        drive: 'https://yandex.ru/maps/-/CHvIiA1Z',
+        descr: 'Можно заехать через парковку ТЦ и дальше по тротуару'
+    },
+    {
+        name: 'Саларьево',
+        number: '2210',
+        place: 'https://yandex.ru/maps/-/CHvIe2zU',
+        drive: 'https://yandex.ru/maps/-/CHvIiA1Z',
+        descr: 'Можно заехать через парковку ТЦ и дальше по тротуару'
+    },
+    {
+        name: 'Саларьево автовокзал',
+        number: '2279',
+        place: 'https://yandex.ru/maps/-/CHvIiE15',
+        drive: 'https://yandex.ru/maps/-/CHvIiA1Z',
+        parking: 'https://yandex.ru/maps/-/CHvIe-mE',
+        descr: 'Запарковаться возле лифта и пройти к автовокзалу, там аппарат на 2-м этаже. Заезжать можно через парковку ТЦ и дальше по тротуару'
+    },
+    {
+        name: 'Свиблово',
+        number: '2449',
+        place: 'https://yandex.ru/maps/-/CHrdECYp',
+        drive: 'https://yandex.ru/maps/-/CHrdEGZ8',
+    },
+    {
+        name: 'Свиблово депо',
+        number: '2284',
+        place: 'https://yandex.ru/maps/-/CHr-FN4O',
+        drive: 'https://yandex.ru/maps/-/CHr-FZ0O',
+    },
+    {
+        name: 'Севастопольская',
+        number: '3507',
+        place: 'https://yandex.ru/maps/-/CHrdBJ65',
+    },
+    {
+        name: 'Северное депо',
+        number: '2270',
+        place: 'https://yandex.ru/maps/-/CHrxAK2d',
+    },
+    {
+        name: 'Северное депо',
+        number: '2269',
+        place: 'https://yandex.ru/maps/-/CHrxAK2d',
+    },
+    {
+        name: 'Северное депо',
+        number: '2271',
+        place: 'https://yandex.ru/maps/-/CHrxAK2d',
+    },
+    {
+        name: 'Северные Ворота автовокзал',
+        number: '2278',
+        place: 'https://yandex.ru/maps/-/CHvMrON7',
+        drive: 'https://yandex.ru/maps/-/CHvC5B6A',
+        parking: 'https://yandex.ru/maps/-/CHvMrCIa',
+        descr: 'Парковаться в кармане, точка указана в столбце "парковка". Пройти ко входу автовокзала (указано в столбце "вход")'
+    },
+    {
+        name: 'Селигерская',
+        number: '2447',
+        place: 'https://yandex.ru/maps/-/CHr-jEMQ',
+    },
+    {
+        name: 'Селигерская',
+        number: '2457',
+        place: 'https://yandex.ru/maps/-/CHr-jQpz',
+        descr: 'Здесь можно на бордюр запрыгнуть, там есть место невысокое'
+    },
+    {
+        name: 'Серпуховская',
+        number: '2137',
+        place: 'https://yandex.ru/maps/-/CHrdBGiI',
+        drive: 'https://yandex.ru/maps/-/CHrdBOJ2'
+    },
+    {
+        name: 'Скобелевская',
+        number: '3501',
+        place: 'https://yandex.ru/navi/-/CHrhIGMU',
+    },
+    {
+        name: 'Славянский бульвар',
+        number: '2453',
+        place: 'https://yandex.ru/maps/-/CHvruNNZ',
+    },
+    {
+        name: 'Славянский бульвар',
+        number: '2452',
+        place: 'https://yandex.ru/maps/-/CHvruLYD',
+    },
+    {
+        name: 'Славянский бульвар',
+        number: '2452',
+        place: 'https://yandex.ru/maps/-/CHvruLYD',
+    },
+    {
+        name: 'СОК Лесной',
+        number: '2761',
+        place: 'https://yandex.ru/maps/-/CHvnzY-C',
+        descr: 'На территории не работает навигация. Надо либо звонить операторам, кто работает на этом маршруте и у них спрашивать где стоят аппараты, либо спрашивать у работников на месте'
+    },
+    {
+        name: 'СОК Лесной',
+        number: '2765',
+        place: 'https://yandex.ru/maps/-/CHvnzY-C',
+        descr: 'На территории не работает навигация. Надо либо звонить операторам, кто работает на этом маршруте и у них спрашивать где стоят аппараты, либо спрашивать у работников на месте'
+    },
+    {
+        name: 'Сокол',
+        number: '2407',
+        place: 'https://yandex.ru/maps/-/CHvMvJJ8',
+        descr: 'Закрывается в 1:00'
+    },
+    {
+        name: 'Сокол',
+        number: '2408',
+        place: 'https://yandex.ru/maps/-/CHvMvCm0',
+    },
+    {
+        name: 'Сокол депо',
+        number: '2274',
+        place: 'https://yandex.ru/maps/-/CHvMvSPN',
+        drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
+        descr: 'Войти к поездам и пойти направо'
+    },
+    {
+        name: 'Сокол депо',
+        number: '2274',
+        place: 'https://yandex.ru/maps/-/CHvMvSPN',
+        drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
+        descr: 'Войти к поездам и пойти налево'
+    },
+    {
+        name: 'Сокол депо',
+        number: '2275',
+        place: 'https://yandex.ru/maps/-/CHvMvSPN',
+        drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
+        descr: 'Войти к поездам и пойти налево'
+    },
+    {
+        name: 'Сокол депо',
+        number: '2276',
+        place: 'https://yandex.ru/maps/-/CHvMzY-8',
+        drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
+        descr: 'Есть лифт, но работает он только в дневное время. Ночью, скорее всего придется топать по лестнице'
+    },
+    {
+        name: 'Сокол депо',
+        number: '2277',
+        place: 'https://yandex.ru/maps/-/CHvMzJyB',
+        drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
+        descr: 'Есть лифт, но работает он только в дневное время. Ночью, скорее всего придется топать по лестнице'
+    },
+    {
+        name: 'Сокольники',
+        number: '2151',
+        place: 'https://yandex.ru/maps/-/CHrxAT4r',
+    },
+    {
+        name: 'Сокольники',
+        number: '2144',
+        place: 'https://yandex.ru/maps/-/CHrxADpT',
+    },
+    {
+        name: 'Солнцево',
+        number: '2723',
+        place: 'https://yandex.ru/maps/-/CHvrEM73',
+    },
+    {
+        name: 'Солнцево депо',
+        number: '2293',
+        place: 'https://yandex.ru/maps/-/CHvrEBji',
+    },
+    {
+        name: 'СОП Варшавское шоссе 93',
+        number: '2463',
+        place: 'https://yandex.ru/maps/-/CHrliSY-',
+        descr: 'Парковаться сразу слева, направо не ехать. Все три аппарата в одном здании'
+    },
+    {
+        name: 'СОП Варшавское шоссе 93',
+        number: '2464',
+        place: 'https://yandex.ru/maps/-/CHrliSY-',
+        descr: 'Парковаться сразу слева, направо не ехать. Все три аппарата в одном здании'
+    },
+    {
+        name: 'СОП Варшавское шоссе 93',
+        number: '2465',
+        place: 'https://yandex.ru/maps/-/CHrliSY-',
+        descr: 'Парковаться сразу слева, направо не ехать. Все три аппарата в одном здании'
+    },
+    {
+        name: 'Спартак',
+        number: '2738',
+        place: 'https://yandex.ru/maps/-/CHvrvL5U',
+    },
+    {
+        name: 'Спортивная',
+        number: '2788',
+        place: 'https://yandex.ru/navi/-/CHv7qA6U',
+        descr: 'Аппарат на улице. Взять ключ от антивандальной конструкции '
+    },
+    {
+        name: 'Сретенский бульвар',
+        number: '2462',
+        place: 'https://yandex.ru/maps/-/CHrxA-2Q',
+    },
+    {
+        name: 'Старокачаловская',
+        number: '2748',
+        place: 'https://yandex.ru/maps/-/CHrdB0YO',
+        descr: 'В одном переходе с Дмитрия Донского 2403'
+    },
+    {
+        name: 'Стахановская',
+        number: '2711',
+        place: 'https://yandex.ru/maps/-/CHrlYSmz',
+    },
+    {
+        name: 'Строгино',
+        number: '2167',
+        place: 'https://yandex.ru/maps/-/CHvrFSn0',
+    },
+    {
+        name: 'Строгино',
+        number: '2166',
+        place: 'https://yandex.ru/maps/-/CHvrF6ZB',
+    },
+    {
+        name: 'Строгино',
+        number: '2166',
+        place: 'https://yandex.ru/maps/-/CHvrF6ZB',
+    },
+    {
+        name: 'Сухаревская',
+        number: '2149',
+        place: 'https://yandex.ru/maps/-/CHvCFD2s',
+    },
+    {
+        name: 'Сходненская',
+        number: '2177',
+        place: 'https://yandex.ru/maps/-/CHvrFEYj',
+    },
+    {
+        name: 'Сходненская',
+        number: '2178',
+        place: 'https://yandex.ru/maps/-/CHvrzPOn',
+    },
 ]
