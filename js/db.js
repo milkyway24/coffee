@@ -1087,11 +1087,6 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHrtv6LN',
     },
     {
-        name: 'Новогиреево',
-        number: '2180',
-        place: 'https://yandex.ru/maps/-/CHrtv6LN',
-    },
-    {
         name: 'Новогиреево депо',
         number: '2262',
         place: 'https://yandex.ru/maps/-/CHrtv8l-',
@@ -1148,4 +1143,128 @@ export const stations = [
         number: '2174',
         place: 'https://yandex.ru/maps/-/CHvIeDO9',
     },
+    {
+        name: 'Озерная',
+        number: '2734',
+        place: 'https://yandex.ru/maps/-/CHvnF2od',
+        drive: 'https://yandex.ru/maps/-/CHvnvL6-'
+    },
+    {
+        name: 'Озерная',
+        number: '3504',
+        place: 'https://yandex.ru/maps/-/CHvnrD7n',
+        drive: 'https://yandex.ru/maps/-/CHvnvL6-'
+    },
+    {
+        name: 'Окружная',
+        number: '2492',
+        place: 'https://yandex.ru/maps/-/CHr-NM5H',
+        descr: 'Закрывается в 2:00. Выход 2'
+    },
+    {
+        name: 'Окружная',
+        number: '2480',
+        place: 'https://yandex.ru/maps/-/CHr-6K2N',
+        descr: 'Закрывается в 2:00. Рядом есть платная парковка. Есть лифт'
+    },
+    {
+        name: 'Окская',
+        number: '2478',
+        place: 'https://yandex.ru/maps/-/CHrlYXox',
+    },
+    {
+        name: 'Октябрьская',
+        number: '2222',
+        place: 'https://yandex.ru/maps/-/CHrd5ZnH',
+        descr: 'Аппарат на улице. Взять ключ от конструкции'
+    },
+    {
+        name: 'Октябрьское поле',
+        number: '2143',
+        place: 'https://yandex.ru/maps/-/CHvMnH57',
+    },
+    {
+        name: 'Олимпийский СК',
+        number: '2204',
+        drive: 'https://yandex.ru/maps/-/CHrx5IlL',
+        descr: 'Пока указан только въезд на территорию, где аппараты звонить ребятам с маршрута или  можно спрашивать у сопровождающего'
+    },
+    {
+        name: 'Олимпийский СК',
+        number: '2238',
+        drive: 'https://yandex.ru/maps/-/CHrx5IlL',
+        descr: 'Пока указан только въезд на территорию, где аппараты звонить ребятам с маршрута или  можно спрашивать у сопровождающего'
+    },
+    {
+        name: 'Олимпийский СК',
+        number: '2239',
+        drive: 'https://yandex.ru/maps/-/CHrx5IlL',
+        descr: 'Пока указан только въезд на территорию, где аппараты звонить ребятам с маршрута или  можно спрашивать у сопровождающего'
+    },
+    {
+        name: 'Олимпийский СК',
+        number: '3518',
+        drive: 'https://yandex.ru/maps/-/CHrx5IlL',
+        descr: 'Пока указан только въезд на территорию, где аппараты звонить ребятам с маршрута или  можно спрашивать у сопровождающего'
+    },
+    {
+        name: 'Олимпийский СК',
+        number: '3519',
+        drive: 'https://yandex.ru/maps/-/CHrx5IlL',
+        descr: 'Пока указан только въезд на территорию, где аппараты звонить ребятам с маршрута или  можно спрашивать у сопровождающего'
+    },
+    {
+        name: 'Олимпийский СК',
+        number: '3520',
+        drive: 'https://yandex.ru/maps/-/CHrx5IlL',
+        descr: 'Пока указан только въезд на территорию, где аппараты звонить ребятам с маршрута или  можно спрашивать у сопровождающего'
+    },
+    {
+        name: 'Олимпийский СК',
+        number: '3521',
+        drive: 'https://yandex.ru/maps/-/CHrx5IlL',
+        descr: 'Пока указан только въезд на территорию, где аппараты звонить ребятам с маршрута или  можно спрашивать у сопровождающего'
+    },
+    {
+        name: 'Ольховая',
+        number: '2482',
+        place: 'https://yandex.ru/maps/-/CHvyuZ9g',
+        descr: 'Вроде оба в одном месте'
+    },
+    {
+        name: 'Ольховая',
+        number: '2744',
+        place: 'https://yandex.ru/maps/-/CHvyuZ9g',
+        descr: 'Вроде оба в одном месте'
+    },
+    {
+        name: 'Орехово',
+        number: '2424',
+        place: 'https://yandex.ru/maps/-/CHrd50pc',
+        descr: 'Там же где 3508'
+    },
+    {
+        name: 'Орехово',
+        number: '3508',
+        place: 'https://yandex.ru/maps/-/CHrd50pc',
+        descr: 'Там же, где 2424'
+    },
+    {
+        name: 'Орехово',
+        number: '2727',
+        place: 'https://yandex.ru/navi/-/CHrhEPZq'
+    },
+    {
+        name: 'Отрадное',
+        number: '2159',
+        place: 'https://yandex.ru/maps/-/CHr-zD04',
+        drive: 'https://yandex.ru/maps/-/CHr-zToR'
+    },
+    {
+        name: 'Отрадное',
+        number: '2160',
+        place: 'https://yandex.ru/maps/-/CHr-z-pY',
+        drive: 'https://yandex.ru/maps/-/CHr-7E-v'
+    },
+
 ]
