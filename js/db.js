@@ -880,6 +880,12 @@ export const stations = [
         descr: 'Закрывается в 2:00. Выход 2. Если опасно на тротуар, напротив есть платная парковка'
     },
     {
+        name: 'Маяковская',
+        number: '2747',
+        place: 'https://yandex.ru/maps/-/CHr-v03K',
+        descr: 'Закрывается в 2:00. Выход 1. Заезжать с пешеходника на тротуар'
+    },
+    {
         name: 'Медведково',
         number: '2714',
         place: 'https://yandex.ru/maps/-/CHr-J0YW',
@@ -979,5 +985,167 @@ export const stations = [
         name: 'Московский метрополитен СБ',
         number: '2769',
         place: 'https://yandex.ru/navi/-/CHrxvOIH',
+    },
+    {
+        name: 'Нагорная',
+        number: '2155',
+        place: 'https://yandex.ru/navi/-/CHrhA2ZI',
+    },
+    {
+        name: 'Народное Ополчение',
+        number: '2799',
+        place: 'https://yandex.ru/maps/-/CHvrvQnI',
+    },
+    {
+        name: 'Народное Ополчение',
+        number: '2720',
+        place: 'https://yandex.ru/maps/-/CHvrr-OU',
+    },
+    {
+        name: 'Нахимовский проспект',
+        number: '2229',
+        place: 'https://yandex.ru/navi/-/CHrhECj4',
+    },
+    {
+        name: 'Нахимовский проспект',
+        number: '2732',
+        place: 'https://yandex.ru/navi/-/CHrhEK21',
+    },
+    {
+        name: 'Некрасовка',
+        number: '2742',
+        place: 'https://yandex.ru/maps/-/CHrl40O-',
+    },
+    {
+        name: 'Некрасовка',
+        number: '2743',
+        place: 'https://yandex.ru/maps/-/CHrl40O-',
+    },
+    {
+        name: 'Некрасовка',
+        number: '2743',
+        place: 'https://yandex.ru/maps/-/CHrl40O-',
+    },
+    {
+        name: 'Нижегородская',
+        number: '2136',
+        place: 'https://yandex.ru/maps/-/CHrliJ28',
+        parking: 'https://yandex.ru/maps/-/CHrliV4o',
+        descr: 'Там же, где 2466 и 2721'
+    },
+    {
+        name: 'Нижегородская',
+        number: '2466',
+        place: 'https://yandex.ru/maps/-/CHrliJ28',
+        parking: 'https://yandex.ru/maps/-/CHrliV4o',
+        descr: 'Там же, где 2136 и 2721'
+    },
+    {
+        name: 'Нижегородская',
+        number: '2721',
+        place: 'https://yandex.ru/maps/-/CHrliJ28',
+        parking: 'https://yandex.ru/maps/-/CHrliV4o',
+        descr: 'Там же, где 2466 и 2136'
+    },
+    {
+        name: 'Нижегородская депо',
+        number: '2265',
+        place: 'https://yandex.ru/maps/-/CHrleU1n',
+        drive: 'https://yandex.ru/maps/-/CHrlaX~F',
+        descr: 'Зайти и дальше топать по депо, они не рядом со входом'
+    },
+    {
+        name: 'Нижегородская депо',
+        number: '2266',
+        place: 'https://yandex.ru/maps/-/CHrleU1n',
+        drive: 'https://yandex.ru/maps/-/CHrlaX~F',
+        descr: 'Зайти и дальше топать по депо, они не рядом со входом'
+    },
+    {
+        name: 'Новаторская',
+        number: '2724',
+        place: 'https://yandex.ru/maps/-/CHvIeSjb',
+    },
+    {
+        name: 'Новаторская',
+        number: '2713',
+        place: 'https://yandex.ru/maps/-/CHvIeOlj',
+    },
+    {
+        name: 'Новаторская',
+        number: '2705',
+        place: 'https://yandex.ru/maps/-/CHvIeSmH',
+    },
+    {
+        name: 'Новогиреево',
+        number: '2179',
+        place: 'https://yandex.ru/maps/-/CHrtvR8o',
+    },
+    {
+        name: 'Новогиреево',
+        number: '2180',
+        place: 'https://yandex.ru/maps/-/CHrtv6LN',
+    },
+    {
+        name: 'Новогиреево',
+        number: '2180',
+        place: 'https://yandex.ru/maps/-/CHrtv6LN',
+    },
+    {
+        name: 'Новогиреево депо',
+        number: '2262',
+        place: 'https://yandex.ru/maps/-/CHrtv8l-',
+    },
+    {
+        name: 'Новокосино',
+        number: '2445',
+        place: 'https://yandex.ru/maps/-/CHrtvTZ1',
+    },
+    {
+        name: 'Новокосино',
+        number: '2446',
+        place: 'https://yandex.ru/maps/-/CHrtzAKQ',
+    },
+    {
+        name: 'Новомосковская',
+        number: '2773',
+        place: 'https://yandex.ru/maps/-/CHv65Ypk',
+    },
+    {
+        name: 'Новомосковская',
+        number: '2475',
+        place: 'https://yandex.ru/maps/-/CHv65B-U',
+        descr: 'Вместе с 2745'
+    },
+    {
+        name: 'Новомосковская',
+        number: '2745',
+        place: 'https://yandex.ru/maps/-/CHv65B-U',
+        descr: 'Вместе с 2475'
+    },
+    {
+        name: 'Новопеределкино',
+        number: '2484',
+        place: 'https://yandex.ru/maps/-/CHvIeWM9',
+    },
+    {
+        name: 'Новопеределкино',
+        number: '2485',
+        place: 'https://yandex.ru/maps/-/CHvIeWyn',
+    },
+    {
+        name: 'Новоясеневская',
+        number: '2176',
+        place: 'https://yandex.ru/maps/-/CHvIeWLS',
+    },
+    {
+        name: 'Новые Черемушки',
+        number: '2173',
+        place: 'https://yandex.ru/maps/-/CHvIeDZV',
+    },
+    {
+        name: 'Новые Черемушки',
+        number: '2174',
+        place: 'https://yandex.ru/maps/-/CHvIeDO9',
     },
 ]
