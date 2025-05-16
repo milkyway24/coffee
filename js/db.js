@@ -277,7 +277,7 @@ export const stations = [
     {
         name: 'Вернадского проспект',
         number: '2781',
-        // place: '',
+        place: 'https://yandex.ru/maps/-/CHvCePn9',
     },
     {
         name: 'Вернадского проспект',
@@ -416,7 +416,8 @@ export const stations = [
     {
         name: 'Говорово',
         number: '3502',
-        // place: 'https://yandex.ru/maps/-/CHv6yJ-E',
+        place: 'https://yandex.ru/maps/-/CHvCiFPg',
+        descr: 'Перед поворотом на заправку проехать по тротуару к метро'
     },
     {
         name: 'Давыдково',
