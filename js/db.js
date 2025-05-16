@@ -97,21 +97,28 @@ export const stations = [
     {
         name: 'Аминьевское депо',
         number: '2282',
-        drive: 'https://yandex.ru/maps/-/CHvruUz5'
+        place: 'https://yandex.ru/navi/-/CHv7q21N',
+        drive: 'https://yandex.ru/maps/-/CHvruUz5',
+        descr: '2282 и 2283 на одном входе'
     },
     {
         name: 'Аминьевское депо',
         number: '2283',
-        drive: 'https://yandex.ru/maps/-/CHvruUz5'
+        place: 'https://yandex.ru/navi/-/CHv7q21N',
+        drive: 'https://yandex.ru/maps/-/CHvruUz5',
+        descr: '2282 и 2283 на одном входе'
     },
     {
         name: 'Аминьевское депо',
         number: '2280',
-        drive: 'https://yandex.ru/maps/-/CHvruUz5'
+        place: 'https://yandex.ru/navi/-/CHv7uNYv',
+        drive: 'https://yandex.ru/maps/-/CHvruUz5',
+        descr: 'После того, как зайти в депо, идти внутри налево до конца и потом направо ещё метров 100, пока не встретится аппарат'
     },
     {
         name: 'Аминьевское депо',
         number: '2281',
+        place: 'https://yandex.ru/maps/-/CHvrFY3Y',
         drive: 'https://yandex.ru/maps/-/CHvruUz5'
     },
     {
@@ -123,6 +130,9 @@ export const stations = [
     {
         name: 'Арбатская',
         number: '2411',
+        place: 'https://yandex.ru/navi/-/CHv7iIJM',
+        drive: 'https://yandex.ru/navi/-/CHv7iZjs',
+        descr: 'Сворачивая с Нового Арбата на бульварное кольцо, держаться крайней левой полосы, там почти сразу будет съезд к метро. Рядом с выходом есть небольшая парковка, где можно оставить машину'
     },
     {
         name: 'Аэропорт',
@@ -210,6 +220,7 @@ export const stations = [
     {
         name: 'Боровское шоссе',
         number: '2722',
+        place: 'https://yandex.ru/navi/-/CHv7yD3N'
     },
     {
         name: 'Ботанический сад',
@@ -410,7 +421,7 @@ export const stations = [
     {
         name: 'Давыдково',
         number: '2248',
-        // place: 'https://yandex.ru/maps/-/CHv6yJ-E',
+        place: 'https://yandex.ru/navi/-/CHv75R6U',
     },
     {
         name: 'Дмитриевского',
@@ -563,22 +574,26 @@ export const stations = [
     {
         name: 'Киевская',
         number: '2778',
-        // place: 'https://yandex.ru/maps/-/CHvIeCMH',
+        place: 'https://yandex.ru/navi/-/CHv75Llq',
+        descr: 'Там за турникетами проходишь и налево, не много по лестнице спуститься и с правой стороны аппарат. Если что, звонить ребятам с этого маршрута, спрашивать'
     },
     {
         name: 'Киевская',
         number: '2437',
         place: 'https://yandex.ru/maps/-/CHvnzHJf',
+        descr: 'По Киевским лучше звонить ребятам, кто катается на маршруте и узнавать, как подъехать, т.к. там сложно разобраться по карте, можно штрафов нахватать'
     },
     {
         name: 'Киевская',
         number: '2438',
         place: 'https://yandex.ru/maps/-/CHvry00~',
+        descr: 'По Киевским лучше звонить ребятам, кто катается на маршруте и узнавать, как подъехать, т.к. там сложно разобраться по карте, можно штрафов нахватать'
     },
     {
         name: 'Киевская',
         number: '2776',
-        // place: 'https://yandex.ru/maps/-/CHvIeCMH',
+        place: 'https://yandex.ru/navi/-/CHv7BNOR',
+        descr: 'По Киевским лучше звонить ребятам, кто катается на маршруте и узнавать, как подъехать, т.к. там сложно разобраться по карте, можно штрафов нахватать'
     },
     {
         name: 'Китай-город',
@@ -659,5 +674,310 @@ export const stations = [
         name: 'Корниловская',
         number: '2780',
         place: 'https://yandex.ru/maps/-/CHv65QYV',
+    },
+    {
+        name: 'Косино',
+        number: '2431',
+        place: 'https://yandex.ru/maps/-/CHrl4N0p',
+    },
+    {
+        name: 'Косино',
+        number: '2431',
+        place: 'https://yandex.ru/maps/-/CHrl4N0p',
+    },
+    {
+        name: 'Котельники',
+        number: '2423',
+        place: 'https://yandex.ru/maps/-/CHrlY8PK',
+    },
+    {
+        name: 'Котельники',
+        number: '2201',
+        place: 'https://yandex.ru/maps/-/CHrlYLL~',
+    },
+    {
+        name: 'Красная Пресня депо',
+        number: '2291',
+        place: 'https://yandex.ru/maps/-/CHvrNO0I',
+    },
+    {
+        name: 'Красногвардейская',
+        number: '2459',
+        place: 'https://yandex.ru/navi/-/CHrhERKA',
+    },
+    {
+        name: 'Красногвардейская',
+        number: '2458',
+        place: 'https://yandex.ru/maps/-/CHrdyTyJ',
+    },
+    {
+        name: 'Красногвардейская Автовокзал',
+        number: '2123',
+        place: 'https://yandex.ru/maps/-/CHrdy-5-',
+        drive: 'https://yandex.ru/maps/-/CHrd5E4j',
+        descr: 'Взять ключ от конструкции. Заезжать под кирпич, только посмотреть или в округе нет ДПС. Дальше мимо шлагбаума слева по тротуару.'
+    },
+    {
+        name: 'Краснопресненская',
+        number: '2703',
+        place: 'https://yandex.ru/maps/-/CHvrrN1e',
+    },
+    {
+        name: 'Красные ворота',
+        number: '2450',
+        place: 'https://yandex.ru/maps/-/CHrtnJYr',
+    },
+    {
+        name: 'Крестьянская застава',
+        number: '2150',
+        place: 'https://yandex.ru/navi/-/CHrh5NY0',
+        drive: 'https://yandex.ru/navi/-/CHrh56n-'
+    },
+    {
+        name: 'Крылатское',
+        number: '2455',
+        place: 'https://yandex.ru/navi/-/CHv7BOnR',
+    },
+    {
+        name: 'Крылатское',
+        number: '2164',
+        place: 'https://yandex.ru/maps/-/CHvrJIod',
+    },
+    {
+        name: 'Кунцево ТК',
+        number: '2416',
+        place: 'https://yandex.ru/navi/-/CHv7BD4g',
+    },
+    {
+        name: 'Кунцевская',
+        number: '2719',
+        place: 'https://yandex.ru/navi/-/CHv7FCZ9',
+        drive: 'https://yandex.ru/navi/-/CHv7FSpd'
+    },
+    {
+        name: 'Кунцевская',
+        number: '2726',
+        place: 'https://yandex.ru/navi/-/CHv7BPPy',
+        drive: 'https://yandex.ru/navi/-/CHv7FYiz',
+        descr: 'Выход 5. Заехать возле выхода 2 и дальше ехать по парку, по тротуару до входа к аппарату'
+    },
+    {
+        name: 'Курская',
+        number: '2413',
+        place: 'https://yandex.ru/maps/-/CHrtn6yc',
+    },
+    {
+        name: 'Курская',
+        number: '2414',
+        place: 'https://yandex.ru/maps/-/CHrtnLmr',
+    },
+    {
+        name: 'Лермонтовский проспект',
+        number: '2220',
+        place: 'https://yandex.ru/maps/-/CHrlUC~s',
+    },
+    {
+        name: 'Лермонтовский проспект',
+        number: '2221',
+        place: 'https://yandex.ru/maps/-/CHrlURKA',
+    },
+    {
+        name: 'Лианозово',
+        number: '2231',
+        place: 'https://yandex.ru/maps/-/CHr-rGKX',
+        drive: 'https://yandex.ru/maps/-/CHr-rLm7',
+        descr: 'Заезжать в самый правый съезд под кирпич, недоезжая до автобусной подзарядки свернуть направо и дальше на тротуар до аппарата. Есть лифт'
+    },
+    {
+        name: 'Лианозово',
+        number: '2232',
+        place: 'https://yandex.ru/maps/-/CHr-vY1q',
+        drive: 'https://yandex.ru/maps/-/CHr-rLm7',
+        descr: 'Заезжать в самый правый съезд под кирпич, недоезжая до автобусной подзарядки свернуть направо и  дальше на тротуар до аппарата'
+    },
+    {
+        name: 'Лихоборы депо',
+        number: '2401',
+        place: 'https://yandex.ru/navi/-/CHfdZUJJ',
+        drive: 'https://yandex.ru/navi/-/CHfdZ49o',
+        descr: '2 этаж на лифте'
+    },
+    {
+        name: 'Лихоборы депо',
+        number: '2402',
+        place: 'https://yandex.ru/navi/-/CHfdZC2X',
+        drive: 'https://yandex.ru/navi/-/CHfdZ49o',
+        descr: 'Рядом по коридору есть туалет'
+    },
+    {
+        name: 'Ломоносовский проспект',
+        number: '2488',
+        place: 'https://yandex.ru/maps/-/CHvriDiY',
+    },
+    {
+        name: 'Ломоносовский проспект',
+        number: '2473',
+        place: 'https://yandex.ru/maps/-/CHvriA4f',
+    },
+    {
+        name: 'Лубянка',
+        number: '2489',
+        place: 'https://yandex.ru/maps/-/CHrtrMpI',
+    },
+    {
+        name: 'Лубянка',
+        number: '2481',
+        place: 'https://yandex.ru/maps/-/CHrtrBPL',
+    },
+    {
+        name: 'Лухмановская',
+        number: '2477',
+        place: 'https://yandex.ru/maps/-/CHrl4K3e',
+    },
+    {
+        name: 'Лухмановская',
+        number: '3512',
+        place: 'https://yandex.ru/maps/-/CHrlyLpq',
+    },
+    {
+        name: 'Люблино',
+        number: '2184',
+        place: 'https://yandex.ru/maps/-/CHrlmYYe',
+    },
+    {
+        name: 'Люблино',
+        number: '2236',
+        place: 'https://yandex.ru/maps/-/CHrliL5g',
+    },
+    {
+        name: 'Марксистская',
+        number: '2134',
+        place: 'https://yandex.ru/maps/-/CHrl4A47',
+    },
+    {
+        name: 'Марьина Роща',
+        number: '2161',
+        place: 'https://yandex.ru/maps/-/CHr-v63c',
+        descr: 'Закрывается в 2:00'
+    },
+    {
+        name: 'Марьино',
+        number: '2185',
+        place: 'https://yandex.ru/maps/-/CHrl4PlE',
+        descr: 'Выход 5-6'
+    },
+    {
+        name: 'Марьино',
+        number: '2235',
+        place: 'https://yandex.ru/maps/-/CHrlaEZv',
+        descr: 'Выход 1-2'
+    },
+    {
+        name: 'Маяковская',
+        number: '2128',
+        place: 'https://yandex.ru/maps/-/CHr-vPLq',
+        parking: 'https://yandex.ru/maps/-/CHr-v24u',
+        descr: 'Закрывается в 2:00. Выход 2. Если опасно на тротуар, напротив есть платная парковка'
+    },
+    {
+        name: 'Медведково',
+        number: '2714',
+        place: 'https://yandex.ru/maps/-/CHr-J0YW',
+        descr: 'Закрывается в 2:00'
+    },
+    {
+        name: 'Международная',
+        number: '2483',
+        place: 'https://yandex.ru/maps/-/CHvryIIZ',
+        descr: 'Много входов, можно позвонить ребятам с маршрута, узнать в какой заходить'
+    },
+    {
+        name: 'Менделеевская',
+        number: '2133',
+        place: 'https://yandex.ru/maps/-/CHr-zYPy',
+    },
+    {
+        name: 'Минская',
+        number: '2217',
+        place: 'https://yandex.ru/maps/-/CHvry4Jg',
+    },
+    {
+        name: 'Митино',
+        number: '2165',
+        place: 'https://yandex.ru/maps/-/CHvrFT4Z',
+    },
+    {
+        name: 'Митино',
+        number: '2230',
+        place: 'https://yandex.ru/maps/-/CHvrFDYg',
+    },
+    {
+        name: 'Митино депо',
+        number: '2294',
+        drive: 'https://yandex.ru/maps/-/CHvrNP8H',
+    },
+    {
+        name: 'Митино депо',
+        number: '2295',
+        drive: 'https://yandex.ru/maps/-/CHvrNP8H',
+    },
+    {
+        name: 'Мичуринский проспект',
+        number: '2240',
+        place: 'https://yandex.ru/maps/-/CHViFU-H',
+        drive: 'https://yandex.ru/maps/-/CHvneU9e',
+        descr: 'Закрывается в 1:00. Аппарат сильно торгует, по возможности его обслуживать в первой половине маршрута'
+    },
+    {
+        name: 'Мичуринский проспект',
+        number: '2750',
+        place: 'https://yandex.ru/maps/-/CHvna0-c',
+        descr: 'Закрывается в 1:00'
+    },
+    {
+        name: 'Мичуринский проспект',
+        number: '2454',
+        place: 'https://yandex.ru/maps/-/CHvnrJYD',
+        drive: 'https://yandex.ru/maps/-/CHvnrKm2',
+        descr: 'Закрывается в 1:00'
+    },
+    {
+        name: 'Мнёвники',
+        number: '2451',
+        place: 'https://yandex.ru/maps/-/CHvrrLZl',
+    },
+    {
+        name: 'Молодежная',
+        number: '3506',
+        place: 'https://yandex.ru/navi/-/CHv7JN90',
+        descr: 'Заезжать с пешеходника рядом'
+    },
+    {
+        name: 'Молодежная',
+        number: '2782',
+        place: 'https://yandex.ru/navi/-/CHv7JFMS',
+        descr: 'Взять ключ от антивандальной конструкции'
+    },
+    {
+        name: 'Москва Сити',
+        number: '2264',
+        place: 'https://yandex.ru/navi/-/CHv7mZk4',
+        descr: 'Сложности с парковкой. Аппараты на 24 и 25 этаже'
+    },
+    {
+        name: 'Москва Сити',
+        number: '2702',
+        place: 'https://yandex.ru/navi/-/CHv7mZk4',
+        descr: 'Сложности с парковкой. Аппараты на 24 и 25 этаже'
+    },
+    {
+        name: 'Московский метрополитен',
+        number: '2700',
+        place: 'https://yandex.ru/maps/-/CHrtrZ39',
+    },
+    {
+        name: 'Московский метрополитен СБ',
+        number: '2769',
+        place: 'https://yandex.ru/navi/-/CHrxvOIH',
     },
 ]
