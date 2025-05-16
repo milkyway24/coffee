@@ -3,9 +3,6 @@ export const stations = [
         name: 'Авиамоторная',
         number: '2707',
         place: 'https://yandex.ru/maps/-/CHrtb-9g',
-        // drive: '#',
-        // parking: '#',
-        // descr: 'Взять ключ от конструкции. Заезжать под кирпич, только посмотреть или в округе нет ДПС. Дальше мимо шлагбаума слева по тротуару.'
     },
     {
         name: 'Авиамоторная',
@@ -55,6 +52,8 @@ export const stations = [
     {
         name: 'Александровский сад',
         number: '2422',
+        place: 'https://yandex.ru/maps/-/CHugQC3B',
+        descr: 'Там же, где Библиотека им. Ленина 2766'
     },
     {
         name: 'Алтуфьево',
@@ -80,30 +79,40 @@ export const stations = [
     {
         name: 'Аминьевская',
         number: '2777',
+        place: 'https://yandex.ru/maps/-/CHEDNL3k',
+        descr: 'На все три аппарата парковаться в одном месте'
     },
     {
         name: 'Аминьевская',
         number: '3513',
+        place: 'https://yandex.ru/maps/-/CHEDNL3k',
+        descr: 'На все три аппарата парковаться в одном месте'
     },
     {
         name: 'Аминьевская',
         number: '2418',
+        place: 'https://yandex.ru/maps/-/CHEDNL3k',
+        descr: 'На все три аппарата парковаться в одном месте'
     },
     {
         name: 'Аминьевское депо',
         number: '2282',
+        drive: 'https://yandex.ru/maps/-/CHvruUz5'
     },
     {
         name: 'Аминьевское депо',
         number: '2283',
+        drive: 'https://yandex.ru/maps/-/CHvruUz5'
     },
     {
         name: 'Аминьевское депо',
         number: '2280',
+        drive: 'https://yandex.ru/maps/-/CHvruUz5'
     },
     {
         name: 'Аминьевское депо',
         number: '2281',
+        drive: 'https://yandex.ru/maps/-/CHvruUz5'
     },
     {
         name: 'Аннино',
@@ -134,14 +143,17 @@ export const stations = [
     {
         name: 'Баррикадная',
         number: '2770',
+        place: 'https://yandex.ru/maps/-/CHvrnL7L'
     },
     {
         name: 'Беговая',
         number: '2171',
+        place: 'https://yandex.ru/maps/-/CHvryTzE'
     },
     {
         name: 'Беговая',
         number: '2172',
+        place: 'https://yandex.ru/maps/-/CHvr5H7s'
     },
     {
         name: 'Беломорская',
@@ -187,6 +199,8 @@ export const stations = [
     {
         name: 'Библиотека имени Ленина',
         number: '2766',
+        place: 'https://yandex.ru/maps/-/CHugQC3B',
+        descr: 'Там же, где Александровский сад 2422'
     },
     {
         name: 'Борисово',
@@ -242,22 +256,22 @@ export const stations = [
     {
         name: 'Вернадского',
         number: '2751',
-        // place: 'https://yandex.ru/navi/-/CHrd7ZoG',
+        place: 'https://yandex.ru/maps/-/CHvrQ81a',
     },
     {
         name: 'Вернадского',
         number: '2243',
-        // place: 'https://yandex.ru/navi/-/CHrd7ZoG',
+        place: 'https://yandex.ru/maps/-/CHvrQP~A',
     },
     {
         name: 'Вернадского проспект',
         number: '2781',
-        // place: 'https://yandex.ru/navi/-/CHrd7ZoG',
+        // place: '',
     },
     {
         name: 'Вернадского проспект',
         number: '2706',
-        // place: 'https://yandex.ru/navi/-/CHrd7ZoG',
+        place: 'https://yandex.ru/maps/-/CHvvMT0F',
     },
     {
         name: 'Верхние Котлы',
@@ -335,12 +349,12 @@ export const stations = [
     {
         name: 'Волоколамская',
         number: '2497',
-        // place: 'https://yandex.ru/maps/-/CHrlyCM7',
+        place: 'https://yandex.ru/maps/-/CHvrrMjg',
     },
     {
         name: 'Волоколамская',
         number: '2496',
-        // place: 'https://yandex.ru/maps/-/CHrlyCM7',
+        place: 'https://yandex.ru/maps/-/CHvrBLLl',
     },
     {
         name: 'Воронцовская',
@@ -519,5 +533,131 @@ export const stations = [
         number: '2263',
         place: 'https://yandex.ru/maps/-/CHrtfT2E',
         drive: 'https://yandex.ru/maps/-/CHvbqSiF'
+    },
+    {
+        name: 'Калужская',
+        number: '2419',
+        place: 'https://yandex.ru/maps/-/CHvIeCMH',
+    },
+    {
+        name: 'Калужская депо',
+        number: '2737',
+        place: 'https://yandex.ru/maps/-/CHvrNIp-',
+    },
+    {
+        name: 'Кантемировская',
+        number: '2425',
+        place: 'https://yandex.ru/maps/-/CHrdu-3X',
+        drive: 'https://yandex.ru/maps/-/CHrdyMZm'
+    },
+    {
+        name: 'Кантемировская',
+        number: '2426',
+        place: 'https://yandex.ru/maps/-/CHrdyY0F',
+    },
+    {
+        name: 'Каховская',
+        number: '2249',
+        place: 'https://yandex.ru/navi/-/CHrhALOk',
+    },
+    {
+        name: 'Киевская',
+        number: '2778',
+        // place: 'https://yandex.ru/maps/-/CHvIeCMH',
+    },
+    {
+        name: 'Киевская',
+        number: '2437',
+        place: 'https://yandex.ru/maps/-/CHvnzHJf',
+    },
+    {
+        name: 'Киевская',
+        number: '2438',
+        place: 'https://yandex.ru/maps/-/CHvry00~',
+    },
+    {
+        name: 'Киевская',
+        number: '2776',
+        // place: 'https://yandex.ru/maps/-/CHvIeCMH',
+    },
+    {
+        name: 'Китай-город',
+        number: '2169',
+        place: 'https://yandex.ru/maps/-/CHrtjIoc',
+    },
+    {
+        name: 'Китай-город',
+        number: '2170',
+        place: 'https://yandex.ru/maps/-/CHrtjFpH',
+    },
+    {
+        name: 'Кленовый бульвар',
+        number: '2253',
+        place: 'https://yandex.ru/maps/-/CHrdyJYP',
+    },
+    {
+        name: 'Кожуховская',
+        number: '2113',
+        place: 'https://yandex.ru/maps/-/CHrla6N8',
+    },
+    {
+        name: 'Коломенская',
+        number: '2256',
+        place: 'https://yandex.ru/maps/-/CHrdyZLV',
+        descr: 'Можно встать на бесплатной парковке рядом'
+    },
+    {
+        name: 'Коломенская',
+        number: '2257',
+        place: 'https://yandex.ru/maps/-/CHrdyOM~',
+        descr: 'Выход 1'
+    },
+    {
+        name: 'Коммунарка',
+        number: '2772',
+        place: 'https://yandex.ru/maps/-/CHvyyM1h',
+    },
+    {
+        name: 'Комсомольская',
+        number: '2716',
+        place: 'https://yandex.ru/maps/-/CHrtjGMk',
+        descr: 'Все три аппарата в одном месте'
+    },
+    {
+        name: 'Комсомольская',
+        number: '2725',
+        place: 'https://yandex.ru/maps/-/CHrtjGMk',
+        descr: 'Все три аппарата в одном месте'
+    },
+    {
+        name: 'Комсомольская',
+        number: '2468',
+        place: 'https://yandex.ru/maps/-/CHrtjGMk',
+        descr: 'Все три аппарата в одном месте'
+    },
+    {
+        name: 'Коньково',
+        number: '2156',
+        place: 'https://yandex.ru/maps/-/CHv6yGMB',
+    },
+    {
+        name: 'Коньково',
+        number: '2754',
+        place: 'https://yandex.ru/maps/-/CHv6yPpN',
+    },
+    {
+        name: 'Коньково',
+        number: '2237',
+        place: 'https://yandex.ru/maps/-/CHvIe049',
+    },
+    {
+        name: 'Корниловская',
+        number: '2779',
+        place: 'https://yandex.ru/maps/-/CHv6y-Nx',
+    },
+    {
+        name: 'Корниловская',
+        number: '2780',
+        place: 'https://yandex.ru/maps/-/CHv65QYV',
     },
 ]
