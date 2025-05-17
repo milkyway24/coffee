@@ -121,10 +121,9 @@ body {
 }
 
 .info-icon {
+  width: 17px;
   margin-right: 5px;
-  font-size: 20px;
   line-height: 1;
-  color: gray;
 }
 
 .page-title {
