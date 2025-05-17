@@ -42,8 +42,9 @@ a {
   text-decoration: none;
 }
 
-img {
+img, svg {
   max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -70,7 +71,6 @@ body {
 
 .container {
   max-width: 600px;
-  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -78,15 +78,57 @@ body {
 }
 
 .main-wrap {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #969696;
+}
+
+.logo {
+  display: flex;
+  width: 30px;
+  opacity: 0.8;
+}
+
+.how-work {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  font-size: 14px;
+  transition: color .2s;
+  outline: none;
+}
+
+.how-work:hover,
+.how-work:focus-visible {
+  color: #cb3945;
+}
+
+.how-work:focus-visible {
+  color: #a32d37;
+}
+
+.info-icon {
+  margin-right: 5px;
+  font-size: 20px;
+  line-height: 1;
+  color: gray;
 }
 
 .page-title {
   margin-top: 0;
   margin-bottom: 20px;
-  color: #961750;
-  font-size: 30px;
+  color: #cb3945;
+  font-size: 26px;
   line-height: 1.2;
   text-align: center;
 }
@@ -165,11 +207,11 @@ body {
 .place {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 1px solid #2b221a;
+  border-top: 1px dashed #969696;
 }
 
 .place:last-child {
-  border-bottom: 1px solid #2b221a;
+  border-bottom: 1px dashed #969696;
 }
 
 .place-title {
@@ -196,8 +238,9 @@ body {
 }
 
 .place-link {
-  color: #961750;
+  color: #cb3945;
   text-decoration: underline;
+  transition: color .2s;
 }
 
 .place-link:hover,
