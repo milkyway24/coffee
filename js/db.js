@@ -1509,7 +1509,7 @@ export const stations = [
         name: 'Савёловская',
         number: '2487',
         place: 'https://yandex.ru/navi/-/CHfd4V~t',
-        parking: 'https://yandex.ru/navi/-/CHfdbJ5f',
+        drive: 'https://yandex.ru/navi/-/CHfdbJ5f',
         descr: 'Закрывается в 1:00'
     },
     {
