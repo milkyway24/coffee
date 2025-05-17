@@ -5,6 +5,12 @@ const inpNum = document.querySelector('.js-number');
 const places = document.querySelector('.js-places');
 const loader = document.querySelector('.js-loader');
 const notFound = document.querySelector('.js-not-found');
+const showAllBtn = document.querySelector('.js-show-all');
+const allQuant = showAllBtn.querySelector('.js-quant');
+
+let showAllFlag = false;
+
+allQuant.textContent = stations.length;
 
 function findStations(stat, num) {
     const findedStArr = stations.filter((el) => {
@@ -36,15 +42,17 @@ function getPlaceTemplate() {
     return placeTemp.content;
 }
 
-function preparePlace(placeObj) {
+function preparePlace(placeObj, i) {
     const placeTemp = getPlaceTemplate();
     const title = placeTemp.querySelector('.js-place-title');
+    const listNum = placeTemp.querySelector('.js-list-num');
     const num = placeTemp.querySelector('.js-place-num');
     const enter = placeTemp.querySelector('.js-place-enter');
     const drive = placeTemp.querySelector('.js-place-drive');
     const parking = placeTemp.querySelector('.js-place-parking');
     const descr = placeTemp.querySelector('.js-place-descr');
 
+    listNum.textContent = i + 1;
     title.textContent = placeObj.name;
     num.textContent = placeObj.number;
 
@@ -84,8 +92,8 @@ function preparePlace(placeObj) {
 function printPlaces(placesArr) {
     cleanPlaces();
 
-    placesArr.forEach((el) => {
-        const placeEl = preparePlace(el);
+    placesArr.forEach((el, i) => {
+        const placeEl = preparePlace(el, i);
         places.append(placeEl);
     });
 }
@@ -115,5 +123,18 @@ function onInpPrint() {
     }, 500);
 }
 
+function onShowAllClick() {
+    if (!showAllFlag) {
+        showAllBtn.classList.remove('all-hidden');
+        printPlaces(stations);
+    } else {
+        showAllBtn.classList.add('all-hidden');
+        cleanPlaces();
+    }
+
+    showAllFlag = !showAllFlag;
+}
+
 inpStation.addEventListener('input', onInpPrint);
 inpNum.addEventListener('input', onInpPrint);
+showAllBtn.addEventListener('click', onShowAllClick)
