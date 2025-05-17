@@ -65,14 +65,16 @@ export const stations = [
     {
         name: 'Алтуфьево',
         number: '2158',
-        place: 'https://yandex.ru/maps/-/CHr-j2I0',
+        place: 'https://yandex.ru/maps/-/CHv0b80U',
+        drive: 'https://yandex.ru/maps/-/CHr-j2I0',
         parking: 'https://yandex.ru/maps/-/CHvFIRJl',
         descr: 'Выход 7. Рядом есть бесплатная парковка, либо на тротуар с пешеходника на светофоре'
     },
     {
         name: 'Алтуфьево',
         number: '2768',
-        place: 'https://yandex.ru/maps/-/CHr-j2I0',
+        place: 'https://yandex.ru/maps/-/CHv0b80U',
+        drive: 'https://yandex.ru/maps/-/CHr-j2I0',
         parking: 'https://yandex.ru/maps/-/CHvFIRJl',
         descr: 'Стоит в одном переходе с 2158'
     },
@@ -346,6 +348,11 @@ export const stations = [
         name: 'Войковская',
         number: '2406',
         place: 'https://yandex.ru/maps/-/CHvMnG6Q',
+    },
+    {
+        name: 'Волгоградский проспект',
+        number: '2444',
+        place: 'https://yandex.ru/maps/-/CHrlaPK6',
     },
     {
         name: 'Волгоградский проспект',
@@ -682,11 +689,6 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHrl4N0p',
     },
     {
-        name: 'Косино',
-        number: '2431',
-        place: 'https://yandex.ru/maps/-/CHrl4N0p',
-    },
-    {
         name: 'Котельники',
         number: '2423',
         place: 'https://yandex.ru/maps/-/CHrlY8PK',
@@ -890,7 +892,7 @@ export const stations = [
         name: 'Медведково',
         number: '2714',
         place: 'https://yandex.ru/maps/-/CHr-J0YW',
-        descr: 'Закрывается в 2:00'
+        descr: 'Закрывается в 2:00. Осторожно, сознательные граждане фоткают машину и потом прилетает штраф. Обязательно ставить конусы'
     },
     {
         name: 'Международная',
@@ -921,11 +923,13 @@ export const stations = [
     {
         name: 'Митино депо',
         number: '2294',
+        place: 'https://yandex.ru/navi/-/CHv0vAOC',
         drive: 'https://yandex.ru/maps/-/CHvrNP8H',
     },
     {
         name: 'Митино депо',
         number: '2295',
+        place: 'https://yandex.ru/navi/-/CHv0vEij',
         drive: 'https://yandex.ru/maps/-/CHvrNP8H',
     },
     {
@@ -1015,11 +1019,6 @@ export const stations = [
     {
         name: 'Некрасовка',
         number: '2742',
-        place: 'https://yandex.ru/maps/-/CHrl40O-',
-    },
-    {
-        name: 'Некрасовка',
-        number: '2743',
         place: 'https://yandex.ru/maps/-/CHrl40O-',
     },
     {
@@ -1326,13 +1325,13 @@ export const stations = [
     },
     {
         name: 'Петровско - Разумовская',
-        number: '2470',
+        number: '2762',
         place: 'https://yandex.ru/maps/-/CHr-7ZNM',
         drive: 'https://yandex.ru/maps/-/CHr-7Ckz',
         descr: 'Закрывается в 2:00. Заезжать по автобусной под кирпич, потом с пешеходника на тротуар. Два аппарата в одном здании. Этот направо'
     },
     {
-        name: 'Петровско-Разумовская',
+        name: 'Петровско - Разумовская',
         number: '2214',
         place: 'https://yandex.ru/maps/-/CHrdAU2a',
         drive: 'https://yandex.ru/maps/-/CHrdA45T',
@@ -1346,12 +1345,12 @@ export const stations = [
     {
         name: 'Планерное депо',
         number: '2741',
-        // place: 'https://yandex.ru/maps/-/CHvrB69a',
+        place: 'https://yandex.ru/navi/-/CHv0rTlX',
     },
     {
         name: 'Планерное депо',
         number: '2740',
-        // place: 'https://yandex.ru/maps/-/CHvrB69a',
+        place: 'https://yandex.ru/navi/-/CHv0rX9g',
     },
     {
         name: 'Площадь Ильича',
@@ -1614,11 +1613,6 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvruLYD',
     },
     {
-        name: 'Славянский бульвар',
-        number: '2452',
-        place: 'https://yandex.ru/maps/-/CHvruLYD',
-    },
-    {
         name: 'СОК Лесной',
         number: '2761',
         place: 'https://yandex.ru/maps/-/CHvnzY-C',
@@ -1647,13 +1641,6 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvMvSPN',
         drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
         descr: 'Войти к поездам и пойти направо'
-    },
-    {
-        name: 'Сокол депо',
-        number: '2274',
-        place: 'https://yandex.ru/maps/-/CHvMvSPN',
-        drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
-        descr: 'Войти к поездам и пойти налево'
     },
     {
         name: 'Сокол депо',
@@ -1752,11 +1739,6 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvrF6ZB',
     },
     {
-        name: 'Строгино',
-        number: '2166',
-        place: 'https://yandex.ru/maps/-/CHvrF6ZB',
-    },
-    {
         name: 'Сухаревская',
         number: '2149',
         place: 'https://yandex.ru/maps/-/CHvCFD2s',
@@ -1770,5 +1752,345 @@ export const stations = [
         name: 'Сходненская',
         number: '2178',
         place: 'https://yandex.ru/maps/-/CHvrzPOn',
+    },
+    {
+        name: 'Текстильщики',
+        number: '2255',
+        place: 'https://yandex.ru/maps/-/CHrliBYo',
+    },
+    {
+        name: 'Текстильщики',
+        number: '2434',
+        place: 'https://yandex.ru/maps/-/CHrlYV4p',
+    },
+    {
+        name: 'Текстильщики',
+        number: '2433',
+        place: 'https://yandex.ru/maps/-/CHrlYYjZ',
+        descr: 'Закрывается в 2:00'
+    },
+    {
+        name: 'Теплый стан',
+        number: '2730',
+        place: 'https://yandex.ru/maps/-/CHvIiIiv',
+    },
+    {
+        name: 'Теплый стан',
+        number: '2420',
+        place: 'https://yandex.ru/maps/-/CHvIiI93',
+    },
+    {
+        name: 'Терехово',
+        number: '2247',
+        place: 'https://yandex.ru/maps/-/CHvr7AKS',
+    },
+    {
+        name: 'Технопарк',
+        number: '2728',
+        place: 'https://yandex.ru/maps/-/CHrdFEja',
+        parking: 'https://yandex.ru/maps/-/CHrdBTkt',
+        descr: 'Прапарковаться на заправке между знаками и пройтись пешком. Выход 4'
+    },
+    {
+        name: 'Тимирязевская',
+        number: '2141',
+        place: 'https://yandex.ru/maps/-/CHrdICPK',
+        drive: 'https://yandex.ru/maps/-/CHrdI88t',
+        descr: 'Недоезжая выхода, где есть заезд, свернуть и дальше по тротуару'
+    },
+    {
+        name: 'Третьяковская',
+        number: '2102',
+        place: 'https://yandex.ru/maps/-/CHrdFUi1',
+        drive: 'https://yandex.ru/maps/-/CHrdF4M~',
+        descr: 'Заезд с пешеходника'
+    },
+    {
+        name: 'Трубная',
+        number: '2147',
+        place: 'https://yandex.ru/maps/-/CHrxEQjq',
+    },
+    {
+        name: 'Тульская',
+        number: '2135',
+        place: 'https://yandex.ru/maps/-/CHrdFNKq',
+        descr: 'Выход 2. Вьезжать под шлагбаум на платную. Оплатить парковку можно на входе в ТЦ.'
+    },
+    {
+        name: 'Тульская',
+        number: '2415',
+        place: 'https://yandex.ru/maps/-/CHrdFSM~',
+        descr: 'Выход 1. Вьезжать под шлагбаум на платную. Оплатить парковку можно на входе в ТЦ.'
+    },
+    {
+        name: 'Тургеневская',
+        number: '2148',
+        place: 'https://yandex.ru/navi/-/CHr3Q2lc',
+    },
+    {
+        name: 'Тушинская',
+        number: '2227',
+        place: 'https://yandex.ru/maps/-/CHvr7Y5t',
+    },
+    {
+        name: 'Тушинская',
+        number: '2228',
+        place: 'https://yandex.ru/maps/-/CHvrvJ49',
+    },
+    {
+        name: 'Тютчевская',
+        number: '2704',
+        place: 'https://yandex.ru/maps/-/CHvIiMJk',
+    },
+    {
+        name: 'Улица 1905 года',
+        number: '2749',
+        place: 'https://yandex.ru/maps/-/CHvr7Zly',
+    },
+    {
+        name: 'Университет',
+        number: '2797',
+        place: 'https://yandex.ru/maps/-/CHvrI-3H',
+        descr: 'Взять ключ от антивандальной конструкции '
+    },
+    {
+        name: 'Университет',
+        number: '2798',
+        place: 'https://yandex.ru/maps/-/CHvrER-G',
+        descr: 'Взять ключ от антивандальной конструкции '
+    },
+    {
+        name: 'Физтех',
+        number: '2251',
+        place: 'https://yandex.ru/maps/-/CHrdMM-5',
+        drive: 'https://yandex.ru/maps/-/CHrdM4oS',
+        descr: 'Закрывается в 2:00, но при сильном желании можно достучаться и после 2:00, там рядом пост, но после 2:00 нужен пропуск'
+    },
+    {
+        name: 'Филатов луг',
+        number: '2467',
+        place: 'https://yandex.ru/maps/-/CHvIiM8i',
+        drive: 'https://yandex.ru/maps/-/CHvIiM11',
+    },
+    {
+        name: 'Фили депо',
+        number: '2244',
+        place: 'https://yandex.ru/maps/-/CHvnFUpS',
+        descr: 'Два ТА в одном здании'
+    },
+    {
+        name: 'Фили депо',
+        number: '2292',
+        place: 'https://yandex.ru/maps/-/CHvnFUpS',
+        descr: 'Два ТА в одном здании'
+    },
+    {
+        name: 'Фонвизинская',
+        number: '2290',
+        place: 'https://yandex.ru/maps/-/CHrdMO3M',
+        drive: 'https://yandex.ru/maps/-/CHrdMWLB',
+    },
+    {
+        name: 'Фонвизинская',
+        number: '2267',
+        place: 'https://yandex.ru/maps/-/CHrdMTZ5',
+        drive: 'https://yandex.ru/maps/-/CHrdM2MY',
+        descr: 'Есть лифт'
+    },
+    {
+        name: 'Ховрино',
+        number: '2126',
+        place: 'https://yandex.ru/maps/-/CHvMz827',
+        drive: 'https://yandex.ru/maps/-/CHvC5B6A',
+        parking: 'https://yandex.ru/maps/-/CHvMrCIa',
+        descr: 'Закрывается в 2:00. В одном переходе с 2441. Есть лифт'
+    },
+    {
+        name: 'Ховрино',
+        number: '2441',
+        place: 'https://yandex.ru/maps/-/CHvMz827',
+        drive: 'https://yandex.ru/maps/-/CHvC5B6A',
+        parking: 'https://yandex.ru/maps/-/CHvMrCIa',
+        descr: 'Закрывается в 2:00. В одном переходе с 2126. Есть лифт'
+    },
+    {
+        name: 'Ховрино',
+        number: '2440',
+        place: 'https://yandex.ru/maps/-/CHvM7J5m',
+        drive: 'https://yandex.ru/maps/-/CHvC5B6A',
+        descr: 'Есть лифт. После обслуживания 2126, 2441 или 2278 можно не выезжая на дорогу доехать по тротуару. Или же заехать где указан заезд'
+    },
+    {
+        name: 'Хорошевская',
+        number: '2708',
+        place: 'https://yandex.ru/maps/-/CHvrv2IZ',
+    },
+    {
+        name: 'Хорошевская',
+        number: '2712',
+        place: 'https://yandex.ru/maps/-/CHvrzR12',
+    },
+    {
+        name: 'Царицыно',
+        number: '2258',
+        place: 'https://yandex.ru/maps/-/CHrdFDjb',
+    },
+    {
+        name: 'Царицыно',
+        number: '2259',
+        place: 'https://yandex.ru/maps/-/CHrdFPO0',
+        descr: 'Не снимать бункер с кофе, он разваливается. Сыпать через верх'
+    },
+    {
+        name: 'Цветной бульвар',
+        number: '2213',
+        place: 'https://yandex.ru/maps/-/CHrxEW4e',
+    },
+    {
+        name: 'Центральный автовокзал',
+        number: '2272',
+        place: 'https://yandex.ru/maps/-/CHrxEH~J',
+        descr: 'Не ехать по автобусной, будет штраф. Нужно где указана точка зарулить на пешеходник и дальше по тротуару до входа в автовокзал'
+    },
+    {
+        name: 'Центральный автовокзал',
+        number: '2273',
+        place: 'https://yandex.ru/maps/-/CHrxEH~J',
+        descr: 'Не ехать по автобусной, будет штраф. Нужно где указана точка зарулить на пешеходник и дальше по тротуару до входа в автовокзал'
+    },
+    {
+        name: 'Черкизово депо',
+        number: '2242',
+        place: 'https://yandex.ru/maps/-/CHrxE-kZ',
+    },
+    {
+        name: 'Черкизовская',
+        number: '2793',
+        place: 'https://yandex.ru/maps/-/CHv0n-7Y',
+    },
+    {
+        name: 'Черкизовская',
+        number: '3514',
+        place: 'https://yandex.ru/maps/-/CHv0rE7F',
+    },
+    {
+        name: 'Чертановская',
+        number: '3503',
+        place: 'https://yandex.ru/navi/-/CHrhISyQ',
+    },
+    {
+        name: 'Чертановская',
+        number: '2767',
+        place: 'https://yandex.ru/navi/-/CHrhILMQ',
+    },
+    {
+        name: 'Чеховская',
+        number: '2448',
+        place: 'https://yandex.ru/maps/-/CHrdQQ2p',
+        descr: 'Выход 14. Заезжать на бордюр со стоянки для такси рядом, либо за стоянкой для такси, если там все заставлено'
+    },
+    {
+        name: 'Чкаловская',
+        number: '2428',
+        place: 'https://yandex.ru/maps/-/CHrxFCJw',
+    },
+    {
+        name: 'Чкаловская',
+        number: '2427',
+        place: 'https://yandex.ru/maps/-/CHrxM4zx',
+    },
+    {
+        name: 'Шаболовская',
+        number: '2783',
+        place: 'https://yandex.ru/navi/-/CHrhIToy',
+    },
+    {
+        name: 'Шипиловская',
+        number: '2759',
+        place: 'https://yandex.ru/maps/-/CHrlaF49',
+    },
+    {
+        name: 'Шипиловская',
+        number: '2125',
+        place: 'https://yandex.ru/maps/-/CHrlaRO7',
+    },
+    {
+        name: 'Щелковская',
+        number: '2460',
+        place: 'https://yandex.ru/maps/-/CHrxM8kU',
+    },
+    {
+        name: 'Щукинская',
+        number: '2442',
+        place: 'https://yandex.ru/maps/-/CHvM7GPN',
+    },
+    {
+        name: 'Щукинская',
+        number: '2443',
+        place: 'https://yandex.ru/maps/-/CHvM70ZK',
+    },
+    {
+        name: 'Электрозаводская',
+        number: '2794',
+        place: 'https://yandex.ru/maps/-/CHrxMLlg',
+    },
+    {
+        name: 'Энтузиастов шоссе',
+        number: '2410',
+        place: 'https://yandex.ru/maps/-/CHrxQIZF',
+    },
+    {
+        name: 'Эскалаторная галерея',
+        number: '2254',
+        place: 'https://yandex.ru/maps/-/CHvrE2MD',
+        parking: 'https://yandex.ru/maps/-/CHvrII5R',
+        descr: 'Рядом есть платная парковка. Если рядом ДПС, или ещё какие-то сложности с заездом к самому выходу, можно встать на парковке и пройтись, там не далеко'
+    },
+    {
+        name: 'Юго-Восточная',
+        number: '2784',
+        place: 'https://yandex.ru/maps/-/CHrlYAjU',
+    },
+    {
+        name: 'Юго-Западная',
+        number: '2139',
+        place: 'https://yandex.ru/maps/-/CHvrIGNb',
+    },
+    {
+        name: 'Юго-Западная',
+        number: '2435',
+        place: 'https://yandex.ru/maps/-/CHvrIRpR',
+    },
+    {
+        name: 'Южная',
+        number: '2154',
+        place: 'https://yandex.ru/navi/-/CHrhMA1C',
+    },
+    {
+        name: 'Южная',
+        number: '2186',
+        place: 'https://yandex.ru/navi/-/CHrhMYmx',
+    },
+    {
+        name: 'Юр.служба метро',
+        number: '2471',
+        place: 'https://yandex.ru/maps/-/CHrxQR78',
+    },
+    {
+        name: 'Ясенево',
+        number: '2175',
+        place: 'https://yandex.ru/maps/-/CHvIiQYv',
+    },
+    {
+        name: 'Ясенево',
+        number: '2731',
+        place: 'https://yandex.ru/maps/-/CHvIiQ73',
+    },
+    {
+        name: 'Яхромская',
+        number: '2417',
+        place: 'https://yandex.ru/maps/-/CHrdMN~C',
+        drive: 'https://yandex.ru/maps/-/CHrdMZ38',
+        descr: 'В зимнее время закрывается в 2:00'
     },
 ]
