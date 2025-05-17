@@ -45,7 +45,8 @@ a {
   text-decoration: none;
 }
 
-img, svg {
+img,
+svg {
   max-width: 100%;
   height: auto;
 }
@@ -107,7 +108,7 @@ body {
   align-items: center;
   margin-top: 5px;
   font-size: 14px;
-  transition: color .2s;
+  transition: color 0.2s;
   outline: none;
 }
 
@@ -121,7 +122,9 @@ body {
 }
 
 .info-icon {
+  display: flex;
   width: 17px;
+  margin-bottom: 5px;
   margin-right: 5px;
   line-height: 1;
 }
@@ -158,7 +161,7 @@ body {
   cursor: pointer;
   background-color: #847d72;
   outline: none;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
 }
 
 .show-all:hover,
@@ -242,7 +245,7 @@ body {
 .place-link {
   color: #cb3945;
   text-decoration: underline;
-  transition: color .2s;
+  transition: color 0.2s;
 }
 
 .place-link:hover,
