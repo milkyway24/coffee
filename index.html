@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кофе. Поиск точек</title>
+    <title>Кофе. База точек</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/index.js" type="module" defer></script>
@@ -12,7 +12,7 @@
 
 <body>
     <div class="container main-wrap">
-        <h1 class="page-title">Поиск точек</h1>
+        <h1 class="page-title">Кофе точки</h1>
 
         <div class="inputs-wrap">
             <label class="input-wrap">
@@ -23,6 +23,10 @@
                 <span class="input-label">Номер Т/А</span>
                 <input type="text" class="input js-number">
             </label>
+            <button class="show-all js-show-all all-hidden">
+                <span class="js-show-hidden hidden-text">Все (<span class="js-quant">0</span>)</span>
+                <span class="js-show-visible visible-text">X</span>
+            </button>
         </div>
 
         <section class="places">
@@ -51,7 +55,7 @@
 
         <template class="js-template">
             <div class="place">
-                <h3 class="place-title"><span class="place-name js-place-title">Петровско-Разумовская</span> - <span
+                <h3 class="place-title"><span class="js-list-num">1</span>. <span class="place-name js-place-title">Петровско-Разумовская</span> - <span
                         class="place-num js-place-num">2213</span> </h3>
                 <div class="place-links">
                     <span class="place-link-wrap js-place-enter">
