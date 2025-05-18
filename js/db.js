@@ -1498,14 +1498,14 @@ export const stations = [
         descr: 'Заезжать через шлагбаум на парковку, там бесплатно первые 2 часа. Обслужить до 22:00, потом парковка закрывается'
     },
     {
-        name: 'Савёловская',
+        name: 'Савеловская',
         number: '2140',
         place: 'https://yandex.ru/maps/-/CHrdEEoN',
         parking: 'https://yandex.ru/maps/-/CHrdEQ12',
         descr: 'Лучше парковаться на платной парковке, там до лифта 50 метров пройтись. На вокзале есть бесплатный туалет'
     },
     {
-        name: 'Савёловская',
+        name: 'Савеловская',
         number: '2487',
         place: 'https://yandex.ru/navi/-/CHfd4V~t',
         drive: 'https://yandex.ru/navi/-/CHfdbJ5f',
