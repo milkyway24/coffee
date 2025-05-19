@@ -68,7 +68,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHv0b80U',
         drive: 'https://yandex.ru/maps/-/CHr-j2I0',
         parking: 'https://yandex.ru/maps/-/CHvFIRJl',
-        descr: 'Выход 7. Рядом есть бесплатная парковка, либо на тротуар с пешеходника на светофоре'
+        descr: 'Выход 7. Рядом есть бесплатная парковка, но есл она занята, тогда на тротуар с пешеходника на светофоре'
     },
     {
         name: 'Алтуфьево',
@@ -76,7 +76,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHv0b80U',
         drive: 'https://yandex.ru/maps/-/CHr-j2I0',
         parking: 'https://yandex.ru/maps/-/CHvFIRJl',
-        descr: 'Стоит в одном переходе с 2158'
+        descr: 'Стоит в одном переходе с 2158. Выход 7. Рядом есть бесплатная парковка, но есл она занята, тогда на тротуар с пешеходника на светофоре'
     },
     {
         name: 'Аминьевская',
@@ -140,7 +140,9 @@ export const stations = [
         name: 'Аэропорт',
         number: '2758',
         place: 'https://yandex.ru/maps/-/CHvMjRzT',
-        descr: 'Закрывается в 2:00'
+        drive: 'https://yandex.ru/maps/-/CHv9BZz-',
+        parking: 'https://yandex.ru/maps/-/CHv9BKm~',
+        descr: 'Закрывается в 2:00. Парковка указана на всякий случай, от нее надо пройтись метров 200, поэтому лучше по возможности заезжать на тротуар'
     },
     {
         name: 'Бабушкинская',
