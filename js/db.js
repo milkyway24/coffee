@@ -68,7 +68,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHv0b80U',
         drive: 'https://yandex.ru/maps/-/CHr-j2I0',
         parking: 'https://yandex.ru/maps/-/CHvFIRJl',
-        descr: 'Стоит в одном переходе с 2768. Выход 7. Рядом есть бесплатная парковка, но если она занята, тогда на тротуар с пешеходника на светофоре'
+        descr: 'Выход 7. Рядом есть бесплатная парковка, но есл она занята, тогда на тротуар с пешеходника на светофоре'
     },
     {
         name: 'Алтуфьево',
@@ -76,7 +76,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHv0b80U',
         drive: 'https://yandex.ru/maps/-/CHr-j2I0',
         parking: 'https://yandex.ru/maps/-/CHvFIRJl',
-        descr: 'Стоит в одном переходе с 2158. Выход 7. Рядом есть бесплатная парковка, но если она занята, тогда на тротуар с пешеходника на светофоре'
+        descr: 'Стоит в одном переходе с 2158. Выход 7. Рядом есть бесплатная парковка, но есл она занята, тогда на тротуар с пешеходника на светофоре'
     },
     {
         name: 'Аминьевская',
@@ -241,7 +241,7 @@ export const stations = [
     {
         name: 'Братеево депо',
         number: '2241',
-        place: 'https://yandex.ru/maps/-/CHrlUD6Z',
+        place: 'https://yandex.ru/maps/-/CHrluJOv',
     },
     {
         name: 'Братиславская',
