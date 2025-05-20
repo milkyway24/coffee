@@ -237,11 +237,13 @@ export const stations = [
         name: 'Братеево депо',
         number: '2203',
         place: 'https://yandex.ru/maps/-/CHrluJOv',
+        descr: 'Точка ведет на само депо. Где аппараты спрашивать у охранников'
     },
     {
         name: 'Братеево депо',
         number: '2241',
         place: 'https://yandex.ru/maps/-/CHrluJOv',
+        descr: 'Точка ведет на само депо. Где аппараты спрашивать у охранников'
     },
     {
         name: 'Братиславская',
