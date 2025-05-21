@@ -59,6 +59,8 @@ function preparePlace(placeObj, i) {
     if (placeObj.place) {
         const link = enter.querySelector('.js-place-link');
         link.href = `${placeObj.place}`;
+    } else {
+        enter.querySelector('.js-place-link').remove();
     }
 
     if (placeObj.drive) {
