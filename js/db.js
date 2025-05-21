@@ -142,7 +142,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvMjRzT',
         drive: 'https://yandex.ru/maps/-/CHv9BZz-',
         parking: 'https://yandex.ru/maps/-/CHv9BKm~',
-        descr: 'Закрывается в 2:00. Парковка указана на всякий случай, от нее надо пройтись метров 200, поэтому лучше по возможности заезжать на тротуар'
+        descr: 'Вход 4. Закрывается в 2:00. Парковка указана на всякий случай, от нее надо пройтись метров 200, поэтому лучше по возможности заезжать на тротуар'
     },
     {
         name: 'Бабушкинская',
@@ -1161,13 +1161,13 @@ export const stations = [
         name: 'Озерная',
         number: '2734',
         place: 'https://yandex.ru/maps/-/CHvnF2od',
-        drive: 'https://yandex.ru/maps/-/CHvnvL6-'
+        drive: 'https://yandex.ru/maps/-/CHCIAA0m'
     },
     {
         name: 'Озерная',
         number: '3504',
         place: 'https://yandex.ru/maps/-/CHvnrD7n',
-        drive: 'https://yandex.ru/maps/-/CHvnvL6-'
+        drive: 'https://yandex.ru/maps/-/CHCIAA0m'
     },
     {
         name: 'Окружная',
@@ -1322,13 +1322,14 @@ export const stations = [
         name: 'Петровский парк',
         number: '2495',
         place: 'https://yandex.ru/maps/-/CHvMrUK3',
-        descr: 'Закрывается в 1:00 или в 2:00'
+        descr: 'Закрывается в 1:00 или в 2:00. Заезд с пешеходника рядом. Выезжать либо через парковку ТЦ, там бесплатно, но с досмотром. Либо можно по тротуару немного проехать и объехать парковку ТЦ, выехать сразу на Театральную аллею. Только не нужно ехать по встречке той дорогой, которой заезжали'
     },
     {
         name: 'Петровский парк',
         number: '2494',
         place: 'https://yandex.ru/maps/-/CHvMn-3E',
-        descr: 'Закрывается в 2:00'
+        drive: 'https://yandex.ru/maps/-/CHCIQFiA', 
+        descr: 'Закрывается в 2:00. Если на стадионе идёт мероприятие и рядом со въездом дежурят ДПС, лучше спросить у них можно ли заехать. Если скажут, что нельзя, тогда найти ближайшую платную парковку и оттуда пройтись пешком, это в итоге будет проще и быстрее, чем нарваться на ДПС'
     },
     {
         name: 'Петровско - Разумовская',
@@ -1360,11 +1361,13 @@ export const stations = [
         name: 'Планерное депо',
         number: '2741',
         place: 'https://yandex.ru/navi/-/CHv0rTlX',
+        drive: 'https://yandex.ru/maps/-/CHCIUQm6',
     },
     {
         name: 'Планерное депо',
         number: '2740',
         place: 'https://yandex.ru/navi/-/CHv0rX9g',
+        drive: 'https://yandex.ru/maps/-/CHCIUQm6',
     },
     {
         name: 'Площадь Ильича',
@@ -1384,23 +1387,23 @@ export const stations = [
     {
         name: 'Полянка',
         number: '2461',
-        place: 'https://yandex.ru/navi/-/CHrhIN8R',
+        place: 'https://yandex.ru/maps/-/CHCIURNx',
     },
     {
         name: 'Потапово',
         number: '2432',
-        place: 'https://yandex.ru/maps/-/CHvIeLY2',
+        place: 'https://yandex.ru/maps/-/CHCIUJPB',
     },
     {
         name: 'Пражская',
         number: '2152',
-        place: 'https://yandex.ru/maps/-/CHrdBQ8Z',
+        place: 'https://yandex.ru/maps/-/CHCIUV2P',
         descr: 'Можно встать на платной парковке'
     },
     {
         name: 'Пражская',
         number: '2153',
-        place: 'https://yandex.ru/maps/-/CHrdB414',
+        place: 'https://yandex.ru/maps/-/CHCIUZ~P',
     },
     {
         name: 'Преображенская площадь',
@@ -1668,14 +1671,14 @@ export const stations = [
         number: '2276',
         place: 'https://yandex.ru/maps/-/CHvMzY-8',
         drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
-        descr: 'Есть лифт, но работает он только в дневное время. Ночью, скорее всего придется топать по лестнице'
+        descr: 'Есть лифт, но работает он только в дневное время. Ночью, скорее всего придется топать по лестнице. Между 2276 и 2277 можно пройти по верху, не выходя на улицу, внутри здания'
     },
     {
         name: 'Сокол депо',
         number: '2277',
         place: 'https://yandex.ru/maps/-/CHvMzJyB',
         drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
-        descr: 'Есть лифт, но работает он только в дневное время. Ночью, скорее всего придется топать по лестнице'
+        descr: 'Есть лифт, но работает он только в дневное время. Ночью, скорее всего придется топать по лестнице. Между 2276 и 2277 можно пройти по верху, не выходя на улицу, внутри здания'
     },
     {
         name: 'Сокольники',
@@ -1701,19 +1704,19 @@ export const stations = [
         name: 'СОП Варшавское шоссе 93',
         number: '2463',
         place: 'https://yandex.ru/maps/-/CHrliSY-',
-        descr: 'Парковаться сразу слева, направо не ехать. Все три аппарата в одном здании'
+        descr: 'Парковаться сразу слева, после того, как въехали в ворота, направо не ехать. Все три аппарата в одном здании'
     },
     {
         name: 'СОП Варшавское шоссе 93',
         number: '2464',
         place: 'https://yandex.ru/maps/-/CHrliSY-',
-        descr: 'Парковаться сразу слева, направо не ехать. Все три аппарата в одном здании'
+        descr: 'Парковаться сразу слева, после того, как въехали в ворота, направо не ехать. Все три аппарата в одном здании'
     },
     {
         name: 'СОП Варшавское шоссе 93',
         number: '2465',
         place: 'https://yandex.ru/maps/-/CHrliSY-',
-        descr: 'Парковаться сразу слева, направо не ехать. Все три аппарата в одном здании'
+        descr: 'Парковаться сразу слева, после того, как въехали в ворота, направо не ехать. Все три аппарата в одном здании'
     },
     {
         name: 'Спартак',
@@ -1734,7 +1737,7 @@ export const stations = [
     {
         name: 'Старокачаловская',
         number: '2748',
-        place: 'https://yandex.ru/maps/-/CHrdB0YO',
+        place: 'https://yandex.ru/maps/-/CHCIaJO9',
         descr: 'В одном переходе с Дмитрия Донского 2403'
     },
     {
@@ -1756,6 +1759,7 @@ export const stations = [
         name: 'Сухаревская',
         number: '2149',
         place: 'https://yandex.ru/maps/-/CHvCFD2s',
+        descr: 'Днем там часто напротив стоит ДПС, в этом случае лучше на платную парковку рядом'
     },
     {
         name: 'Сходненская',
@@ -1809,7 +1813,7 @@ export const stations = [
         name: 'Тимирязевская',
         number: '2141',
         place: 'https://yandex.ru/maps/-/CHrdICPK',
-        drive: 'https://yandex.ru/maps/-/CHrdI88t',
+        drive: 'https://yandex.ru/maps/-/CHCIiEmt',
         descr: 'Недоезжая выхода, где есть заезд, свернуть и дальше по тротуару'
     },
     {
@@ -1917,7 +1921,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvMz827',
         drive: 'https://yandex.ru/maps/-/CHvC5B6A',
         parking: 'https://yandex.ru/maps/-/CHvMrCIa',
-        descr: 'Закрывается в 2:00. В одном переходе с 2441. Есть лифт'
+        descr: 'Закрывается в 2:00. В одном переходе с 2441. Парковаться в кармане, точка указана в столбце "парковка". Рядом лифт'
     },
     {
         name: 'Ховрино',
@@ -1925,7 +1929,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvMz827',
         drive: 'https://yandex.ru/maps/-/CHvC5B6A',
         parking: 'https://yandex.ru/maps/-/CHvMrCIa',
-        descr: 'Закрывается в 2:00. В одном переходе с 2126. Есть лифт'
+        descr: 'Закрывается в 2:00. В одном переходе с 2441. Парковаться в кармане, точка указана в столбце "парковка". Рядом лифт'
     },
     {
         name: 'Ховрино',
