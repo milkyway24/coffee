@@ -2,7 +2,9 @@ export const stations = [
     {
         name: 'Авиамоторная',
         number: '2707',
-        place: 'https://yandex.ru/maps/-/CHrtb-9g',
+        place: 'https://yandex.ru/maps/-/CHCF4Si5',
+        drive: 'https://yandex.ru/maps/-/CHCF46oW',
+        descr: 'Заезд указан на случай, если ехать из центра. Если ехать в сторону центра, то можно заехать через трамвайные пути, тогда в маршрут лучше забивать не заезд, а саму точку (вход)'
     },
     {
         name: 'Авиамоторная',
@@ -256,7 +258,8 @@ export const stations = [
     {
         name: 'Братиславская',
         number: '2202',
-        place: 'https://yandex.ru/maps/-/CHrlU0K1',
+        place: 'https://yandex.ru/maps/-/CHCFQQn-',
+        descr: 'Выход 4. Заезжать лучше со стороны торгового центра (точка так и ведет). Рядом есть платная парковка, но там и с выходом тоже есть место где встать на тротуаре, если парковка вся занята'
     },
     {
         name: 'Братиславская',
@@ -1045,21 +1048,24 @@ export const stations = [
         number: '2136',
         place: 'https://yandex.ru/maps/-/CHrliJ28',
         parking: 'https://yandex.ru/maps/-/CHrliV4o',
-        descr: 'Там же, где 2466 и 2721'
+        drive: 'https://yandex.ru/maps/-/CHCFUSjF',
+        descr: 'Там же, где 2466 и 2721. Можно зарулить с пешеходника и подъехать прамо ко входу, если парковка вся занята'
     },
     {
         name: 'Нижегородская',
         number: '2466',
         place: 'https://yandex.ru/maps/-/CHrliJ28',
         parking: 'https://yandex.ru/maps/-/CHrliV4o',
-        descr: 'Там же, где 2136 и 2721'
+        drive: 'https://yandex.ru/maps/-/CHCFUSjF',
+        descr: 'Там же, где 2136 и 2721. Если встать к итальянцу 2136 лицом, то от него левее будет переход. Пройти в переход, повернуть налево, а потом ещё раз налево в конце. Можно зарулить с пешеходника и подъехать прамо ко входу, если парковка вся занята'
     },
     {
         name: 'Нижегородская',
         number: '2721',
         place: 'https://yandex.ru/maps/-/CHrliJ28',
         parking: 'https://yandex.ru/maps/-/CHrliV4o',
-        descr: 'Там же, где 2466 и 2136'
+        drive: 'https://yandex.ru/maps/-/CHCFUSjF',
+        descr: 'Там же, где 2466 и 2136. Можно зарулить с пешеходника и подъехать прамо ко входу, если парковка вся занята'
     },
     {
         name: 'Нижегородская депо',
@@ -1775,6 +1781,8 @@ export const stations = [
         name: 'Текстильщики',
         number: '2255',
         place: 'https://yandex.ru/maps/-/CHrliBYo',
+        drive: 'https://yandex.ru/maps/-/CHCFQ2mJ',
+        descr: 'Закрывается в 2:00. Выход 8'
     },
     {
         name: 'Текстильщики',
@@ -1785,7 +1793,8 @@ export const stations = [
         name: 'Текстильщики',
         number: '2433',
         place: 'https://yandex.ru/maps/-/CHrlYYjZ',
-        descr: 'Закрывается в 2:00'
+        drive: 'https://yandex.ru/maps/-/CHCFQ2mJ',
+        descr: 'Закрывается в 2:00. Выход 6'
     },
     {
         name: 'Теплый стан',
