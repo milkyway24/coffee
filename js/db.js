@@ -596,6 +596,13 @@ export const stations = [
         name: 'Кантемировская',
         number: '2426',
         place: 'https://yandex.ru/maps/-/CHrdyY0F',
+        descr: 'Одна локация у 2426 и 2760'
+    },
+    {
+        name: 'Кантемировская',
+        number: '2760',
+        place: 'https://yandex.ru/maps/-/CHrdyY0F',
+        descr: 'Одна локация у 2426 и 2760'
     },
     {
         name: 'Каховская',
