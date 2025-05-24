@@ -565,6 +565,12 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvbqRj1',
     },
     {
+        name: 'Зябликово',
+        number: '3526',
+        // place: '',
+        descr: 'Видимо готовится к запуску'
+    },
+    {
         name: 'Измайлово депо',
         number: '2263',
         place: 'https://yandex.ru/maps/-/CHrtfT2E',
