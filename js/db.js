@@ -661,19 +661,19 @@ export const stations = [
         name: 'Комсомольская',
         number: '2716',
         place: 'https://yandex.ru/maps/-/CHrtjGMk',
-        descr: 'Все три аппарата в одном месте'
+        descr: 'Зайти через выход. Этот аппарат справа от турникетов'
     },
     {
         name: 'Комсомольская',
         number: '2725',
         place: 'https://yandex.ru/maps/-/CHrtjGMk',
-        descr: 'Все три аппарата в одном месте'
+        descr: 'Зайти через выход. Этот аппарат слева от турникетов'
     },
     {
         name: 'Комсомольская',
         number: '2468',
         place: 'https://yandex.ru/maps/-/CHrtjGMk',
-        descr: 'Все три аппарата в одном месте'
+        descr: 'Возле 2716 эскалатор вниз, на сокольническую линию, и там уже прямо до платформы будет 2468'
     },
     {
         name: 'Коньково',
@@ -1051,7 +1051,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHrliJ28',
         parking: 'https://yandex.ru/maps/-/CHrliV4o',
         drive: 'https://yandex.ru/maps/-/CHCFUSjF',
-        descr: 'Там же, где 2466 и 2721. Можно зарулить с пешеходника и подъехать прамо ко входу, если парковка вся занята'
+        descr: 'Там же, где 2466 и 2721. Можно зарулить с пешеходника и подъехать прямо ко входу, если парковка вся занята'
     },
     {
         name: 'Нижегородская',
@@ -1064,10 +1064,8 @@ export const stations = [
     {
         name: 'Нижегородская',
         number: '2721',
-        place: 'https://yandex.ru/maps/-/CHrliJ28',
-        parking: 'https://yandex.ru/maps/-/CHrliV4o',
-        drive: 'https://yandex.ru/maps/-/CHCFUSjF',
-        descr: 'Там же, где 2466 и 2136. Можно зарулить с пешеходника и подъехать прамо ко входу, если парковка вся занята'
+        place: 'https://yandex.ru/navi/-/CHC6nSpU',
+        parking: 'https://yandex.ru/maps/-/CHrliV4o'
     },
     {
         name: 'Нижегородская депо',
@@ -1376,6 +1374,7 @@ export const stations = [
         number: '2740',
         place: 'https://yandex.ru/navi/-/CHv0rX9g',
         drive: 'https://yandex.ru/maps/-/CHCIUQm6',
+        descr: 'Третья дверь от начала здания, рядом с ней вывеска "Электродепо Планерное. Зайти внутрь, и выйти через коридор к поездам. Дальше идти прямо через весь "ангар" с поездами, далее через небольшой коридорчик, мимо комнаты дежурного, пройти в следующий "ангар", там сразу повернуть направо и пройти вдоль стены метров 30-50 до аппарата'
     },
     {
         name: 'Площадь Ильича',
@@ -1478,6 +1477,11 @@ export const stations = [
         name: 'Пятницкое шоссе',
         number: '2498',
         place: 'https://yandex.ru/maps/-/CHvrvSKe',
+    },
+    {
+        name: 'Раменки',
+        number: '3527',
+        place: 'https://yandex.ru/navi/-/CHC6v8NP',
     },
     {
         name: 'Рассказовка',
