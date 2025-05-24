@@ -1064,8 +1064,7 @@ export const stations = [
     {
         name: 'Нижегородская',
         number: '2721',
-        place: 'https://yandex.ru/navi/-/CHC6nSpU',
-        parking: 'https://yandex.ru/maps/-/CHrliV4o'
+        place: 'https://yandex.ru/navi/-/CHC6nSpU'
     },
     {
         name: 'Нижегородская депо',
