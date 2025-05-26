@@ -12,6 +12,20 @@ let showAllFlag = false;
 
 allQuant.textContent = stations.length;
 
+function debounce(callee, timeoutMs) {
+  return function perform(...args) {
+    let previousCall = this.lastCall
+
+    this.lastCall = Date.now()
+
+    if (previousCall && this.lastCall - previousCall <= timeoutMs) {
+      clearTimeout(this.lastCallTimer)
+    }
+
+    this.lastCallTimer = setTimeout(() => callee(...args), timeoutMs)
+  }
+}
+
 function findStations(stat, num) {
     const findedStArr = stations.filter((el) => {
 
@@ -100,7 +114,7 @@ function printPlaces(placesArr) {
     });
 }
 
-function onInpPrint() {
+const onInpPrint = debounce(function () {
     cleanPlaces();
     loader.style.display = 'block';
 
@@ -123,7 +137,7 @@ function onInpPrint() {
 
         loader.style.display = 'none';
     }, 500);
-}
+}, 500);
 
 function onShowAllClick() {
     if (!showAllFlag) {
