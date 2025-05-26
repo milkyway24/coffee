@@ -642,6 +642,7 @@ export const stations = [
         name: 'Китай-город',
         number: '2170',
         place: 'https://yandex.ru/maps/-/CHrtjFpH',
+        descr: 'Если рядом стоит ДПС, можно попробовать сунуться на платную парковку поблизости и пройтись пешком'
     },
     {
         name: 'Кленовый бульвар',
@@ -862,6 +863,7 @@ export const stations = [
         name: 'Лубянка',
         number: '2481',
         place: 'https://yandex.ru/maps/-/CHrtrBPL',
+        drive: 'https://yandex.ru/maps/-/CHCC6Aou'
     },
     {
         name: 'Лухмановская',
@@ -1351,6 +1353,13 @@ export const stations = [
     },
     {
         name: 'Петровско - Разумовская',
+        number: '2214',
+        place: 'https://yandex.ru/maps/-/CHrdAU2a',
+        drive: 'https://yandex.ru/maps/-/CHrdA45T',
+        descr: 'Закрывается в 2:00. Лифт закрывается в 1:00. Фриз можно открыть пальцем с внутренней стороны'
+    },
+    {
+        name: 'Петровско - Разумовская',
         number: '2470',
         place: 'https://yandex.ru/maps/-/CHr-7ZNM',
         drive: 'https://yandex.ru/maps/-/CHr-7Ckz',
@@ -1362,13 +1371,6 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHr-7ZNM',
         drive: 'https://yandex.ru/maps/-/CHr-7Ckz',
         descr: 'Закрывается в 2:00. Заезжать по автобусной под кирпич, потом с пешеходника на тротуар. Два аппарата в одном здании. Этот направо'
-    },
-    {
-        name: 'Петровско - Разумовская',
-        number: '2214',
-        place: 'https://yandex.ru/maps/-/CHrdAU2a',
-        drive: 'https://yandex.ru/maps/-/CHrdA45T',
-        descr: 'Закрывается в 2:00. Есть лифт'
     },
     {
         name: 'Планерная',
