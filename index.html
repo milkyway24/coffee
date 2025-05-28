@@ -72,22 +72,7 @@
         <section class="places">
             <h2 class="visually-hidden">Точки</h2>
 
-            <svg class="loader js-loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                <radialGradient id="a7" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)">
-                    <stop offset="0" stop-color="#FF156D"></stop>
-                    <stop offset=".3" stop-color="#FF156D" stop-opacity=".9"></stop>
-                    <stop offset=".6" stop-color="#FF156D" stop-opacity=".6"></stop>
-                    <stop offset=".8" stop-color="#FF156D" stop-opacity=".3"></stop>
-                    <stop offset="1" stop-color="#FF156D" stop-opacity="0"></stop>
-                </radialGradient>
-                <circle transform-origin="center" fill="none" stroke="url(#a7)" stroke-width="15" stroke-linecap="round"
-                    stroke-dasharray="200 1000" stroke-dashoffset="0" cx="100" cy="100" r="70">
-                    <animateTransform type="rotate" attributeName="transform" calcMode="spline" dur=".5" values="360;0"
-                        keyTimes="0;1" keySplines="0 0 1 1" repeatCount="indefinite"></animateTransform>
-                </circle>
-                <circle transform-origin="center" fill="none" opacity=".2" stroke="#FF156D" stroke-width="15"
-                    stroke-linecap="round" cx="100" cy="100" r="70"></circle>
-            </svg>
+            <svg class="loader js-loader" fill="#D13543" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="4" width="6" height="14" opacity="1"><animate id="spinner_aqiq" begin="0;spinner_xVBj.end-0.25s" attributeName="y" dur="0.5s" values="1;5" fill="#D13543"/><animate begin="0;spinner_xVBj.end-0.25s" attributeName="height" dur="0.5s" values="22;14" fill="#D13543"/><animate begin="0;spinner_xVBj.end-0.25s" attributeName="opacity" dur="0.5s" values="1;.2" fill="#D13543"/></rect><rect x="9" y="4" width="6" height="14" opacity=".4"><animate begin="spinner_aqiq.begin+0.15s" attributeName="y" dur="0.5s" values="1;5" fill="#D13543"/><animate begin="spinner_aqiq.begin+0.15s" attributeName="height" dur="0.5s" values="22;14" fill="#D13543"/><animate begin="spinner_aqiq.begin+0.15s" attributeName="opacity" dur="0.5s" values="1;.2" fill="#D13543"/></rect><rect x="17" y="4" width="6" height="14" opacity=".3"><animate id="spinner_xVBj" begin="spinner_aqiq.begin+0.3s" attributeName="y" dur="0.5s" values="1;5" fill="#D13543"/><animate begin="spinner_aqiq.begin+0.3s" attributeName="height" dur="0.5s" values="22;14" fill="#D13543"/><animate begin="spinner_aqiq.begin+0.3s" attributeName="opacity" dur="0.5s" values="1;.2" fill="#D13543"/></rect></svg>
             <b class="not-found js-not-found">Не найдено</b>
             <div class="js-places">
             </div>
