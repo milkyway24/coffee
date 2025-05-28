@@ -942,6 +942,12 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHr-zYPy',
     },
     {
+        name: 'Мещанская',
+        number: '2775',
+        // place: 'https://yandex.ru/maps/-/CHr-zYPy',
+        descr: 'Ждет запуска'
+    },
+    {
         name: 'Минская',
         number: '2217',
         place: 'https://yandex.ru/maps/-/CHvry4Jg',
