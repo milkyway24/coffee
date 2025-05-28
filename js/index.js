@@ -137,7 +137,7 @@ const onInpPrint = debounce(function () {
 
         loader.style.display = 'none';
     }, 500);
-}, 500);
+}, 200);
 
 function onShowAllClick() {
     if (!showAllFlag) {
