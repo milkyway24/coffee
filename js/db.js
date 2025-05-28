@@ -4,7 +4,7 @@ export const stations = [
         number: '2707',
         place: 'https://yandex.ru/maps/-/CHCF4Si5',
         drive: 'https://yandex.ru/maps/-/CHCF46oW',
-        descr: 'Заезд указан на случай, если ехать из центра. Если ехать в сторону центра, то можно заехать через трамвайные пути, тогда в маршрут лучше забивать не заезд, а саму точку (вход)'
+        descr: 'Закрывается ночью. Заезд указан на случай, если ехать из центра. Если ехать в сторону центра, то можно заехать через трамвайные пути, тогда в маршрут лучше забивать не заезд, а саму точку (вход)'
     },
     {
         name: 'Авиамоторная',
@@ -287,11 +287,13 @@ export const stations = [
         name: 'Вернадского',
         number: '2751',
         place: 'https://yandex.ru/maps/-/CHvrQ81a',
+        descr: 'Есть лифт. Можно обслужить сразу два аппарата, этот и 2243'
     },
     {
         name: 'Вернадского',
         number: '2243',
         place: 'https://yandex.ru/maps/-/CHvrQP~A',
+        descr: 'Есть лифт. Можно обслужить сразу два аппарата, этот и 2751'
     },
     {
         name: 'Вернадского проспект',
@@ -1135,6 +1137,7 @@ export const stations = [
         name: 'Новокосино',
         number: '2446',
         place: 'https://yandex.ru/maps/-/CHrtzAKQ',
+        descr: 'Закрывается ночью'
     },
     {
         name: 'Новомосковская',
@@ -2015,6 +2018,7 @@ export const stations = [
         name: 'Черкизовская',
         number: '2793',
         place: 'https://yandex.ru/maps/-/CHv0n-7Y',
+        descr: 'Закрывается ночью'
     },
     {
         name: 'Черкизовская',
@@ -2081,6 +2085,7 @@ export const stations = [
         name: 'Электрозаводская',
         number: '2794',
         place: 'https://yandex.ru/maps/-/CHrxMLlg',
+        descr: 'Закрывается ночью'
     },
     {
         name: 'Энтузиастов шоссе',
@@ -2123,6 +2128,7 @@ export const stations = [
         name: 'Юр.служба метро',
         number: '2471',
         place: 'https://yandex.ru/maps/-/CHrxQR78',
+        descr: 'Закрывается ночью (скорее всего в 22:00 или раньше)'
     },
     {
         name: 'Ясенево',
