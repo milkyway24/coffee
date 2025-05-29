@@ -944,8 +944,8 @@ export const stations = [
     {
         name: 'Мещанская',
         number: '2775',
-        // place: 'https://yandex.ru/maps/-/CHr-zYPy',
-        descr: 'Ждет запуска'
+        place: 'https://yandex.ru/navi/-/CHCpZRpX',
+        descr: 'Вход на углу. Обслуживание доступно круглосуточно'
     },
     {
         name: 'Минская',
