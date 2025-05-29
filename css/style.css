@@ -194,15 +194,15 @@ body {
 .input {
   width: 100%;
   height: 35px;
-  padding: 3px 5px;
+  padding: 5px 5px 3px;
   border: 2px solid #bab5a2;
+  font-size: 16px;
   transition: border-color 0.2s;
   outline: none;
 }
 
 .input:focus-visible {
   border-color: #867544;
-  font-size: 18px;
 }
 
 .places {
