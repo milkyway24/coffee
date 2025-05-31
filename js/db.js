@@ -569,8 +569,7 @@ export const stations = [
     {
         name: 'Зябликово',
         number: '3526',
-        // place: '',
-        descr: 'Видимо готовится к запуску'
+        place: 'https://yandex.ru/maps/-/CHGiRAmu',
     },
     {
         name: 'Измайлово депо',
@@ -1612,18 +1611,24 @@ export const stations = [
     },
     {
         name: 'Северное депо',
-        number: '2270',
-        place: 'https://yandex.ru/maps/-/CHrxAK2d',
+        number: '2269',
+        place: 'https://yandex.ru/maps/-/CHGiJQYI',
+        drive: 'https://yandex.ru/maps/-/CHrxAK2d',
+        descr: 'Припарковаться возле здания, где стоит аппарат 2270. Далее пешком перейти железнодорожные пути по красной дорожке переходу, обойти здание слева, вход будет, где обозначена точка'
     },
     {
         name: 'Северное депо',
-        number: '2269',
-        place: 'https://yandex.ru/maps/-/CHrxAK2d',
+        number: '2270',
+        place: 'https://yandex.ru/maps/-/CHGiFTZW',
+        drive: 'https://yandex.ru/maps/-/CHrxAK2d',
+        descr: 'Вход находится, где три ступеньки. Зайти в дверь и пройти в ещё одну дверь прямо'
     },
     {
         name: 'Северное депо',
         number: '2271',
-        place: 'https://yandex.ru/maps/-/CHrxAK2d',
+        place: 'https://yandex.ru/maps/-/CHGiJClp',
+        drive: 'https://yandex.ru/maps/-/CHrxAK2d',
+        descr: 'Зайти в дверь, где вход, повернуть налево, к поездам. Аппарат стоит между 4 и 5 путями, за колонной'
     },
     {
         name: 'Северные Ворота автовокзал',
@@ -2091,7 +2096,7 @@ export const stations = [
         name: 'Электрозаводская',
         number: '2794',
         place: 'https://yandex.ru/maps/-/CHrxMLlg',
-        descr: 'Закрывается ночью'
+        descr: 'Закрывается ночью. Нужно пройти за турникет, спуститься на эскалаторе и повернуть налево'
     },
     {
         name: 'Энтузиастов шоссе',
