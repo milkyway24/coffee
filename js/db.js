@@ -70,7 +70,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHv0b80U',
         drive: 'https://yandex.ru/maps/-/CHr-j2I0',
         parking: 'https://yandex.ru/maps/-/CHvFIRJl',
-        descr: 'Выход 7. Рядом есть бесплатная парковка, но есл она занята, тогда на тротуар с пешеходника на светофоре'
+        descr: 'Выход 7. Стоит в одном переходе с 2768. Рядом есть бесплатная парковка, но если она занята, тогда на тротуар с пешеходника на светофоре'
     },
     {
         name: 'Алтуфьево',
@@ -78,13 +78,13 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHv0b80U',
         drive: 'https://yandex.ru/maps/-/CHr-j2I0',
         parking: 'https://yandex.ru/maps/-/CHvFIRJl',
-        descr: 'Стоит в одном переходе с 2158. Выход 7. Рядом есть бесплатная парковка, но есл она занята, тогда на тротуар с пешеходника на светофоре'
+        descr: 'Стоит в одном переходе с 2158. Выход 7. Рядом есть бесплатная парковка, но если она занята, тогда на тротуар с пешеходника на светофоре'
     },
     {
         name: 'Аминьевская',
         number: '2777',
         place: 'https://yandex.ru/maps/-/CHEDNL3k',
-        descr: ''
+        // descr: ''
     },
     {
         name: 'Аминьевская',
