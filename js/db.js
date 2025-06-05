@@ -451,6 +451,12 @@ export const stations = [
         place: 'https://yandex.ru/navi/-/CHv75R6U',
     },
     {
+        name: 'Динамо',
+        number: '3531',
+        // place: 'https://yandex.ru/navi/-/CHv75R6U',
+        descr: 'Ждет запуска'
+    },
+    {
         name: 'Дмитриевского',
         number: '2430',
         place: 'https://yandex.ru/maps/-/CHrl46IJ',
@@ -1385,6 +1391,12 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHr-7ZNM',
         drive: 'https://yandex.ru/maps/-/CHr-7Ckz',
         descr: 'Закрывается в 2:00. Заезжать по автобусной под кирпич, потом с пешеходника на тротуар. Можно обслужить сразу два аппарата, т.к. они в одном здании. Этот аппарат направо. Здесь же (налево) находится 2470'
+    },
+    {
+        name: 'Печатники',
+        number: '3510',
+        // place: 'https://yandex.ru/maps/-/CHr-7ZNM',
+        descr: 'Ждет запуска'
     },
     {
         name: 'Планерная',
