@@ -453,8 +453,16 @@ export const stations = [
     {
         name: 'Динамо',
         number: '3531',
-        // place: 'https://yandex.ru/navi/-/CHv75R6U',
-        descr: 'Ждет запуска'
+        place: 'https://yandex.ru/navi/-/CHGl4P-M',
+        drive: 'https://yandex.ru/navi/-/CHGla45x',
+        descr: 'Выход 1'
+    },
+    {
+        name: 'Динамо',
+        number: '3532',
+        place: 'https://yandex.ru/navi/-/CHGleUjG',
+        drive: 'https://yandex.ru/navi/-/CHGleJjV',
+        descr: 'Выход 2'
     },
     {
         name: 'Дмитриевского',
@@ -1395,8 +1403,7 @@ export const stations = [
     {
         name: 'Печатники',
         number: '3510',
-        // place: 'https://yandex.ru/maps/-/CHr-7ZNM',
-        descr: 'Ждет запуска'
+        place: 'https://yandex.ru/maps/-/CHGlaV1z'
     },
     {
         name: 'Планерная',
@@ -1997,7 +2004,14 @@ export const stations = [
         number: '2440',
         place: 'https://yandex.ru/maps/-/CHvM7J5m',
         drive: 'https://yandex.ru/maps/-/CHvC5B6A',
-        descr: 'Есть лифт. После обслуживания 2126, 2441 или 2278 можно не выезжая на дорогу доехать по тротуару. Или же заехать где указан заезд'
+        descr: 'Есть лифт. Стоит в одном переходе с 3533. После обслуживания 2126, 2441 или 2278 можно не выезжая на дорогу доехать по тротуару. Или же заехать где указан заезд'
+    },
+    {
+        name: 'Ховрино',
+        number: '3533',
+        place: 'https://yandex.ru/maps/-/CHvM7J5m',
+        drive: 'https://yandex.ru/maps/-/CHvC5B6A',
+        descr: 'Есть лифт. Стоит в одном переходе с 2440. После обслуживания 2126, 2441 или 2278 можно не выезжая на дорогу доехать по тротуару. Или же заехать где указан заезд'
     },
     {
         name: 'Хорошевская',
