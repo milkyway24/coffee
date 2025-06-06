@@ -461,8 +461,8 @@ export const stations = [
         name: 'Динамо',
         number: '3532',
         place: 'https://yandex.ru/navi/-/CHGleUjG',
-        drive: 'https://yandex.ru/navi/-/CHGleJjV',
-        descr: 'Выход 2'
+        parking: 'https://yandex.ru/navi/-/CHGlFJjE',
+        descr: 'Выход 2. Припарковаться перед ступеньками, где указана точка парковки и пройти до выхода пешком'
     },
     {
         name: 'Дмитриевского',
