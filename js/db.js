@@ -279,6 +279,11 @@ export const stations = [
         place: 'https://yandex.ru/navi/-/CHfdRI3o',
     },
     {
+        name: 'Варшавская БКЛ',
+        number: '3509',
+        place: 'https://yandex.ru/navi/-/CHSMrY9I',
+    },
+    {
         name: 'Варшавская',
         number: '3511',
         place: 'https://yandex.ru/navi/-/CHrd7ZoG',
@@ -706,7 +711,13 @@ export const stations = [
         name: 'Комсомольская',
         number: '2468',
         place: 'https://yandex.ru/maps/-/CHrtjGMk',
-        descr: 'Возле 2716 эскалатор вниз, на сокольническую линию, и там уже прямо до платформы будет 2468'
+        descr: 'Возле 2716 эскалатор вниз, на сокольническую линию, и там уже прямо до платформы будет 2468. Там же, рядом стоит ещё аппарат 3528'
+    },
+    {
+        name: 'Комсомольская',
+        number: '3528',
+        place: 'https://yandex.ru/maps/-/CHrtjGMk',
+        descr: 'Возле 2716 эскалатор вниз, на сокольническую линию, и там уже прямо до платформы будет 3528. Там же, рядом стоит ещё аппарат 2468'
     },
     {
         name: 'Коньково',
