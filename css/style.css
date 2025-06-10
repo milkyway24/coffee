@@ -84,7 +84,7 @@ body {
 .main-wrap {
   padding-top: 10px;
   padding-bottom: 40px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header {
