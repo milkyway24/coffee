@@ -1064,6 +1064,16 @@ export const stations = [
         place: 'https://yandex.ru/navi/-/CHrxvOIH',
     },
     {
+        name: 'Мякинино',
+        number: '3529',
+        place: '',
+    },
+    {
+        name: 'Мякинино',
+        number: '3530',
+        place: '',
+    },
+    {
         name: 'Нагорная',
         number: '2155',
         place: 'https://yandex.ru/navi/-/CHrhA2ZI',
@@ -1387,7 +1397,7 @@ export const stations = [
         name: 'Петровский парк',
         number: '2494',
         place: 'https://yandex.ru/maps/-/CHvMn-3E',
-        drive: 'https://yandex.ru/maps/-/CHCIQFiA', 
+        drive: 'https://yandex.ru/maps/-/CHCIQFiA',
         descr: 'Закрывается в 2:00. Если на стадионе идёт мероприятие и рядом со въездом дежурят ДПС, лучше спросить у них можно ли заехать. Если скажут, что нельзя, тогда найти ближайшую платную парковку и оттуда пройтись пешком, это в итоге будет проще и быстрее, чем нарваться на ДПС'
     },
     {
@@ -1671,7 +1681,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvMrON7',
         drive: 'https://yandex.ru/maps/-/CHvC5B6A',
         parking: 'https://yandex.ru/maps/-/CHvMrCIa',
-        descr: 'Парковаться в кармане, точка указана в столбце "парковка". Пройти ко входу автовокзала (указано в столбце "вход")'
+        descr: 'Парковаться в кармане, точка указана в столбце "парковка". Пройти ко входу автовокзала (указано в столбце "вход"). Телегу через рамку досмотра не провозить, только через выход'
     },
     {
         name: 'Селигерская',
@@ -1732,28 +1742,28 @@ export const stations = [
         name: 'Сокол депо',
         number: '2274',
         place: 'https://yandex.ru/maps/-/CHvMvSPN',
-        drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
+        drive: 'https://yandex.ru/maps/-/CHvMvUOG',
         descr: 'Войти к поездам и пойти направо'
     },
     {
         name: 'Сокол депо',
         number: '2275',
         place: 'https://yandex.ru/maps/-/CHvMvSPN',
-        drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
+        drive: 'https://yandex.ru/maps/-/CHvMvUOG',
         descr: 'Войти к поездам и пойти налево'
     },
     {
         name: 'Сокол депо',
         number: '2276',
         place: 'https://yandex.ru/maps/-/CHvMzY-8',
-        drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
+        drive: 'https://yandex.ru/maps/-/CHvMvUOG',
         descr: 'Есть лифт, но работает он только в дневное время. Ночью, скорее всего придется топать по лестнице. Между 2276 и 2277 можно пройти по верху, не выходя на улицу, внутри здания'
     },
     {
         name: 'Сокол депо',
         number: '2277',
         place: 'https://yandex.ru/maps/-/CHvMzJyB',
-        drive: 'https://yandex.ru/maps/-/CHvMvUOG', 
+        drive: 'https://yandex.ru/maps/-/CHvMvUOG',
         descr: 'Есть лифт, но работает он только в дневное время. Ночью, скорее всего придется топать по лестнице. Между 2276 и 2277 можно пройти по верху, не выходя на улицу, внутри здания'
     },
     {
