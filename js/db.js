@@ -1583,13 +1583,13 @@ export const stations = [
         name: 'РУДН',
         number: '2710',
         place: 'https://yandex.ru/maps/-/CHvIeT5q',
-        descr: 'В одном переходе см 3524'
+        descr: 'Стоит в одном переходе с аппаратом 3524'
     },
     {
         name: 'РУДН',
         number: '3524',
         place: 'https://yandex.ru/maps/-/CHvIeT5q',
-        descr: 'В одном переходе см 2710'
+        descr: 'Стоит в одном переходе с аппаратом 2710'
     },
     {
         name: 'Румянцево',
