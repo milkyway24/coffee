@@ -460,7 +460,7 @@ export const stations = [
         number: '3531',
         place: 'https://yandex.ru/navi/-/CHGl4P-M',
         drive: 'https://yandex.ru/navi/-/CHGla45x',
-        descr: 'Выход 1'
+        descr: 'Выход 1. Взять ключ от конструкции'
     },
     {
         name: 'Динамо',
@@ -1583,6 +1583,11 @@ export const stations = [
         name: 'РУДН',
         number: '2710',
         place: 'https://yandex.ru/maps/-/CHvIeT5q',
+    },
+    {
+        name: 'РУДН',
+        number: '3524',
+        place: '',
     },
     {
         name: 'Румянцево',
