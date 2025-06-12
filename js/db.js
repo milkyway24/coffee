@@ -1713,6 +1713,7 @@ export const stations = [
         name: 'Скобелевская',
         number: '3501',
         place: 'https://yandex.ru/navi/-/CHrhIGMU',
+        descr: 'Выход 1. Взять ключ от конструкции'
     },
     {
         name: 'Славянский бульвар',
