@@ -227,6 +227,11 @@ export const stations = [
         descr: 'Там же, где Александровский сад 2422'
     },
     {
+        name: 'Битцевский парк',
+        number: '3525',
+        place: 'https://yandex.ru/maps/-/CHWGUUmn',
+    },
+    {
         name: 'Борисово',
         number: '2260',
         place: 'https://yandex.ru/navi/-/CHrhqLMj',
