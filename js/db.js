@@ -635,6 +635,11 @@ export const stations = [
         place: 'https://yandex.ru/navi/-/CHrhALOk',
     },
     {
+        name: 'Каховская',
+        number: '3543',
+        place: 'https://yandex.ru/navi/-/CHcRn8Pr',
+    },
+    {
         name: 'Киевская',
         number: '2437',
         place: 'https://yandex.ru/maps/-/CHGBnYoc',
