@@ -1,4 +1,4 @@
-// Версия 23.06.2025 13:10
+// Версия 23.06.2025 13:55
 
 const currentUrl = window.location.href;
 const substringToCheck = "rtvmcloading_m";
@@ -436,10 +436,19 @@ if (currentUrl.includes(substringToCheck)) {
 
 
     function onBtnReplaceClick() {
-        setTimeout(() => {
+        const config = {
+            childList: true,
+            subtree: true,
+        };
+
+        const observer = new MutationObserver(function () {
             const btn = activateApp();
             document.body.append(btn);
-        }, 1500);
+            observer.disconnect();
+        });
+
+        observer.observe(document, config);
+
     }
 
     const btnRepl = document.querySelector('.button_replace');
