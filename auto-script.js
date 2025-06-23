@@ -1,4 +1,4 @@
-// Версия 23.06.2025 13:55
+// Версия 23.06.2025 14:10
 
 const currentUrl = window.location.href;
 const substringToCheck = "rtvmcloading_m";
@@ -122,19 +122,29 @@ if (currentUrl.includes(substringToCheck)) {
             },
 
             'Молоко': function (obj) {
-                if (Number(obj.was.textContent) >= 1500) {
-                    obj.was.textContent = 1500;
-                    obj.take.textContent = '+1000';
-                }
+                if (Number(obj.max.textContent) > 1500) {
+                    if (Number(obj.was.textContent) >= 1500) {
+                        obj.was.textContent = 1500;
+                        obj.take.textContent = '+1000';
+                    }
 
-                if (Number(obj.was.textContent) < 1500) {
-                    obj.was.textContent = 500;
-                    obj.take.textContent = '+2000';
-                }
+                    if (Number(obj.was.textContent) < 1500) {
+                        obj.was.textContent = 500;
+                        obj.take.textContent = '+2000';
+                    }
 
-                if (Number(obj.was.textContent) === 0) {
-                    obj.was.textContent = 0;
-                    obj.take.textContent = '+2500';
+                    if (Number(obj.was.textContent) === 0) {
+                        obj.was.textContent = 0;
+                        obj.take.textContent = '+2500';
+                    }
+                } else {
+                    if (Number(obj.was.textContent) > 0) {
+                        obj.was.textContent = 500;
+                        obj.take.textContent = '+1000';
+                    } else {
+                        obj.was.textContent = 0;
+                        obj.take.textContent = '+1500';
+                    }
                 }
             },
 
