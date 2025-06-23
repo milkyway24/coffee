@@ -1,4 +1,4 @@
-// Версия 23.06.2025 14:30
+// Версия 23.06.2025 15:24
 
 const currentUrl = window.location.href;
 const substringToCheck = "rtvmcloading_m";
@@ -236,7 +236,7 @@ if (currentUrl.includes(substringToCheck)) {
                     }
 
                     if (Number(obj.was.textContent) < 2400 && Number(obj.was.textContent) >= 1500) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
+                        obj.was.textContent = 2000;
                         obj.take.textContent = '+1000';
                     }
 
@@ -285,7 +285,7 @@ if (currentUrl.includes(substringToCheck)) {
                     }
 
                     if (Number(obj.was.textContent) < 2400 && Number(obj.was.textContent) >= 1500) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
+                        obj.was.textContent = 2000;
                         obj.take.textContent = '+1000';
                     }
 
@@ -334,7 +334,7 @@ if (currentUrl.includes(substringToCheck)) {
                     }
 
                     if (Number(obj.was.textContent) < 2400 && Number(obj.was.textContent) >= 1500) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
+                        obj.was.textContent = 2000;
                         obj.take.textContent = '+1000';
                     }
 
@@ -383,7 +383,7 @@ if (currentUrl.includes(substringToCheck)) {
                     }
 
                     if (Number(obj.was.textContent) < 2400 && Number(obj.was.textContent) >= 1500) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
+                        obj.was.textContent = 2000;
                         obj.take.textContent = '+1000';
                     }
 
