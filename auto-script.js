@@ -1,4 +1,4 @@
-// Версия 23.06.2025 15:24
+// Версия 23.06.2025 21:15
 
 const currentUrl = window.location.href;
 const substringToCheck = "rtvmcloading_m";
@@ -90,7 +90,7 @@ if (currentUrl.includes(substringToCheck)) {
                 if (Number(obj.max.textContent) > 2750) {
                     if (Number(obj.was.textContent) >= 2000) {
                         obj.was.textContent = 2000;
-                        obj.take.textContent = '+1000';
+                        obj.take.textContent = '+0';
                     }
 
                     if (Number(obj.was.textContent) < 2000) {
@@ -230,17 +230,17 @@ if (currentUrl.includes(substringToCheck)) {
             'Irish': function (obj) {
                 if (Number(obj.max.textContent) > 2500) {
 
-                    if (Number(obj.was.textContent) > 2400) {
+                    if (Number(obj.was.textContent) > 2000) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+0';
                     }
 
-                    if (Number(obj.was.textContent) < 2400 && Number(obj.was.textContent) >= 1500) {
+                    if (Number(obj.was.textContent) < 2000 && Number(obj.was.textContent) >= 1000) {
                         obj.was.textContent = 2000;
                         obj.take.textContent = '+1000';
                     }
 
-                    if (Number(obj.was.textContent) < 1500 && Number(obj.was.textContent) >= 600) {
+                    if (Number(obj.was.textContent) < 1000 && Number(obj.was.textContent) >= 600) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+2000';
                     }
@@ -255,12 +255,12 @@ if (currentUrl.includes(substringToCheck)) {
                         obj.take.textContent = '+3000';
                     }
                 } else {
-                    if (Number(obj.was.textContent) > 1900) {
+                    if (Number(obj.was.textContent) > 1800) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+0';
                     }
 
-                    if (Number(obj.was.textContent) < 1900 && Number(obj.was.textContent) >= 900) {
+                    if (Number(obj.was.textContent) < 1800 && Number(obj.was.textContent) >= 900) {
                         obj.was.textContent = 1500;
                         obj.take.textContent = '+1000';
                     }
@@ -279,17 +279,18 @@ if (currentUrl.includes(substringToCheck)) {
 
             'Сухое молоко МАЛИНА': function (obj) {
                 if (Number(obj.max.textContent) > 2500) {
-                    if (Number(obj.was.textContent) > 2400) {
+
+                    if (Number(obj.was.textContent) > 2000) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+0';
                     }
 
-                    if (Number(obj.was.textContent) < 2400 && Number(obj.was.textContent) >= 1500) {
+                    if (Number(obj.was.textContent) < 2000 && Number(obj.was.textContent) >= 1000) {
                         obj.was.textContent = 2000;
                         obj.take.textContent = '+1000';
                     }
 
-                    if (Number(obj.was.textContent) < 1500 && Number(obj.was.textContent) >= 600) {
+                    if (Number(obj.was.textContent) < 1000 && Number(obj.was.textContent) >= 600) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+2000';
                     }
@@ -304,12 +305,12 @@ if (currentUrl.includes(substringToCheck)) {
                         obj.take.textContent = '+3000';
                     }
                 } else {
-                    if (Number(obj.was.textContent) > 1900) {
+                    if (Number(obj.was.textContent) > 1800) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+0';
                     }
 
-                    if (Number(obj.was.textContent) < 1900 && Number(obj.was.textContent) >= 900) {
+                    if (Number(obj.was.textContent) < 1800 && Number(obj.was.textContent) >= 900) {
                         obj.was.textContent = 1500;
                         obj.take.textContent = '+1000';
                     }
@@ -328,17 +329,18 @@ if (currentUrl.includes(substringToCheck)) {
 
             'Toffee': function (obj) {
                 if (Number(obj.max.textContent) > 2500) {
-                    if (Number(obj.was.textContent) > 2400) {
+
+                    if (Number(obj.was.textContent) > 2000) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+0';
                     }
 
-                    if (Number(obj.was.textContent) < 2400 && Number(obj.was.textContent) >= 1500) {
+                    if (Number(obj.was.textContent) < 2000 && Number(obj.was.textContent) >= 1000) {
                         obj.was.textContent = 2000;
                         obj.take.textContent = '+1000';
                     }
 
-                    if (Number(obj.was.textContent) < 1500 && Number(obj.was.textContent) >= 600) {
+                    if (Number(obj.was.textContent) < 1000 && Number(obj.was.textContent) >= 600) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+2000';
                     }
@@ -353,12 +355,12 @@ if (currentUrl.includes(substringToCheck)) {
                         obj.take.textContent = '+3000';
                     }
                 } else {
-                    if (Number(obj.was.textContent) > 1900) {
+                    if (Number(obj.was.textContent) > 1800) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+0';
                     }
 
-                    if (Number(obj.was.textContent) < 1900 && Number(obj.was.textContent) >= 900) {
+                    if (Number(obj.was.textContent) < 1800 && Number(obj.was.textContent) >= 900) {
                         obj.was.textContent = 1500;
                         obj.take.textContent = '+1000';
                     }
@@ -377,17 +379,18 @@ if (currentUrl.includes(substringToCheck)) {
 
             'Апельсин': function (obj) {
                 if (Number(obj.max.textContent) > 2500) {
-                    if (Number(obj.was.textContent) > 2400) {
+
+                    if (Number(obj.was.textContent) > 2000) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+0';
                     }
 
-                    if (Number(obj.was.textContent) < 2400 && Number(obj.was.textContent) >= 1500) {
+                    if (Number(obj.was.textContent) < 2000 && Number(obj.was.textContent) >= 1000) {
                         obj.was.textContent = 2000;
                         obj.take.textContent = '+1000';
                     }
 
-                    if (Number(obj.was.textContent) < 1500 && Number(obj.was.textContent) >= 600) {
+                    if (Number(obj.was.textContent) < 1000 && Number(obj.was.textContent) >= 600) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+2000';
                     }
@@ -402,13 +405,13 @@ if (currentUrl.includes(substringToCheck)) {
                         obj.take.textContent = '+3000';
                     }
                 } else {
-                    if (Number(obj.was.textContent) > 1900) {
+                    if (Number(obj.was.textContent) > 1800) {
                         obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                         obj.take.textContent = '+0';
                     }
 
-                    if (Number(obj.was.textContent) < 1900 && Number(obj.was.textContent) >= 900) {
-                       obj.was.textContent = 1500;
+                    if (Number(obj.was.textContent) < 1800 && Number(obj.was.textContent) >= 900) {
+                        obj.was.textContent = 1500;
                         obj.take.textContent = '+1000';
                     }
 
