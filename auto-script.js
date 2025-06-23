@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
+// document.addEventListener("DOMContentLoaded", (event) => {
 
     const currentUrl = window.location.href;
     const substringToCheck = "rtvmcloading_m";
@@ -401,4 +401,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         document.body.append(btn);
     }
-});
+// });
