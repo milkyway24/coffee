@@ -1,4 +1,4 @@
-// Версия 23.06.2025 14:10
+// Версия 23.06.2025 14:20
 
 const currentUrl = window.location.href;
 const substringToCheck = "rtvmcloading_m";
@@ -211,12 +211,12 @@ if (currentUrl.includes(substringToCheck)) {
             },
 
             'Крышка': function (obj) {
-                if (Number(obj.was.textContent) > 100) {
+                if (Number(obj.was.textContent) > 120) {
                     obj.was.textContent = 200;
                     obj.take.textContent = '+0';
                 }
 
-                if (Number(obj.was.textContent) < 100) {
+                if (Number(obj.was.textContent) < 120) {
                     obj.was.textContent = 100;
                     obj.take.textContent = '+100';
                 }
