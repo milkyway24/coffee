@@ -1,8 +1,10 @@
-
+// Версия 23.06.2025 12:45
 const currentUrl = window.location.href;
 const substringToCheck = "rtvmcloading_m";
 
 if (currentUrl.includes(substringToCheck)) {
+
+    const btnRepl = document.querySelector('.button_replace');
 
     function applyStyles(element, styles) {
         for (const property in styles) {
@@ -429,5 +431,11 @@ if (currentUrl.includes(substringToCheck)) {
         btn.remove();
     });
 
-    document.body.append(btn);
+    function onBtnReplaceClick () {
+        setTimeout(() => {
+            document.body.append(btn);
+        }, 1000);
+    }
+
+    btnRepl.addEventListener('click', onBtnReplaceClick);
 }
