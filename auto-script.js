@@ -23,7 +23,7 @@
             borderRadius: '50%',
             position: 'fixed',
             top: '30px',
-            right: '30px',
+            left: '30px',
             width: '60px',
             height: '60px',
             border: 'none',
