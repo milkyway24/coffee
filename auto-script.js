@@ -1,4 +1,4 @@
-// Версия 23.06.2025 12:55
+// Версия 23.06.2025 13:10
 
 const currentUrl = window.location.href;
 const substringToCheck = "rtvmcloading_m";
@@ -178,7 +178,7 @@ if (currentUrl.includes(substringToCheck)) {
             },
 
             'Стаканы': function (obj) {
-                if (Number(obj.was.textContent) >= 190) {
+                if (Number(obj.was.textContent) >= 180) {
                     obj.take.textContent = '+40';
                 }
 
@@ -439,7 +439,7 @@ if (currentUrl.includes(substringToCheck)) {
         setTimeout(() => {
             const btn = activateApp();
             document.body.append(btn);
-        }, 500);
+        }, 1500);
     }
 
     const btnRepl = document.querySelector('.button_replace');
