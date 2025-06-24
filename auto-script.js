@@ -1,4 +1,4 @@
-// Версия 24.06.2025 19:12
+// Версия 24.06.2025 19:33
 
 const currentUrl = window.location.href;
 const substringToCheck = "rtvmcloading_m";
@@ -98,6 +98,7 @@ if (currentUrl.includes(substringToCheck)) {
         // ***********************************
 
         const inpRows = document.querySelectorAll('.machine-list-detail-item-content');
+        const inpRowsFocused = document.querySelectorAll('.machine-list-detail-properties-edit');
 
         function getWasAndTake(row) {
             const name = row.firstChild.textContent;
@@ -106,11 +107,17 @@ if (currentUrl.includes(substringToCheck)) {
             const was = rowIngr.children[1];
             const take = rowIngr.lastChild;
 
+            const nextRow = row.nextElementSibling
+            const wasEdit = nextRow.querySelector('.input-was');
+            const putEdit = nextRow.querySelector('.input-put');
+
             return {
                 name,
                 max,
                 was,
-                take
+                take,
+                wasEdit,
+                putEdit
             }
         }
 
@@ -122,20 +129,27 @@ if (currentUrl.includes(substringToCheck)) {
             if (Number(obj.take.textContent) <= settings.coffee.ONE_LIMIT) {
                 obj.was.textContent = settings.coffee.WAS_IF_ONE_LIMIT;
                 obj.take.textContent = settings.coffee.TAKE_IF_ONE_LIMIT;
+                obj.wasEdit.textContent = settings.coffee.WAS_IF_ONE_LIMIT;
+                obj.putEdit.textContent = settings.coffee.TAKE_IF_ONE_LIMIT;
             }
 
             if (Number(obj.take.textContent) > settings.coffee.ONE_LIMIT && Number(obj.take.textContent) <= settings.coffee.TWO_LIMIT) {
                 obj.was.textContent = settings.coffee.WAS_IF_TWO_LIMIT;
                 obj.take.textContent = `+${settings.coffee.TAKE_IF_TWO_LIMIT}`;
+                obj.wasEdit.textContent = settings.coffee.WAS_IF_TWO_LIMIT;
+                obj.putEdit.textContent = `+${settings.coffee.TAKE_IF_TWO_LIMIT}`;
             }
 
             if (Number(obj.was.textContent) === 0) {
                 obj.was.textContent = settings.coffee.WAS_IF_THREE_LIMIT;
+                obj.wasEdit.textContent = settings.coffee.WAS_IF_THREE_LIMIT;
 
                 if (Number(obj.max.textContent) > settings.coffee.ITALIAN_COFFEE_MAX) {
                     obj.take.textContent = `+${settings.coffee.china.TAKE_IF_THREE_LIMIT}`;
+                    obj.putEdit.textContent = `+${settings.coffee.china.TAKE_IF_THREE_LIMIT}`;
                 } else {
                     obj.take.textContent = `+${settings.coffee.italian.TAKE_IF_THREE_LIMIT}`;
+                    obj.putEdit.textContent = `+${settings.coffee.italian.TAKE_IF_THREE_LIMIT}`;
                 }
             }
         }
@@ -147,26 +161,36 @@ if (currentUrl.includes(substringToCheck)) {
                 if (Number(obj.take.textContent) <= settings.milk.ONE_LIMIT) {
                     obj.was.textContent = settings.milk.big.WAS_IF_ONE_LIMIT;
                     obj.take.textContent = `+${settings.milk.big.TAKE_IF_ONE_LIMIT}`;
+                    obj.wasEdit.textContent = settings.milk.big.WAS_IF_ONE_LIMIT;
+                    obj.putEdit.textContent = `+${settings.milk.big.TAKE_IF_ONE_LIMIT}`;
                 }
 
                 if (Number(obj.take.textContent) > settings.milk.ONE_LIMIT && Number(obj.take.textContent) <= settings.milk.TWO_LIMIT) {
                     obj.was.textContent = settings.milk.big.WAS_IF_TWO_LIMIT;
                     obj.take.textContent = `+${settings.milk.big.TAKE_IF_TWO_LIMIT}`;
+                    obj.wasEdit.textContent = settings.milk.big.WAS_IF_TWO_LIMIT;
+                    obj.putEdit.textContent = `+${settings.milk.big.TAKE_IF_TWO_LIMIT}`;
                 }
 
                 if (Number(obj.was.textContent) === 0) {
                     obj.was.textContent = settings.milk.big.WAS_IF_THREE_LIMIT;
                     obj.take.textContent = `+${settings.milk.big.TAKE_IF_THREE_LIMIT}`;
+                    obj.wasEdit.textContent = settings.milk.big.WAS_IF_THREE_LIMIT;
+                    obj.putEdit.textContent = `+${settings.milk.big.TAKE_IF_THREE_LIMIT}`;
                 }
             } else {
                 if (Number(obj.take.textContent) <= settings.milk.ONE_LIMIT) {
                     obj.was.textContent = settings.milk.small.WAS_IF_ONE_LIMIT;
                     obj.take.textContent = `+${settings.milk.small.TAKE_IF_ONE_LIMIT}`;
+                    obj.wasEdit.textContent = settings.milk.small.WAS_IF_ONE_LIMIT;
+                    obj.putEdit.textContent = `+${settings.milk.small.TAKE_IF_ONE_LIMIT}`;
                 }
 
                 if (Number(obj.was.textContent) === 0) {
                     obj.was.textContent = settings.milk.small.WAS_IF_TWO_LIMIT;
                     obj.take.textContent = `+${settings.milk.small.TAKE_IF_TWO_LIMIT}`;
+                    obj.wasEdit.textContent = settings.milk.small.WAS_IF_TWO_LIMIT;
+                    obj.putEdit.textContent = `+${settings.milk.small.TAKE_IF_TWO_LIMIT}`;
                 }
             }
         }
@@ -177,46 +201,64 @@ if (currentUrl.includes(substringToCheck)) {
                 if (Number(obj.was.textContent) > 2000) {
                     obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                     obj.take.textContent = '+0';
+                    obj.wasEdit.textContent = roundToHondreds(Number(obj.was.textContent));
+                    obj.putEdit.textContent = '+0';
                 }
 
                 if (Number(obj.was.textContent) < 2000 && Number(obj.was.textContent) >= 1000) {
                     obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                     obj.take.textContent = '+1000';
+                    obj.wasEdit.textContent = roundToHondreds(Number(obj.was.textContent));
+                    obj.putEdit.textContent = '+1000';
                 }
 
                 if (Number(obj.was.textContent) < 1000 && Number(obj.was.textContent) >= 600) {
                     obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                     obj.take.textContent = '+2000';
+                    obj.wasEdit.textContent = roundToHondreds(Number(obj.was.textContent));
+                    obj.putEdit.textContent = '+2000';
                 }
 
                 if (Number(obj.was.textContent) < 600 && Number(obj.was.textContent) > 0) {
                     obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                     obj.take.textContent = '+2000';
+                    obj.wasEdit.textContent = roundToHondreds(Number(obj.was.textContent));
+                    obj.putEdit.textContent = '+2000';
                 }
 
                 if (Number(obj.was.textContent) === 0) {
                     obj.was.textContent = 0;
                     obj.take.textContent = '+3000';
+                    obj.wasEdit.textContent = 0;
+                    obj.putEdit.textContent = '+3000';
                 }
             } else {
                 if (Number(obj.was.textContent) > 1800) {
                     obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                     obj.take.textContent = '+0';
+                    obj.wasEdit.textContent = roundToHondreds(Number(obj.was.textContent));
+                    obj.putEdit.textContent = '+0';
                 }
 
                 if (Number(obj.was.textContent) < 1800 && Number(obj.was.textContent) >= 500) {
                     obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                     obj.take.textContent = '+1000';
+                    obj.wasEdit.textContent = roundToHondreds(Number(obj.was.textContent));
+                    obj.putEdit.textContent = '+1000';
                 }
 
                 if (Number(obj.was.textContent) < 500 && Number(obj.was.textContent) > 0) {
                     obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                     obj.take.textContent = '+2000';
+                    obj.wasEdit.textContent = roundToHondreds(Number(obj.was.textContent));
+                    obj.putEdit.textContent = '+2000';
                 }
 
                 if (Number(obj.was.textContent) === 0) {
                     obj.was.textContent = 0;
                     obj.take.textContent = '+2500';
+                    obj.wasEdit.textContent = 0;
+                    obj.putEdit.textContent = '+2500';
                 }
             }
         }
@@ -227,20 +269,30 @@ if (currentUrl.includes(substringToCheck)) {
                     if (Number(obj.was.textContent) === 0) {
                         obj.was.textContent = 0;
                         obj.take.textContent = '+57';
+                        obj.wasEdit.textContent = 0;
+                        obj.putEdit.textContent = '+57';
                     } else if (Number(obj.was.textContent) > 37) {
                         obj.was.textContent = 38;
                         obj.take.textContent = '+19';
+                        obj.wasEdit.textContent = 38;
+                        obj.putEdit.textContent = '+19';
                     } else {
                         obj.was.textContent = 19;
                         obj.take.textContent = '+38';
+                        obj.wasEdit.textContent = 19;
+                        obj.putEdit.textContent = '+38';
                     }
                 } else {
                     if (Number(obj.was.textContent) === 0) {
                         obj.was.textContent = 0;
                         obj.take.textContent = '+38';
+                        obj.wasEdit.textContent = 0;
+                        obj.putEdit.textContent = '+38';
                     } else {
                         obj.was.textContent = 19;
                         obj.take.textContent = '+19';
+                        obj.wasEdit.textContent = 19;
+                        obj.putEdit.textContent = '+19';
                     }
                 }
             },
@@ -252,21 +304,29 @@ if (currentUrl.includes(substringToCheck)) {
                 if (Number(obj.was.textContent) > 1500) {
                     obj.was.textContent = 1500;
                     obj.take.textContent = '+500';
+                    obj.wasEdit.textContent = 1500;
+                    obj.putEdit.textContent = '+500';
                 }
 
                 if (Number(obj.was.textContent) < 1500 && Number(obj.was.textContent) >= 1000) {
                     obj.was.textContent = 1000;
                     obj.take.textContent = '+1000';
+                    obj.wasEdit.textContent = 1000;
+                    obj.putEdit.textContent = '+1000';
                 }
 
                 if (Number(obj.was.textContent) < 1000) {
                     obj.was.textContent = 500;
                     obj.take.textContent = '+1500';
+                    obj.wasEdit.textContent = 500;
+                    obj.putEdit.textContent = '+1500';
                 }
 
                 if (Number(obj.was.textContent) === 0) {
                     obj.was.textContent = 0;
                     obj.take.textContent = '+2000';
+                    obj.wasEdit.textContent = 0;
+                    obj.putEdit.textContent = '+2000';
                 }
             },
 
@@ -274,39 +334,51 @@ if (currentUrl.includes(substringToCheck)) {
                 if (Number(obj.was.textContent) > 1000) {
                     obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
                     obj.take.textContent = '+0';
+                    obj.wasEdit.textContent = roundToHondreds(Number(obj.was.textContent));
+                    obj.putEdit.textContent = '+0';
                 }
 
                 if (Number(obj.was.textContent) < 1000) {
                     obj.was.textContent = 500;
                     obj.take.textContent = '+1000';
+                    obj.wasEdit.textContent = 500;
+                    obj.putEdit.textContent = '+1000';
                 }
 
                 if (Number(obj.was.textContent) === 0) {
                     obj.was.textContent = 0;
                     obj.take.textContent = '+1500';
+                    obj.wasEdit.textContent = 0;
+                    obj.putEdit.textContent = '+1500';
                 }
             },
 
             'Стаканы': function (obj) {
                 if (Number(obj.was.textContent) >= 180) {
                     obj.take.textContent = '+40';
+                    obj.putEdit.textContent = '+40';
                 }
 
                 if (Number(obj.was.textContent) < 180 && Number(obj.was.textContent) >= 140) {
                     obj.take.textContent = '+80';
+                    obj.putEdit.textContent = '+80';
                 }
 
                 if (Number(obj.was.textContent) < 140 && Number(obj.was.textContent) >= 100) {
                     obj.take.textContent = '+120';
+                    obj.putEdit.textContent = '+120';
                 }
 
                 if (Number(obj.was.textContent) < 100 && Number(obj.was.textContent) >= 60) {
                     obj.take.textContent = '+160';
+                    obj.putEdit.textContent = '+160';
                 }
 
                 if (Number(obj.was.textContent) === 0) {
                     obj.was.textContent = 0;
                     obj.take.textContent = '+200';
+                    obj.wasEdit.textContent = 0;
+                    obj.putEdit.textContent = '+200';
                 }
             },
 
@@ -314,16 +386,22 @@ if (currentUrl.includes(substringToCheck)) {
                 if (Number(obj.was.textContent) > 150) {
                     obj.was.textContent = 200;
                     obj.take.textContent = '+0';
+                    obj.wasEdit.textContent = 200;
+                    obj.putEdit.textContent = '+0';
                 }
 
                 if (Number(obj.was.textContent) < 150) {
                     obj.was.textContent = 100;
                     obj.take.textContent = '+100';
+                    obj.wasEdit.textContent = 100;
+                    obj.putEdit.textContent = '+100';
                 }
 
                 if (Number(obj.was.textContent) === 0) {
                     obj.was.textContent = 0;
                     obj.take.textContent = '+200';
+                    obj.wasEdit.textContent = 0;
+                    obj.putEdit.textContent = '+200';
                 }
             },
 
