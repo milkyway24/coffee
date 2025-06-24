@@ -1,4 +1,4 @@
-// Версия 24.06.2025 2034
+// Версия 24.06.2025 21:12
 
 const currentUrl = window.location.href;
 const substringToCheck = "rtvmcloading_m";
