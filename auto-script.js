@@ -1,4 +1,4 @@
-// Версия 24.06.2025 18:35
+// Версия 24.06.2025 19:05
 
 const currentUrl = window.location.href;
 const substringToCheck = "rtvmcloading_m";
@@ -345,6 +345,7 @@ if (currentUrl.includes(substringToCheck)) {
 
 
         btn.addEventListener('click', function () {
+            navigator.vibrate(100);
             writeTele(inpRows);
             btn.remove();
         });
