@@ -387,7 +387,7 @@
             const { was } = getMaxAndWas(obj);
 
             const howMuch = {
-                was: settings.shugar.limitsEmpty.ONE,
+                was: settings.shugar.isRound ? roundToHondreds(was) : was,
                 take: settings.EMPTY
             }
 
