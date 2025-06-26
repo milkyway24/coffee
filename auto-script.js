@@ -387,11 +387,16 @@
 
             const howMuch = {
                 was: settings.shugar.limitsEmpty.ONE,
-                take: settings.shugar.packages.ONE
+                take: settings.EMPTY
             }
 
-            if (was === settings.shugar.limitsEmpty.TWO) {
+            if (was <= settings.shugar.limitsEmpty.ONE) {
                 howMuch.was = settings.shugar.limitsEmpty.TWO;
+                howMuch.take = settings.shugar.packages.ONE;
+            }
+
+            if (was === settings.shugar.limitsEmpty.THREE) {
+                howMuch.was = settings.shugar.limitsEmpty.THREE;
                 howMuch.take = settings.shugar.packages.TWO;
             }
 
