@@ -109,9 +109,11 @@
             },
 
             limitsEmpty: {
-                ONE: 500,
-                TWO: 0,
-            }
+                ONE: 1000,
+                TWO: 500,
+                THREE: 0
+            },
+            isRound: false
         },
 
         cups: {
