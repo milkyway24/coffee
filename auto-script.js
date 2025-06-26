@@ -102,6 +102,86 @@ if (currentUrl.includes(substringToCheck)) {
             }
         },
 
+        shugar: {
+            packages: {
+                ONE: 1000,
+                TWO: 1500,
+            },
+
+            limitsEmpty: {
+                ONE: 500,
+                TWO: 0,
+            }
+        },
+
+        cups: {
+            packages: {
+                ONE: 40,
+                TWO: 80,
+                THREE: 120,
+                FOUR: 160,
+                FIVE: 200,
+                SIX: 240
+            },
+
+            limitsEmpty: {
+                ONE: 200,
+                TWO: 160,
+                THREE: 120,
+                FOUR: 80,
+                FIVE: 40,
+                SIX: 0
+            },
+
+            isRound: false
+        },
+
+        lids: {
+            packages: {
+                ONE: 100,
+                TWO: 200
+            },
+
+            limitsEmpty: {
+                ONE: 150,
+                TWO: 0
+            }
+        },
+
+        ingredients: {
+            small: {
+                MAX: 2500,
+
+                packages: {
+                    ONE: 1000,
+                    TWO: 2000,
+                    THREE: 2500
+                },
+
+                limitsEmpty: {
+                    ONE: 1500,
+                    TWO: 500,
+                    THREE: 0
+                }
+            },
+
+            big: {
+                MAX: 3000,
+
+                packages: {
+                    ONE: 1000,
+                    TWO: 2000,
+                    THREE: 3000
+                },
+
+                limitsEmpty: {
+                    ONE: 2000,
+                    TWO: 1000,
+                    THREE: 0
+                }
+            }
+        },
+
         EMPTY: 0
     }
 
@@ -134,7 +214,8 @@ if (currentUrl.includes(substringToCheck)) {
             justifyContent: 'center',
             alignItems: 'center',
             fontWeight: 'bold',
-            boxShadow: '0 0 10px #80808047'
+            boxShadow: '0 0 10px #80808047',
+            cursor: 'pointer'
         };
 
         applyStyles(btn, styles);
@@ -177,8 +258,8 @@ if (currentUrl.includes(substringToCheck)) {
 
         function getMaxAndWas(obj) {
             return {
-                max: Number(obj.max.textContent),
-                was: Number(obj.was.textContent)
+                max: Math.floor(Number(obj.max.textContent)),
+                was: Math.floor(Number(obj.was.textContent))
             }
         }
 
@@ -298,268 +379,141 @@ if (currentUrl.includes(substringToCheck)) {
 
             writeValues(obj, howMuch);
         }
+
+        function setShugar(obj) {
+            const { was } = getMaxAndWas(obj);
+
+            const howMuch = {
+                was: settings.shugar.limitsEmpty.ONE,
+                take: settings.shugar.packages.ONE
+            }
+
+            if (was === settings.shugar.limitsEmpty.TWO) {
+                howMuch.was = settings.shugar.limitsEmpty.TWO;
+                howMuch.take = settings.shugar.packages.TWO;
+            }
+
+            writeValues(obj, howMuch);
+        }
+
+        function setCups(obj) {
+            const { was } = getMaxAndWas(obj);
+
+            const howMuch = {
+                was,
+                take: settings.EMPTY
+            }
+
+            if (was <= settings.cups.limitsEmpty.ONE && was > settings.cups.limitsEmpty.TWO) {
+                if (settings.cups.isRound) howMuch.was = settings.cups.packages.FIVE;
+                howMuch.take = settings.cups.packages.ONE;
+            }
+
+            if (was <= settings.cups.limitsEmpty.TWO && was > settings.cups.limitsEmpty.THREE) {
+                if (settings.cups.isRound) howMuch.was = settings.cups.packages.FOUR;
+                howMuch.take = settings.cups.packages.TWO;
+            }
+
+            if (was <= settings.cups.limitsEmpty.THREE && was > settings.cups.limitsEmpty.FOUR) {
+                if (settings.cups.isRound) howMuch.was = settings.cups.packages.THREE;
+                howMuch.take = settings.cups.packages.THREE;
+            }
+
+            if (was <= settings.cups.limitsEmpty.FOUR && was > settings.cups.limitsEmpty.FIVE) {
+                if (settings.cups.isRound) howMuch.was = settings.cups.packages.TWO;
+                howMuch.take = settings.cups.packages.FOUR;
+            }
+
+            if (was <= settings.cups.limitsEmpty.FIVE) {
+                if (settings.cups.isRound) howMuch.was = settings.cups.packages.ONE;
+                howMuch.take = settings.cups.packages.FIVE;
+            }
+
+            if (was === settings.cups.limitsEmpty.SIX) {
+                howMuch.was = settings.EMPTY;
+                howMuch.take = settings.cups.packages.SIX;
+            }
+
+            writeValues(obj, howMuch);
+        }
+
+        function setLids(obj) {
+            const { was } = getMaxAndWas(obj);
+
+            const howMuch = {
+                was: settings.lids.packages.ONE,
+                take: settings.lids.packages.ONE
+            }
+
+            if (was >= settings.lids.limitsEmpty.ONE) {
+                howMuch.was = settings.lids.packages.TWO;
+                howMuch.take = settings.EMPTY;
+            }
+
+            if (was === settings.EMPTY) {
+                howMuch.was = settings.EMPTY;
+                howMuch.take = settings.lids.packages.TWO;
+            }
+
+            writeValues(obj, howMuch);
+        }
+
+        function setIngredients(obj) {
+            const { max, was } = getMaxAndWas(obj);
+            let isSmall = max <= settings.ingredients.small.MAX;
+
+            const howMuch = {
+                was: settings.isRound ? roundToHondreds(was) : was,
+                take: settings.EMPTY
+            }
+
+            if (!isSmall) {
+                if (was <= settings.ingredients.big.limitsEmpty.ONE && was > settings.ingredients.big.limitsEmpty.TWO) {
+                    howMuch.was = settings.isRound ? roundToHondreds(was) : was;
+                    howMuch.take = settings.ingredients.big.packages.ONE;
+                }
+
+                if (was <= settings.ingredients.big.limitsEmpty.TWO && was > settings.ingredients.big.limitsEmpty.THREE) {
+                    howMuch.was = settings.isRound ? roundToHondreds(was) : was;
+                    howMuch.take = settings.ingredients.big.packages.TWO;
+                }
+
+                if (was === settings.ingredients.big.limitsEmpty.THREE) {
+                    howMuch.was = settings.EMPTY;
+                    howMuch.take = settings.ingredients.big.packages.THREE;
+                }
+            } else {
+                if (was <= settings.ingredients.small.limitsEmpty.ONE && was > settings.ingredients.small.limitsEmpty.TWO) {
+                    howMuch.was = settings.isRound ? roundToHondreds(was) : was;
+                    howMuch.take = settings.ingredients.small.packages.ONE;
+                }
+
+                if (was <= settings.ingredients.small.limitsEmpty.TWO && was > settings.ingredients.small.limitsEmpty.THREE) {
+                    howMuch.was = settings.isRound ? roundToHondreds(was) : was;
+                    howMuch.take = settings.ingredients.small.packages.TWO;
+                }
+
+                if (was === settings.ingredients.small.limitsEmpty.THREE) {
+                    howMuch.was = settings.EMPTY;
+                    howMuch.take = settings.ingredients.small.packages.THREE;
+                }
+            }
+
+            writeValues(obj, howMuch);
+        }
+
         const nameMap = {
             'Вода': setWater,
             'Кофе Jardin': setCoffee,
             'Молоко': setMilk,
             'Шоколад': setChocolate,
-
-            'Сахар сладкий': function (obj) {
-                if (Number(obj.was.textContent) > 1000) {
-                    obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                    obj.take.textContent = '+0';
-                }
-
-                if (Number(obj.was.textContent) < 1000) {
-                    obj.was.textContent = 500;
-                    obj.take.textContent = '+1000';
-                }
-
-                if (Number(obj.was.textContent) === 0) {
-                    obj.was.textContent = 0;
-                    obj.take.textContent = '+1500';
-                }
-            },
-
-            'Стаканы': function (obj) {
-                if (Number(obj.was.textContent) >= 180) {
-                    obj.take.textContent = '+40';
-                }
-
-                if (Number(obj.was.textContent) < 180 && Number(obj.was.textContent) >= 140) {
-                    obj.take.textContent = '+80';
-                }
-
-                if (Number(obj.was.textContent) < 140 && Number(obj.was.textContent) >= 100) {
-                    obj.take.textContent = '+120';
-                }
-
-                if (Number(obj.was.textContent) < 100 && Number(obj.was.textContent) >= 60) {
-                    obj.take.textContent = '+160';
-                }
-
-                if (Number(obj.was.textContent) === 0) {
-                    obj.was.textContent = 0;
-                    obj.take.textContent = '+200';
-                }
-            },
-
-            'Крышка': function (obj) {
-                if (Number(obj.was.textContent) > 150) {
-                    obj.was.textContent = 200;
-                    obj.take.textContent = '+0';
-                }
-
-                if (Number(obj.was.textContent) < 150) {
-                    obj.was.textContent = 100;
-                    obj.take.textContent = '+100';
-                }
-
-                if (Number(obj.was.textContent) === 0) {
-                    obj.was.textContent = 0;
-                    obj.take.textContent = '+200';
-                }
-            },
-
-            'Irish': function (obj) {
-                if (Number(obj.max.textContent) > 2500) {
-
-                    if (Number(obj.was.textContent) > 2000) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+0';
-                    }
-
-                    if (Number(obj.was.textContent) < 2000 && Number(obj.was.textContent) >= 1000) {
-                        obj.was.textContent = 2000;
-                        obj.take.textContent = '+1000';
-                    }
-
-                    if (Number(obj.was.textContent) < 1000 && Number(obj.was.textContent) >= 600) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) < 600 && Number(obj.was.textContent) > 0) {
-                        obj.was.textContent = 1000;
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+3000';
-                    }
-                } else {
-                    if (Number(obj.was.textContent) > 1800) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+0';
-                    }
-
-                    if (Number(obj.was.textContent) < 1800 && Number(obj.was.textContent) >= 900) {
-                        obj.was.textContent = 1500;
-                        obj.take.textContent = '+1000';
-                    }
-
-                    if (Number(obj.was.textContent) < 900 && Number(obj.was.textContent) > 0) {
-                        obj.was.textContent = 500;
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+2500';
-                    }
-                }
-            },
-
-            'Сухое молоко МАЛИНА': function (obj) {
-                if (Number(obj.max.textContent) > 2500) {
-
-                    if (Number(obj.was.textContent) > 2000) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+0';
-                    }
-
-                    if (Number(obj.was.textContent) < 2000 && Number(obj.was.textContent) >= 1000) {
-                        obj.was.textContent = 2000;
-                        obj.take.textContent = '+1000';
-                    }
-
-                    if (Number(obj.was.textContent) < 1000 && Number(obj.was.textContent) >= 600) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) < 600 && Number(obj.was.textContent) > 0) {
-                        obj.was.textContent = 1000;
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+3000';
-                    }
-                } else {
-                    if (Number(obj.was.textContent) > 1800) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+0';
-                    }
-
-                    if (Number(obj.was.textContent) < 1800 && Number(obj.was.textContent) >= 900) {
-                        obj.was.textContent = 1500;
-                        obj.take.textContent = '+1000';
-                    }
-
-                    if (Number(obj.was.textContent) < 900 && Number(obj.was.textContent) > 0) {
-                        obj.was.textContent = 500;
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+2500';
-                    }
-                }
-            },
-
-            'Toffee': function (obj) {
-                if (Number(obj.max.textContent) > 2500) {
-
-                    if (Number(obj.was.textContent) > 2000) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+0';
-                    }
-
-                    if (Number(obj.was.textContent) < 2000 && Number(obj.was.textContent) >= 1000) {
-                        obj.was.textContent = 2000;
-                        obj.take.textContent = '+1000';
-                    }
-
-                    if (Number(obj.was.textContent) < 1000 && Number(obj.was.textContent) >= 600) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) < 600 && Number(obj.was.textContent) > 0) {
-                        obj.was.textContent = 1000;
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+3000';
-                    }
-                } else {
-                    if (Number(obj.was.textContent) > 1800) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+0';
-                    }
-
-                    if (Number(obj.was.textContent) < 1800 && Number(obj.was.textContent) >= 900) {
-                        obj.was.textContent = 1500;
-                        obj.take.textContent = '+1000';
-                    }
-
-                    if (Number(obj.was.textContent) < 900 && Number(obj.was.textContent) > 0) {
-                        obj.was.textContent = 500;
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+2500';
-                    }
-                }
-            },
-
-            'Апельсин': function (obj) {
-                if (Number(obj.max.textContent) > 2500) {
-
-                    if (Number(obj.was.textContent) > 2000) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+0';
-                    }
-
-                    if (Number(obj.was.textContent) < 2000 && Number(obj.was.textContent) >= 1000) {
-                        obj.was.textContent = 2000;
-                        obj.take.textContent = '+1000';
-                    }
-
-                    if (Number(obj.was.textContent) < 1000 && Number(obj.was.textContent) >= 600) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) < 600 && Number(obj.was.textContent) > 0) {
-                        obj.was.textContent = 1000;
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+3000';
-                    }
-                } else {
-                    if (Number(obj.was.textContent) > 1800) {
-                        obj.was.textContent = roundToHondreds(Number(obj.was.textContent));
-                        obj.take.textContent = '+0';
-                    }
-
-                    if (Number(obj.was.textContent) < 1800 && Number(obj.was.textContent) >= 900) {
-                        obj.was.textContent = 1500;
-                        obj.take.textContent = '+1000';
-                    }
-
-                    if (Number(obj.was.textContent) < 900 && Number(obj.was.textContent) > 0) {
-                        obj.was.textContent = 500;
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+2500';
-                    }
-                }
-            }
+            'Сахар сладкий': setShugar,
+            'Стаканы': setCups,
+            'Крышка': setLids,
+            'Irish': setIngredients,
+            'Сухое молоко МАЛИНА': setIngredients,
+            'Toffee': setIngredients,
+            'Апельсин': setIngredients
         }
 
         function writeTele(rows) {
