@@ -447,10 +447,10 @@
                 take: settings.lids.packages.ONE
             }
 
-            if (was >= settings.lids.limitsEmpty.ONE) {
-                howMuch.was = settings.lids.packages.TWO;
-                howMuch.take = settings.EMPTY;
-            }
+            // if (was >= settings.lids.limitsEmpty.ONE) {
+            //     howMuch.was = settings.lids.packages.TWO;
+            //     howMuch.take = settings.EMPTY;
+            // }
 
             if (was === settings.EMPTY) {
                 howMuch.was = settings.EMPTY;
