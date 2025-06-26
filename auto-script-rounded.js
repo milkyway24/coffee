@@ -133,7 +133,7 @@ if (currentUrl.includes(substringToCheck)) {
                 SIX: 0
             },
 
-            isRound: false
+            isRound: true
         },
 
         lids: {
@@ -149,7 +149,7 @@ if (currentUrl.includes(substringToCheck)) {
         },
 
         ingredients: {
-            isRound: false,
+            isRound: true,
 
             small: {
                 MAX: 2500,
