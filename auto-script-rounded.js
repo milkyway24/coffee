@@ -555,5 +555,7 @@
     }
 
     const btnRepl = document.querySelector('.button_replace');
-    btnRepl.addEventListener('click', onBtnReplaceClick);
+    if (btnRepl) {
+        btnRepl.addEventListener('click', onBtnReplaceClick);
+    }
 // }
