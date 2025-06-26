@@ -41,7 +41,7 @@ if (currentUrl.includes(substringToCheck)) {
         script.src = src;
         script.addEventListener("load", callback);
         document.body.append(script);
-    };
+    }
 
     function applyStyles(element, styles) {
         for (const property in styles) {
