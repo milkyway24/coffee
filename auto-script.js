@@ -4,6 +4,22 @@ const substringToCheck = "rtvmcloading_m";
 if (currentUrl.includes(substringToCheck)) {
 
     const settings = {
+        water: {
+            italiano: {
+                MAX: 57
+            },
+
+            china: {
+                MAX: 38
+            },
+
+            buttles: {
+                ONE: 19,
+                TWO: 38,
+                THREE: 57
+            }
+        },
+
         coffee: {
             china: {
                 MAX: 3000,
@@ -33,6 +49,38 @@ if (currentUrl.includes(substringToCheck)) {
                 limitsEmpty: {
                     ONE: 1750,
                     TWO: 750,
+                    THREE: 0
+                }
+            }
+        },
+
+        milk: {
+            small: {
+                MAX: 1500,
+
+                packages: {
+                    ONE: 1000,
+                    TWO: 1500
+                },
+
+                limitsEmpty: {
+                    ONE: 500,
+                    TWO: 0,
+                }
+            },
+
+            big: {
+                MAX: 2500,
+
+                packages: {
+                    ONE: 1000,
+                    TWO: 2000,
+                    THREE: 2500
+                },
+
+                limitsEmpty: {
+                    ONE: 1500,
+                    TWO: 500,
                     THREE: 0
                 }
             }
@@ -111,87 +159,108 @@ if (currentUrl.includes(substringToCheck)) {
             obj.putEdit.textContent = `+${values.take}`;
         }
 
-        function getCoffee (obj) {
-                const max = Number(obj.max.textContent);
-                const was = Number(obj.was.textContent);
-                const model = max > settings.coffee.italiano.MAX ? 'china':'italiano';
+        function getMaxAndWas(obj) {
+            return {
+                max: Number(obj.max.textContent),
+                was: Number(obj.was.textContent)
+            }
+        }
 
-                if (was >= settings.coffee[model].limitsEmpty.ONE) {
-                    writeValues(obj, {
-                        was: settings.coffee[model].limitsEmpty.ONE,
-                        take: settings.coffee[model].packages.ONE
-                    });
+        function setWater(obj) {
+            const { max, was } = getMaxAndWas(obj);
+
+            const howMuch = {
+                was: settings.water.buttles.ONE,
+                take: settings.water.buttles.ONE
+            }
+
+            if (max > settings.water.china.MAX) {
+                if (was < settings.water.buttles.TWO) {
+                    howMuch.was = settings.water.buttles.ONE;
+                    howMuch.take = settings.water.buttles.TWO
                 }
 
-                if (was < settings.coffee[model].limitsEmpty.ONE) {
-                    writeValues(obj, {
-                        was: settings.coffee[model].limitsEmpty.TWO,
-                        take: settings.coffee[model].packages.TWO
-                    });
+                if (was >= settings.water.buttles.TWO) {
+                    howMuch.was = settings.water.buttles.TWO;
+                    howMuch.take = settings.water.buttles.ONE
                 }
 
-                if (was === settings.coffee[model].limitsEmpty.THREE) {
-                    writeValues(obj, {
-                        was: settings.coffee[model].limitsEmpty.THREE,
-                        take: settings.coffee[model].packages.THREE
-                    });
+                if (was === settings.EMPTY) {
+                    howMuch.was = settings.EMPTY;
+                    howMuch.take = settings.water.buttles.THREE
+                }
+            } else {
+                if (was < settings.water.buttles.TWO) {
+                    howMuch.was = settings.water.buttles.ONE;
+                    howMuch.take = settings.water.buttles.ONE
+                }
+
+                if (was === settings.EMPTY) {
+                    howMuch.was = settings.EMPTY;
+                    howMuch.take = settings.water.buttles.TWO
                 }
             }
 
+            writeValues(obj, howMuch);
+        }
+
+        function setCoffee(obj) {
+            const { max, was } = getMaxAndWas(obj);
+            const model = max > settings.coffee.italiano.MAX ? 'china' : 'italiano';
+            const howMuch = {
+                was: settings.coffee[model].limitsEmpty.ONE,
+                take: settings.coffee[model].packages.ONE
+            }
+
+            if (was < settings.coffee[model].limitsEmpty.ONE) {
+                howMuch.was = settings.coffee[model].limitsEmpty.TWO;
+                howMuch.take = settings.coffee[model].packages.TWO;
+            }
+
+            if (was === settings.coffee[model].limitsEmpty.THREE) {
+                howMuch.was = settings.coffee[model].limitsEmpty.THREE;
+                howMuch.take = settings.coffee[model].packages.THREE;
+            }
+
+            writeValues(obj, howMuch);
+        }
+
+        function setMilk(obj) {
+            const { max, was } = getMaxAndWas(obj);
+            let isSmall = max <= settings.milk.small.MAX;
+
+            const howMuch = {
+                was: settings.milk.big.limitsEmpty.ONE,
+                take: settings.milk.big.packages.ONE
+            }
+
+            if (!isSmall) {
+                if (was < settings.milk.big.limitsEmpty.ONE) {
+                    howMuch.was = settings.milk.big.limitsEmpty.TWO;
+                    howMuch.take = settings.milk.big.packages.TWO;
+                }
+
+                if (was === settings.milk.big.limitsEmpty.THREE) {
+                    howMuch.was = settings.milk.big.limitsEmpty.THREE;
+                    howMuch.take = settings.milk.big.packages.THREE;
+                }
+            } else {
+                howMuch.was = settings.milk.small.limitsEmpty.ONE;
+                howMuch.take = settings.milk.small.packages.ONE;
+
+                if (was === settings.milk.small.limitsEmpty.TWO) {
+                    howMuch.was = settings.milk.small.limitsEmpty.TWO;
+                    howMuch.take = settings.milk.small.packages.TWO;
+                }
+            }
+
+            writeValues(obj, howMuch);
+        }
+
         const nameMap = {
-            'Кофе Jardin': getCoffee,
-
-            'Вода': function (obj) {
-                if (Number(obj.max.textContent) > 38) {
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+57';
-                    } else if (Number(obj.was.textContent) > 37) {
-                        obj.was.textContent = 38;
-                        obj.take.textContent = '+19';
-                    } else {
-                        obj.was.textContent = 19;
-                        obj.take.textContent = '+38';
-                    }
-                } else {
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+38';
-                    } else {
-                        obj.was.textContent = 19;
-                        obj.take.textContent = '+19';
-                    }
-                }
-            },
-
-
-
-            'Молоко': function (obj) {
-                if (Number(obj.max.textContent) > 1500) {
-                    if (Number(obj.was.textContent) >= 1500) {
-                        obj.was.textContent = 1500;
-                        obj.take.textContent = '+1000';
-                    }
-
-                    if (Number(obj.was.textContent) < 1500) {
-                        obj.was.textContent = 500;
-                        obj.take.textContent = '+2000';
-                    }
-
-                    if (Number(obj.was.textContent) === 0) {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+2500';
-                    }
-                } else {
-                    if (Number(obj.was.textContent) > 0) {
-                        obj.was.textContent = 500;
-                        obj.take.textContent = '+1000';
-                    } else {
-                        obj.was.textContent = 0;
-                        obj.take.textContent = '+1500';
-                    }
-                }
-            },
+            'Вода': setWater,
+            'Кофе Jardin': setCoffee,
+            'Молоко': setMilk,
 
             'Шоколад': function (obj) {
                 if (Number(obj.was.textContent) > 1500) {
