@@ -86,6 +86,22 @@ if (currentUrl.includes(substringToCheck)) {
             }
         },
 
+        chocolate: {
+            packages: {
+                ONE: 500,
+                TWO: 1000,
+                THREE: 1500,
+                FOUR: 2000
+            },
+
+            limitsEmpty: {
+                ONE: 1500,
+                TWO: 1000,
+                THREE: 500,
+                FOUR: 0
+            }
+        },
+
         EMPTY: 0
     }
 
@@ -257,32 +273,36 @@ if (currentUrl.includes(substringToCheck)) {
             writeValues(obj, howMuch);
         }
 
+        function setChocolate(obj) {
+            const { was } = getMaxAndWas(obj);
+
+            const howMuch = {
+                was: settings.chocolate.limitsEmpty.ONE,
+                take: settings.chocolate.packages.ONE
+            }
+
+            if (was < settings.chocolate.limitsEmpty.ONE && was >= settings.chocolate.limitsEmpty.TWO) {
+                howMuch.was = settings.chocolate.limitsEmpty.TWO;
+                howMuch.take = settings.chocolate.packages.TWO;
+            }
+
+            if (was < settings.chocolate.limitsEmpty.TWO) {
+                howMuch.was = settings.chocolate.limitsEmpty.THREE;
+                howMuch.take = settings.chocolate.packages.THREE;
+            }
+
+            if (was === settings.chocolate.limitsEmpty.FOUR) {
+                howMuch.was = settings.chocolate.limitsEmpty.FOUR;
+                howMuch.take = settings.chocolate.packages.FOUR;
+            }
+
+            writeValues(obj, howMuch);
+        }
         const nameMap = {
             'Вода': setWater,
             'Кофе Jardin': setCoffee,
             'Молоко': setMilk,
-
-            'Шоколад': function (obj) {
-                if (Number(obj.was.textContent) > 1500) {
-                    obj.was.textContent = 1500;
-                    obj.take.textContent = '+500';
-                }
-
-                if (Number(obj.was.textContent) < 1500 && Number(obj.was.textContent) >= 1000) {
-                    obj.was.textContent = 1000;
-                    obj.take.textContent = '+1000';
-                }
-
-                if (Number(obj.was.textContent) < 1000) {
-                    obj.was.textContent = 500;
-                    obj.take.textContent = '+1500';
-                }
-
-                if (Number(obj.was.textContent) === 0) {
-                    obj.was.textContent = 0;
-                    obj.take.textContent = '+2000';
-                }
-            },
+            'Шоколад': setChocolate,
 
             'Сахар сладкий': function (obj) {
                 if (Number(obj.was.textContent) > 1000) {
