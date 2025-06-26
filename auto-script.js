@@ -1,7 +1,7 @@
-const currentUrl = window.location.href;
-const substringToCheck = "rtvmcloading_m";
+// const currentUrl = window.location.href;
+// const substringToCheck = "rtvmcloading_m";
 
-if (currentUrl.includes(substringToCheck)) {
+// if (currentUrl.includes(substringToCheck)) {
 
     const settings = {
         water: {
@@ -556,4 +556,4 @@ if (currentUrl.includes(substringToCheck)) {
 
     const btnRepl = document.querySelector('.button_replace');
     btnRepl.addEventListener('click', onBtnReplaceClick);
-}
+// }
