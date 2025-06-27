@@ -9,7 +9,7 @@ if (currentUrl.includes(substringToCheck)) {
         const styles = {
             position: 'fixed',
             top: '0',
-            left: '',
+            left: '0',
             width: '100%',
             height: '100%',
             zIndex: '10000',

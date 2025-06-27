@@ -205,9 +205,9 @@
         const styles = {
             position: 'fixed',
             top: '30px',
-            left: '30px',
-            width: '60px',
-            height: '60px',
+            left: '5px',
+            width: '50px',
+            height: '50px',
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
