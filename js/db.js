@@ -640,6 +640,11 @@ export const stations = [
         place: 'https://yandex.ru/navi/-/CHcRn8Pr',
     },
     {
+        name: 'Каширская',
+        number: '3545',
+        place: 'https://yandex.ru/maps/-/CHsBVEmD',
+    },
+    {
         name: 'Киевская',
         number: '2437',
         place: 'https://yandex.ru/maps/-/CHGBnYoc',
@@ -1348,6 +1353,11 @@ export const stations = [
         name: 'Орехово',
         number: '2727',
         place: 'https://yandex.ru/navi/-/CHrhEPZq'
+    },
+    {
+        name: 'Орехово',
+        number: '3537',
+        // place: ''
     },
     {
         name: 'Отрадное',
