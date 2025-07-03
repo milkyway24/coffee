@@ -933,6 +933,11 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHrliL5g',
     },
     {
+        name: 'Манежная площадь',
+        number: '3539',
+        place: 'https://yandex.ru/navi/-/CHsZU0LM',
+    },
+    {
         name: 'Марксистская',
         number: '2134',
         place: 'https://yandex.ru/maps/-/CHrl4A47',
@@ -1470,6 +1475,12 @@ export const stations = [
         name: 'Площадь Ильича',
         number: '2752',
         place: 'https://yandex.ru/maps/-/CHrleV~q',
+    },
+    {
+        name: 'Площадь Победы',
+        number: '3541',
+        place: 'https://yandex.ru/navi/-/CHsZYGlM',
+        descr: 'Заходить через выход 1 и перейти ближе к выходу 5'
     },
     {
         name: 'Полежаевская',
