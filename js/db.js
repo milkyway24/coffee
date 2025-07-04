@@ -1638,7 +1638,8 @@ export const stations = [
     {
         name: 'Рязанский проспект',
         number: '3544',
-        // place: '',
+        place: 'https://yandex.ru/maps/-/CHszFK0S',
+        descr: 'Взять ключ от антивандальной конструкции'
     },
     {
         name: 'Савеловская',
