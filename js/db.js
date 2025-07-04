@@ -1362,7 +1362,8 @@ export const stations = [
     {
         name: 'Орехово',
         number: '3537',
-        // place: ''
+        place: 'https://yandex.ru/navi/-/CHszu-Kk',
+        descr: 'Нужен ключ от конструкции'
     },
     {
         name: 'Отрадное',
@@ -1633,6 +1634,11 @@ export const stations = [
         number: '2211',
         place: 'https://yandex.ru/maps/-/CHvIeTzs',
         descr: 'Заезжать через шлагбаум на парковку, там бесплатно первые 2 часа. Обслужить до 22:00, потом парковка закрывается'
+    },
+    {
+        name: 'Рязанский проспект',
+        number: '3544',
+        // place: '',
     },
     {
         name: 'Савеловская',
