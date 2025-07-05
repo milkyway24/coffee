@@ -1568,10 +1568,8 @@ export const stations = [
     {
         name: ' Гормост Пушкинский, Армения (конструкция 1)',
         number: '3534',
-        place: 'https://yandex.ru/maps/-/CHrdAV4j',
-        drive: 'https://yandex.ru/maps/-/CHrdA6Z9',
-        parking: 'https://yandex.ru/maps/-/CHrdAS1M',
-        descr: 'Стоит в одном переходе с аппаратом 2187. Заезд там где низкий бордюр. Если рядом ДПС или в праздники много народу, можно встать на платной парковке и пройтись'
+        place: 'https://yandex.ru/navi/-/CHssEQNK',
+        descr: 'Стоит в одном переходе с аппаратом Пушкинская 2187, если что можно заехать там и пройтись по переходу'
     },
     {
         name: 'Пыхтино',
