@@ -1515,6 +1515,11 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHCIUZ~P',
     },
     {
+        name: 'Пражская',
+        number: '3535',
+        place: 'https://yandex.ru/navi/-/CHsdRTzO',
+    },
+    {
         name: 'Преображенская площадь',
         number: '2493',
         descr: 'Cкорее всего аппарат давно не работает, ни у кого точки нет',
