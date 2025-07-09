@@ -126,6 +126,18 @@ export const stations = [
         drive: 'https://yandex.ru/maps/-/CHvruUz5'
     },
     {
+        name: 'Гормост Пешеходный мост «Андреевский» (конструкция 1)',
+        number: '3540',
+        // place: '',
+        // descr: ''
+    },
+    {
+        name: 'Гормост Пешеходный мост «Андреевский» (конструкция 2)',
+        number: '3523',
+        // place: '',
+        // descr: ''
+    },
+    {
         name: 'Аннино',
         number: '2491',
         place: 'https://yandex.ru/maps/-/CHrdq89o',
@@ -190,6 +202,13 @@ export const stations = [
         place: 'https://yandex.ru/navi/-/CHfdiE-a',
         parking: 'https://yandex.ru/navi/-/CHfdiU0D',
         descr: 'Закрывается в 2:00. Рядом есть платная парковка'
+    },
+    {
+        name: 'Белорусская',
+        number: '3547',
+        // place: 'https://yandex.ru/navi/-/CHfdiE-a',
+        // parking: 'https://yandex.ru/navi/-/CHfdiU0D',
+        // descr: 'Закрывается в 2:00. Рядом есть платная парковка'
     },
     {
         name: 'Беляево',
@@ -1765,6 +1784,12 @@ export const stations = [
         descr: 'Выход 1. Взять ключ от конструкции'
     },
     {
+        name: 'Скобелевская',
+        number: '3548',
+        // place: '',
+        // descr: ''
+    },
+    {
         name: 'Славянский бульвар',
         number: '2453',
         place: 'https://yandex.ru/maps/-/CHvruNNZ',
@@ -1949,6 +1974,11 @@ export const stations = [
         name: 'Терехово',
         number: '2247',
         place: 'https://yandex.ru/maps/-/CHvr7AKS',
+    },
+    {
+        name: 'Терехово',
+        number: '3546',
+        // place: 'https://yandex.ru/maps/-/CHvr7AKS',
     },
     {
         name: 'Технопарк',
