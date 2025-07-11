@@ -661,7 +661,7 @@ export const stations = [
     {
         name: 'Каширская',
         number: '3545',
-        place: 'https://yandex.ru/maps/-/CHsBVEmD',
+        place: 'https://yandex.ru/maps/-/CHwX6BNL',
     },
     {
         name: 'Киевская',
