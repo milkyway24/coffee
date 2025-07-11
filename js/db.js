@@ -1786,8 +1786,7 @@ export const stations = [
     {
         name: 'Скобелевская',
         number: '3548',
-        // place: '',
-        // descr: ''
+        place: 'https://yandex.ru/maps/-/CHwLfYyn',
     },
     {
         name: 'Славянский бульвар',
@@ -1908,7 +1907,7 @@ export const stations = [
         name: 'Старокачаловская',
         number: '2748',
         place: 'https://yandex.ru/maps/-/CHCIaJO9',
-        descr: 'В одном переходе с Дмитрия Донского 2403'
+        descr: 'Там, где Дмитрия Донского 2403, пройти за турникеты. Аппарат находится в вестибюле, над платформой'
     },
     {
         name: 'Стахановская',
