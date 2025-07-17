@@ -413,7 +413,7 @@ export const stations = [
     {
         name: 'Волжская',
         number: '3536',
-        // place: 'https://yandex.ru/maps/-/CHrlyCM7',
+        place: 'https://yandex.ru/maps/-/CHHIeZ7c',
     },
     {
         name: 'Волоколамская',
