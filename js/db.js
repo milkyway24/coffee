@@ -84,7 +84,6 @@ export const stations = [
         name: 'Аминьевская',
         number: '2777',
         place: 'https://yandex.ru/maps/-/CHEDNL3k',
-        // descr: ''
     },
     {
         name: 'Аминьевская',
@@ -206,9 +205,7 @@ export const stations = [
     {
         name: 'Белорусская',
         number: '3547',
-        // place: 'https://yandex.ru/navi/-/CHfdiE-a',
-        // parking: 'https://yandex.ru/navi/-/CHfdiU0D',
-        // descr: 'Закрывается в 2:00. Рядом есть платная парковка'
+        place: 'https://yandex.ru/navi/-/CHHA7Q30',
     },
     {
         name: 'Беляево',
@@ -249,6 +246,7 @@ export const stations = [
         name: 'Битцевский парк',
         number: '3525',
         place: 'https://yandex.ru/maps/-/CHWGUUmn',
+        descr: 'Аппарат за турникетом. Закрывается в 2:00'
     },
     {
         name: 'Борисово',
@@ -413,6 +411,11 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHrlyCM7',
     },
     {
+        name: 'Волжская',
+        number: '3536',
+        // place: 'https://yandex.ru/maps/-/CHrlyCM7',
+    },
+    {
         name: 'Волоколамская',
         number: '2497',
         place: 'https://yandex.ru/maps/-/CHvrrMjg',
@@ -467,6 +470,7 @@ export const stations = [
         name: 'Генерала Тюленева',
         number: '2709',
         place: 'https://yandex.ru/maps/-/CHv6yJ-E',
+        descr: 'Есть лифт'
     },
     {
         name: 'Говорово',
@@ -1069,6 +1073,12 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvrrLZl',
     },
     {
+        name: 'Мнёвники',
+        number: '2786',
+        place: 'https://yandex.ru/maps/-/CHHAvHit',
+        descr: 'Выход 3-4'
+    },
+    {
         name: 'Молодежная',
         number: '3506',
         place: 'https://yandex.ru/navi/-/CHv7JN90',
@@ -1229,18 +1239,19 @@ export const stations = [
         name: 'Новомосковская',
         number: '2773',
         place: 'https://yandex.ru/maps/-/CHv65Ypk',
+        descr: 'Закрывается в 2:00. Есть лифт'
     },
     {
         name: 'Новомосковская',
         number: '2475',
         place: 'https://yandex.ru/maps/-/CHv65B-U',
-        descr: 'Вместе с 2745'
+        descr: 'Вместе с 2745. Закрывается в 2:00'
     },
     {
         name: 'Новомосковская',
         number: '2745',
         place: 'https://yandex.ru/maps/-/CHv65B-U',
-        descr: 'Вместе с 2475'
+        descr: 'Вместе с 2475. Закрывается в 2:00'
     },
     {
         name: 'Новопеределкино',
@@ -1353,13 +1364,13 @@ export const stations = [
         name: 'Ольховая',
         number: '2482',
         place: 'https://yandex.ru/maps/-/CHvyuZ9g',
-        descr: 'Вроде оба в одном месте'
+        descr: 'Закрывается в 2:00. Стоит за турникетами, рядом также есть аппарат 2744. Есть лифт'
     },
     {
         name: 'Ольховая',
         number: '2744',
         place: 'https://yandex.ru/maps/-/CHvyuZ9g',
-        descr: 'Вроде оба в одном месте'
+        descr: 'Закрывается в 2:00. Стоит за турникетами, рядом также есть аппарат 2482. Есть лифт'
     },
     {
         name: 'Орехово',
@@ -1619,6 +1630,7 @@ export const stations = [
         name: 'Рассказовка',
         number: '2474',
         place: 'https://yandex.ru/maps/-/CHvIePp7',
+        descr: 'Закрывается в 2:00. Через пешеходный переход к выходу 3 или 4'
     },
     {
         name: 'Рижская',
@@ -1704,7 +1716,7 @@ export const stations = [
         number: '2210',
         place: 'https://yandex.ru/maps/-/CHvIe2zU',
         drive: 'https://yandex.ru/maps/-/CHvIiA1Z',
-        descr: 'Можно заехать через парковку ТЦ и дальше по тротуару'
+        descr: 'Можно заехать через парковку ТЦ и дальше по тротуару. Закрывается в 2:00. Если не работает лифт, то выход номер 1, по ступенькам'
     },
     {
         name: 'Саларьево автовокзал',
@@ -1712,7 +1724,7 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvIiE15',
         drive: 'https://yandex.ru/maps/-/CHvIiA1Z',
         parking: 'https://yandex.ru/maps/-/CHvIe-mE',
-        descr: 'Запарковаться возле лифта и пройти к автовокзалу, там аппарат на 2-м этаже. Заезжать можно через парковку ТЦ и дальше по тротуару'
+        descr: 'Запарковаться возле лифта и пройти к автовокзалу, там аппарат на 2-м этаже. Заезжать можно через парковку ТЦ и дальше по тротуару. На автовокзале можно на лифте подняться на второй этаж. Вход в автовокзал через подземный переход'
     },
     {
         name: 'Свиблово',
@@ -1977,7 +1989,8 @@ export const stations = [
     {
         name: 'Терехово',
         number: '3546',
-        // place: 'https://yandex.ru/maps/-/CHvr7AKS',
+        place: 'https://yandex.ru/maps/-/CHHEYB3V',
+        descr: 'Стоит в переходе между выходом 1 и 2. Без разницы с какой стороны подъезжать'
     },
     {
         name: 'Технопарк',
@@ -2036,6 +2049,7 @@ export const stations = [
         name: 'Тютчевская',
         number: '2704',
         place: 'https://yandex.ru/maps/-/CHvIiMJk',
+        descr: 'Закрывается в 2:00'
     },
     {
         name: 'Улица 1905 года',
@@ -2285,6 +2299,7 @@ export const stations = [
         name: 'Ясенево',
         number: '2175',
         place: 'https://yandex.ru/maps/-/CHvIiQYv',
+        descr: 'Рядом есть бесплатная парковка прямо на проезжей части. Либо на тротуар, если парковка занята'
     },
     {
         name: 'Ясенево',
