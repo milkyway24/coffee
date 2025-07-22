@@ -255,6 +255,11 @@ export const stations = [
         place: 'https://yandex.ru/navi/-/CHrhqLMj',
     },
     {
+        name: 'Борисово',
+        number: '2261',
+        place: 'https://yandex.ru/maps/-/CHH-aS4P',
+    },
+    {
         name: 'Боровское шоссе',
         number: '2722',
         place: 'https://yandex.ru/navi/-/CHv7yD3N'
@@ -332,11 +337,6 @@ export const stations = [
         name: 'Вернадского проспект',
         number: '2706',
         place: 'https://yandex.ru/maps/-/CHvvMT0F',
-    },
-    {
-        name: 'Верхние Котлы',
-        number: '2261',
-        place: 'https://yandex.ru/navi/-/CHrhAQlb',
     },
     {
         name: 'Верхние Лихоборы',
