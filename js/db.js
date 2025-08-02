@@ -1315,6 +1315,12 @@ export const stations = [
         descr: 'Аппарат на улице. Взять ключ от конструкции'
     },
     {
+        name: 'Октябрьская',
+        number: '3551',
+        place: 'https://yandex.ru/navi/-/CHdI44of',
+        descr: 'Взять ключ от конструкции'
+    },
+    {
         name: 'Октябрьское поле',
         number: '2143',
         place: 'https://yandex.ru/maps/-/CHvMnH57',
