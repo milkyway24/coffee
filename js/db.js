@@ -2214,6 +2214,16 @@ export const stations = [
         descr: 'Не ехать по автобусной, будет штраф. Нужно где указана точка зарулить на пешеходник и дальше по тротуару до входа в автовокзал'
     },
     {
+        name: 'ЦСКА',
+        number: '3555',
+        place: 'https://yandex.ru/navi/-/CLeDuR3z'
+    },
+    {
+        name: 'ЦСКА',
+        number: '2404',
+        place: 'https://yandex.ru/navi/-/CLeDuK9A'
+    },
+    {
         name: 'Черкизово депо',
         number: '2242',
         place: 'https://yandex.ru/maps/-/CHrxE-kZ',
