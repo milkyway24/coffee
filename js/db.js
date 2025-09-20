@@ -327,6 +327,11 @@ export const stations = [
         place: 'https://yandex.ru/navi/-/CHrd7ZoG',
     },
     {
+        name: 'Вавиловская',
+        number: '3568',
+        place: 'https://yandex.ru/maps/-/CLe9IBLK',
+    },
+    {
         name: 'Вернадского',
         number: '2751',
         place: 'https://yandex.ru/maps/-/CHvrQ81a',
