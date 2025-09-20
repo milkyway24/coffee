@@ -345,6 +345,11 @@ export const stations = [
         descr: 'Закрывается в 1:00'
     },
     {
+        name: 'Верхние Лихоборы',
+        number: '3561',
+        place: 'https://yandex.ru/navi/-/CLe1j28T',
+    },
+    {
         name: 'Владыкино',
         number: '2739',
         place: 'https://yandex.ru/navi/-/CHfdRLOx',
