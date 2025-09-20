@@ -82,9 +82,21 @@ body {
 }
 
 .main-wrap {
+  display: flex;
+  flex-direction: column;
   padding-top: 10px;
   padding-bottom: 40px;
   min-height: 100vh;
+}
+
+.last-update {
+  margin-top: auto;
+  align-self: center;
+  font-size: 12px;
+}
+
+.upd-time {
+  font-weight: bold;
 }
 
 .header {
@@ -207,6 +219,10 @@ body {
 
 .places {
   padding-top: 30px;
+}
+
+.places:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .place {

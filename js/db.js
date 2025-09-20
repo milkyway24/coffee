@@ -52,6 +52,16 @@ export const stations = [
         place: 'https://yandex.ru/maps/-/CHvIeM8C'
     },
     {
+        name: 'Академическая',
+        number: '3565',
+        place: 'https://yandex.ru/maps/-/CLe9IP0N'
+    },
+    {
+        name: 'Академическая',
+        number: '3566',
+        place: 'https://yandex.ru/maps/-/CLe9INnM'
+    },
+    {
         name: 'Александровский сад',
         number: '2422',
         place: 'https://yandex.ru/maps/-/CHugQC3B',
@@ -890,6 +900,11 @@ export const stations = [
         name: 'Лермонтовский проспект',
         number: '2221',
         place: 'https://yandex.ru/maps/-/CHrlURKA',
+    },
+    {
+        name: 'Ленинский проспект',
+        number: '3553',
+        place: 'https://yandex.ru/maps/-/CLe9EXKs',
     },
     {
         name: 'Лианозово',
